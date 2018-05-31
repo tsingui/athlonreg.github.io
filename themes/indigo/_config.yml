@@ -23,10 +23,10 @@ menu:
   user:
     text: 关于
     url: /about
-  # github:
-  #   text: GitHub
-  #   url: https://github.com/athlonreg
-  #   target: _blank
+  github:
+    text: GitHub
+    url: https://github.com/athlonreg
+    target: _blank
   apple:
     text: Daliansky
     url: https://blog.Daliansky.net
