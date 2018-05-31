@@ -111,6 +111,6 @@ deploy:
 - type: git
   repository: 
     coding: https://git.coding.net/iamzhl/iamzhl.coding.me.git
-    # github: https://github.com/athlonreg/iamzhl.github.io.git
+    github: https://github.com/athlonreg/iamzhl.github.io.git
   branch: master
 - type: baidu_url_submitter
