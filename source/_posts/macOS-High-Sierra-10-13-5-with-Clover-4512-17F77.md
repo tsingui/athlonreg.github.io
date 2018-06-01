@@ -21,7 +21,7 @@ tags:
 此次更新后，小编第一时间更新并打包镜像，希望可以帮助到大家
 
 ## 镜像内容
-此镜像采用Applestore官方商店下载整包制作，适用于gpt分区表，加入了截至`2018-6-2`最新的`Clover_v2.4k_r4512`，并集成一些常用驱动和`config`，镜像内有文件详细说明
+此镜像采用`Applestore`官方商店下载整包制作，仅适用于`GUID`分区表，加入了截至`2018-6-2`最新的`Clover_v2.4k_r4512`，并集成一些常用驱动和`config`，镜像内有文件详细说明
 
 PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 
@@ -36,8 +36,8 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 **新手请务必按其中的说明自行选用**
 
 ## 镜像地址
-[谷歌网盘](https://drive.google.com/open?id=16CIc_hAblkNzY4z7AfPOrGNm_8Ml655H)
-[百度网盘]() 待上传
+- 谷歌网盘：[https://drive.google.com/open?id=16CIc_hAblkNzY4z7AfPOrGNm_8Ml655H](https://drive.google.com/open?id=16CIc_hAblkNzY4z7AfPOrGNm_8Ml655H)
+- 百度网盘：链接:[https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg](https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg)  密码:115w
 
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
