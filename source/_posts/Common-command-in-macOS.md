@@ -218,6 +218,11 @@ $ echo $(($(sysctl -n hw.memsize) / 1024 / 1024))
 $ sysctl -n hw.model
 ```
 
+### 查看当前系统短版本名称
+```
+$ xxd -ps /Applications/Utilities/System\ Information.app/Contents/MacOS/System\ Information|tr -d '\n'|perl -nle "print $& if m{00$(sw_vers -productVersion|awk -F '.' '{printf $1"."$2}'|xxd -ps)00\K.*?00}"|xxd -r -p
+```
+
 ### 待续...
 
 
