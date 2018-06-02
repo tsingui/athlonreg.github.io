@@ -38,6 +38,7 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 ## 镜像地址
 - 谷歌网盘：[https://drive.google.com/open?id=16CIc_hAblkNzY4z7AfPOrGNm_8Ml655H](https://drive.google.com/open?id=16CIc_hAblkNzY4z7AfPOrGNm_8Ml655H)
 - 百度网盘：链接:[https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg](https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg)  密码:115w
+- 城通网盘：[https://u14843043.ctfile.com/dir/14843043-28496597-c0c4c0](https://u14843043.ctfile.com/dir/14843043-28496597-c0c4c0)
 
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
