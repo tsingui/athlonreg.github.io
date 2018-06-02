@@ -40,6 +40,8 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 - 百度网盘：链接:[https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg](https://pan.baidu.com/s/1T7QemiQeFHgafEdUb7Uvsg)  密码:115w
 - 城通网盘：[https://u14843043.ctfile.com/dir/14843043-28496597-c0c4c0](https://u14843043.ctfile.com/dir/14843043-28496597-c0c4c0)
 
+- 超懒包：链接：[https://pan.baidu.com/s/1whIe34rvL7FE1x4XnBTFcA](https://pan.baidu.com/s/1whIe34rvL7FE1x4XnBTFcA) 密码：pyhh
+
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
 
