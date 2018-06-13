@@ -9,6 +9,9 @@ tags:
 - 18A293u
 ---
 
+## macOS Mojave 10.14 beta1 with Clover 4513 18A293u原版镜像
+<!--more-->
+
 ## 前言
 随着WWDC大会的召开，`apple`带来了我们期待已久的`10.14`，代号`macOS Mojave`，下面是本次的支持列表
 
@@ -62,5 +65,5 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
 
-![MD5 SHA1 SHA256](http://ovefvi4g3.bkt.clouddn.com/MD5 SHA1 SHA256.jpg)
+![MD5\ SHA1\ SHA256](http://ovefvi4g3.bkt.clouddn.com/MD5\ SHA1\ SHA256.jpg)
 
