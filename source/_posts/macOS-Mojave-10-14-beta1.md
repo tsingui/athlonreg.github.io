@@ -65,5 +65,5 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
 
-![MD5\ SHA1\ SHA256](http://ovefvi4g3.bkt.clouddn.com/MD5\ SHA1\ SHA256.jpg)
+![](http://ovefvi4g3.bkt.clouddn.com/MD5%20SHA1%20SHA256.jpg)
 
