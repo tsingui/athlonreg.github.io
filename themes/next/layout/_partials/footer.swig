@@ -48,14 +48,7 @@
   <span class="post-meta-divider">|</span>
 {% endif %}
 
-{% if theme.footer.theme.enable %}
-  <div class="theme-info">{#
-  #}{{ __('footer.theme') }} &mdash; {#
-  #}<a class="theme-link" target="_blank"{{ nofollow }} href="https://github.com/theme-next/hexo-theme-next">{#
-    #}NexT.{{ theme.scheme }}{#
-  #}</a>{% if theme.footer.theme.version %} v{{ version }}{% endif %}{#
-#}</div>
-{% endif %}
+<p>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></p>
 
 {% if theme.footer.custom_text %}
   <div class="footer-custom">{#
