@@ -1,5 +1,5 @@
 ---
-title: Deploy tale on Fedora27
+title: 在 Fedora27 部署国人开源博客 Tale
 date: 2018-04-15 09:30:10
 copyright: true
 categories: Linux
@@ -7,9 +7,6 @@ description: 在 Fedora27 部署国人开源博客 Tale
 tags: 
 - Tale
 ---
-
-## 在 Fedora27 部署国人开源博客 Tale
-<!--more-->
 
 ## 前言
 > 什么是`Nginx`?

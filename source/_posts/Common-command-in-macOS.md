@@ -1,5 +1,5 @@
 ---
-title: Common command in macOS
+title: macOS 下一些常用命令
 copyright: true
 date: 2018-03-30 20:32:47
 categories: Hackintosh
@@ -8,9 +8,6 @@ tags:
 - command
 - macOS
 ---
-
-## macOS下一些常用命令
-<!--more-->
 
 ### Trim
 > 开启

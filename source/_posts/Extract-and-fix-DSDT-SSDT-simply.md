@@ -1,5 +1,5 @@
 ---
-title: Extract and fix DSDT SSDT simply
+title: DSDT SSDT 简单提取修复
 copyright: true
 date: 2017-08-30
 categories: Hackintosh

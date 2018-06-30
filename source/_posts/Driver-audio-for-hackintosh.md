@@ -1,5 +1,5 @@
 ---
-title: Driver audio for hackintosh
+title: 利用 AppleALC 驱动声卡
 copyright: true
 date: 2017-11-06
 categories: Hackintosh
@@ -8,9 +8,6 @@ tags:
 - Hacintosh
 - 黑苹果
 ---
-
-## 利用 AppleALC 驱动声卡
-<!--more-->
 
 ## 前言
 > 在`vit9696`推出`AppleALC`后，经过越来越多人仿冒声卡得到的数据的提交整理，`AppleALC`的数据越来越集中，也使声卡驱动变得越来越简单。

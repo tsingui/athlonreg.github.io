@@ -1,5 +1,5 @@
 ---
-title: Check CPU frequences by using AppleIntelInfo
+title: 利用 AppleIntelInfo 查看变频
 copyright: true
 date: 2017-09-05
 categories: Hackintosh
@@ -10,9 +10,6 @@ tags:
 - Hacintosh
 - 黑苹果
 ---
-
-## 利用 AppleIntelInfo 查看变频
-<!--more-->
 
 # 前言
 很多朋友在查看自己机器变频时利用 CPU-S 发现并不准确，这里我教给大家一种比较准确的方法----利用 AppleIntelInfo 查看变频

@@ -1,5 +1,5 @@
 ---
-title: How to change your username on your mac
+title: macOS 修改帐户名、主机名和计算机名
 copyright: true
 date: 2018-03-15 17:19:00
 categories: Hackintosh
@@ -10,9 +10,6 @@ tags:
     - 计算机名
     - mac
 ---
-
-## 更改 mac 的帐户名、主机名和计算机名
-<!--more-->
 
 ### 帐户信息修改
 ```

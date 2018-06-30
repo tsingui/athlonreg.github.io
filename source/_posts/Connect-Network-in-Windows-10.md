@@ -1,5 +1,5 @@
 ---
-title: Connect Network in Windows 10
+title: Windows 10 开机自动连接宽带
 copyright: true
 date: 2017-10-15 21:59:01
 categories: Study
@@ -9,9 +9,6 @@ tags:
 - 自动连接
 - 宽带
 ---
-
-## Windows 10 开机自动连接宽带
-<!--more-->
 
 ### 开工
 

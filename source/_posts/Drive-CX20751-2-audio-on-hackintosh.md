@@ -1,5 +1,5 @@
 ---
-title: Drive CX20751/2 audio on hackintosh
+title: 黑苹果声卡 cx20751/2 驱动方法
 abbrlink: 942dd3f5
 copyright: true
 date: 2018-05-02 23:10:57
@@ -10,10 +10,6 @@ tags:
 - cx20752
 - ALCPlugFix
 ---
-
-黑苹果`cx20751/2`驱动方法
-
-<!--more-->
 
 ### 准备工作
 首先从`linux`提取`codec`，然后整理`codec`提取节点数据，参考我的另一篇帖子[http://blog.athlonreg.top/Driver-audio-for-hackintosh.html](http://blog.athlonreg.top/Driver-audio-for-hackintosh.html)

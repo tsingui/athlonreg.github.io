@@ -9,9 +9,6 @@ tags:
 - 燃7000
 ---
 
-## Install macOS High Sierra on Dell Inspiron 15 7000 i7 8550u
-<!--more-->
-    
 ### Laptop Configuration 
 ```
   --------[ 鲁大师 ]--------------------------------------------------------------------------------

@@ -11,9 +11,6 @@ tags:
 - SSDT
 ---
 
-## Using Clover to "hotpatch" ACPI
-<!--more-->
-
 ## Preface--序言
 This blog is created by me to introduce how to using Clover to hotpatch ACPI，and provide an Chinese version。
 > 我写这篇博客是为了介绍如何使用`Clover`对`ACPI`使用`hotpatch`，并翻译原贴提供中文参考帖。

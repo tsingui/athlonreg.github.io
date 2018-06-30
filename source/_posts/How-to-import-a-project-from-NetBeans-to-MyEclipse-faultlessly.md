@@ -1,5 +1,5 @@
 ---
-title: How to import a project from NetBeans to MyEclipse faultlessly
+title: 将 NetBeans 的项目导入 MyEclipse 并减少错误与乱码现象
 copyright: true
 date: 2017-10-30 16:03:27
 categories: Study
@@ -8,9 +8,6 @@ tags:
 - NetBeans
 - MyEclipse
 ---
-
-## 将 NetBeans 的项目导入 MyEclipse 并减少错误与乱码现象
-<!--more-->
 
 ## 金币阵列问题
 <!--more-->

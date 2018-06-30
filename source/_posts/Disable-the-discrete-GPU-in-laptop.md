@@ -1,5 +1,5 @@
 ---
-title: Disable the discrete GPU in laptop
+title: Hotpatch 屏蔽独显
 copyright: true
 date: 2017-10-04
 categories: Hackintosh
@@ -11,9 +11,6 @@ tags:
 - Disable DGPU
 - 屏蔽独显
 ---
-
-## Disable the discrete GPU to fix "Window Server Service only ran for 0 seconds" in High Sierra
-<!--more-->
 
 ## 写在前面
 最近我根据 RehabMan 的 hotpatch 添加了一些路径做了一个屏蔽独显得 hotpatch 来屏蔽独显解决一些升级 10.13 后因为 nv_disable 参数失效而卡在 Window Server Service only ran for 0 seconds 的错误，发现有些成功，有些失败。于是把我琢磨到的一种方法分享给大家！希望该帖子能帮助到各位！

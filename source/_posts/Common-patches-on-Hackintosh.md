@@ -1,5 +1,5 @@
 ---
-title: Common patches on Hackintosh
+title: 黑苹果常见补丁
 copyright: true
 date: 2018-04-09 10:08:56
 categories: Hackintosh
@@ -9,9 +9,6 @@ tags:
 - Hackintosh
 - 补丁
 ---
-
-## 黑苹果常见补丁
-<!--more-->
 
 ### 先说说怎样强制加载某个驱动
 如下，`KextToPatch`并列`ForceKextsToLoad`，设置`kext`路径

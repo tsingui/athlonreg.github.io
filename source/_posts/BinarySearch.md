@@ -1,5 +1,5 @@
 ---
-title: BinarySearch
+title: 二分查找
 copyright: true
 date: 2018-01-17 15:29:36
 categories: algorithm
@@ -9,9 +9,6 @@ tags:
 - 二分查找
 - algorithm
 ---
-
-## 二分查找
-<!--more-->
 
 ### 代码
 ```

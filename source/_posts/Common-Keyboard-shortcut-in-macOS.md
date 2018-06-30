@@ -1,5 +1,5 @@
 ---
-title: Common Keyboard  shortcut on MAC
+title: MAC 常用快捷键整理
 copyright: true
 date: 2017-10-26 08:14:21
 categories: Study
@@ -8,9 +8,6 @@ tags:
 - 快捷键 
 - Mac
 ---
-
-## MAC 常用快捷键整理
-<!--more-->
 
 ## 写在前面
 > 苹果 Mac 系统常用快捷键有很多，但是很多童鞋对于这些 Mac 快捷键都不是很熟悉，今天小编为大家整理了一份 Mac 系统常用快捷键大全，大家快收藏起来吧!平时在使用 Mac 系统的时候可以提高不少工作效率哦!
