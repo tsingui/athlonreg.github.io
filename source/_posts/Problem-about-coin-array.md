@@ -2,7 +2,7 @@
 title: 金币阵列问题
 copyright: true
 date: 2017-09-03
-categories: algorithm
+categories: 算法
 description: 金币阵列问题
 tags:
 - C语言

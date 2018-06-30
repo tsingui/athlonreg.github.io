@@ -2,9 +2,7 @@
 title: 警匪110问题
 copyright: true
 date: 2017-09-18
-categories: 
-- algorithm
-- 算法
+categories: 算法
 description: 警匪110问题
 tags:
 - C语言

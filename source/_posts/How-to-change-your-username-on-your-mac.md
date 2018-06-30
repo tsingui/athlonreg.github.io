@@ -2,7 +2,7 @@
 title: macOS 修改帐户名、主机名和计算机名
 copyright: true
 date: 2018-03-15 17:19:00
-categories: Hackintosh
+categories: 黑苹果
 description: 更改 mac 的帐户名、主机名和计算机名
 tags: 
     - 账户名

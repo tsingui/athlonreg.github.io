@@ -2,7 +2,7 @@
 title: 黑苹果无线网卡 BCM94352z 驱动教程
 copyright: true
 date: 2017-09-13
-categories: Hackintosh
+categories: 黑苹果
 description: 黑苹果无线网卡 BCM94352z 驱动教程
 tags:
 - Hacintosh

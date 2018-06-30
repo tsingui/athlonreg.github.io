@@ -2,7 +2,7 @@
 title: Windows 10 开机自动连接宽带
 copyright: true
 date: 2017-10-15 21:59:01
-categories: Study
+categories: 学习
 password: password
 description: Windows 10 开机自动连接宽带
 tags: 

@@ -2,9 +2,7 @@
 title: 统计数字问题
 copyright: true
 date: 2017-08-29
-categories: 
-- algorithm
-- 算法
+categories: 算法
 description: 统计数字问题
 tags:
 - C语言

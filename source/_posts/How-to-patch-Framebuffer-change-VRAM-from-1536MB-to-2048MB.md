@@ -2,7 +2,7 @@
 title: 简单修改 FB 实现显存增加至 2048MB 修复某些花屏
 copyright: true
 date: 2018-03-29 17:22:57
-categories: Hackintosh
+categories: 黑苹果
 description: 简单修改FB实现显存增加至2048MB修复某些花屏
 tags: 
 - 显存

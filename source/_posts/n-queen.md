@@ -2,7 +2,7 @@
 title: n 皇后问题
 copyright: true
 date: 2018-01-17 16:04:05
-categories: algorithm
+categories: 算法
 description: n皇后问题
 tags: 
 - n皇后问题
@@ -11,6 +11,7 @@ tags:
 ---
 
 ### 代码
+
 ```
 //
 //  main.c

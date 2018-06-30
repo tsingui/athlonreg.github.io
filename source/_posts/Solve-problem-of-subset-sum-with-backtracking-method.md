@@ -2,9 +2,7 @@
 title: 回溯法求子集和问题
 copyright: true
 date: 2017-12-12 14:12:40
-categories: 
-- algorithm
-- 算法
+categories: 算法
 description: 回溯法求子集和问题
 tags:
 - 子集和问题

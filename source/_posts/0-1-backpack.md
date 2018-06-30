@@ -2,7 +2,7 @@
 title: 0-1背包问题
 copyright: true
 date: 2018-01-17 16:51:25
-categories: algorithm
+categories: 算法
 description: 0-1背包问题
 tags: 
 - 0-1背包问题

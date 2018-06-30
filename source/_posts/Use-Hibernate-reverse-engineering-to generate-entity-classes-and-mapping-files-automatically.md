@@ -2,9 +2,7 @@
 title: 使用Hibernate反向工程自动产生实体类和映射文件
 copyright: true
 date: 2018-05-31 21:07:42
-categories: 
-- Study
-- 学习
+categories: 学习
 description: 使用Hibernate反向工程自动产生实体类和映射文件
 tags: 
 - GitHub

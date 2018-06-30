@@ -2,7 +2,7 @@
 title: xcode-select 命令详解
 copyright: true
 date: 2017-09-03
-categories: Hackintosh
+categories: 学习
 description: How to use xcode-select in terminal
 tags:
 - 终端

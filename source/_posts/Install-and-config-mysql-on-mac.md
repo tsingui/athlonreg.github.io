@@ -2,7 +2,7 @@
 title: macOS 安装和配置 MySQL
 copyright: true
 date: 2017-12-20 17:01:00
-categories: Study
+categories: 学习
 description: 在 Mac 安装和配置 MySQL
 tags:
 - MySQL

@@ -2,7 +2,7 @@
 title: 在 CentOS7 部署国人开源博客 Tale
 copyright: true
 date: 2018-04-14 09:34:15
-categories: Linux
+categories: 学习
 description: 在 CentOS7 部署国人开源博客 Tale
 tags: 
 - Tale

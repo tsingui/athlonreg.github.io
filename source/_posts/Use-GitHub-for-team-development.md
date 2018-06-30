@@ -2,9 +2,7 @@
 title: 利用 GitHub 进行团队多分支开发
 copyright: true
 date: 2018-04-21 22:07:42
-categories: 
-- Study
-- 学习
+categories: 学习
 description: 利用 GitHub 进行团队开发
 tags: 
 - GitHub

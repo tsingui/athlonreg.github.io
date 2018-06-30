@@ -2,7 +2,7 @@
 title: macOS 下一些常用命令
 copyright: true
 date: 2018-03-30 20:32:47
-categories: Hackintosh
+categories: 黑苹果
 description: macOS下一些常用命令
 tags: 
 - command

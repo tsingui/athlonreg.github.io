@@ -2,9 +2,7 @@
 title: 最简单的客户机与服务器案例演示
 copyright: true
 date: 2017-09-07
-categories: 
-- Study
-- 学习
+categories: 学习
 description: 最简单的客户机与服务器案例演示
 tags:
 - Java

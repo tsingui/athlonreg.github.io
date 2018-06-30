@@ -2,7 +2,7 @@
 title: Dell-Inspiron-15-7000-i7-8550u
 copyright: true
 date: 2017-12-10 22:16:01
-categories: Hackintosh
+categories: 黑苹果
 description: Install macOS High Sierra on Dell Inspiron 15 7000 i7 8550u
 tags:
 - Hacintosh

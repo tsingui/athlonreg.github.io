@@ -2,7 +2,7 @@
 title: DSDT SSDT 简单提取修复
 copyright: true
 date: 2017-08-30
-categories: Hackintosh
+categories: 黑苹果
 description: DSDT SSDT 简单提取修复
 tags:
 - DSDT

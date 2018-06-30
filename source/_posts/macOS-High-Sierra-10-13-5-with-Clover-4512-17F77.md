@@ -1,7 +1,7 @@
 ---
 title: macOS High Sierra 10.13.5 原版镜像
 date: 2018-06-02 04:29:28
-categories: Hackintosh
+categories: 黑苹果
 description: macOS High Sierra 10.13.5 with Clover 4512 17F77原版镜像
 tags:
 - 10.13.5

@@ -1,7 +1,7 @@
 ---
 title: 集成 CLOVER 引导的黑苹果原版镜像制作教程
 date: 2018-06-14 10:27:33
-categories: Hackintosh
+categories: 黑苹果
 description: 制作集成CLOVER引导的黑苹果原版镜像
 tags:
 - dmg

@@ -1,7 +1,7 @@
 ---
 title: iTerm2 + ohmyzsh + powerlevel9k + tmux 打造专属个性化终端
 date: 2018-06-26 11:04:23
-categories: Study
+categories: 学习
 description: iTerm2 + ohmyzsh + powerlevel9k + tmux 打造专属个性化终端
 tags: 
 - iTerm2

@@ -2,7 +2,7 @@
 title: Hexo 主题 NexT 使用详解
 copyright: true
 date: 2017-09-14 19:04:36
-categories: Study
+categories: 学习
 description: NexT使用详解
 tags:
 - 静态博客

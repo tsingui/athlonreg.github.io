@@ -2,9 +2,7 @@
 title: 多设备之间同步 hexo 搭建的 blog 
 copyright: true
 date: 2017-10-14 23:35:54
-categories: 
-- Study
-- 学习
+categories: 学习
 description: 对多设备之间 hexo 搭建的 blog 进行同步
 tags: 
 - git 

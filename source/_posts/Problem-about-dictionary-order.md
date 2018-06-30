@@ -2,9 +2,7 @@
 title: 字典序问题
 copyright: true
 date: 2017-08-31
-categories: 
-- algorithm
-- 算法
+categories: 算法
 description: 字典序问题
 tags:
 - C语言

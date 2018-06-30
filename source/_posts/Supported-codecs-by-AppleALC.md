@@ -1,9 +1,7 @@
 ---
 title: AppleALC 目前支持的 Codec
 date: 2018-04-18 20:41:37
-categories:  
-- Hackintosh
-- 黑苹果
+categories: 黑苹果
 description: AppleALC 目前支持的 Codec
 tags: 
 - AppleALC

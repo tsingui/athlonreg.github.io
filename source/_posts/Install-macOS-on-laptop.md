@@ -2,7 +2,7 @@
 title: 笔记本原版黑苹果安装教程
 copyright: true
 date: 2017-12-12 00:28:15
-categories: Hackintosh
+categories: 黑苹果
 description: Install macOS on laptop 原版黑苹果安装参考贴
 tags:
 - Hacintosh

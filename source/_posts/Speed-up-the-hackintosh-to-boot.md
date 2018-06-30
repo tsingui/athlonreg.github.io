@@ -2,9 +2,7 @@
 title: 加快黑苹果开机速度的一种方法
 copyright: true
 date: 2017-09-05
-categories: 
-- Hackintosh
-- 黑苹果
+categories: 黑苹果
 description: 加快黑苹果开机速度的一种方法
 tags:
 - 黑苹果

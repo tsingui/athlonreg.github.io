@@ -2,7 +2,7 @@
 title: ASUS-X455LD-i5-4210u
 copyright: true
 date: 2017-12-13 14:51:34
-categories: Hackintosh
+categories: 黑苹果
 description: Install macOS High Sierra on ASUS X455LD i5 4210u
 tags:
 - Hacintosh

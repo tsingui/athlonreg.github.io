@@ -2,7 +2,7 @@
 title: Clover ACPI hotpatch
 copyright: true
 date: 2017-12-17 15:30:15
-categories: Hackintosh
+categories: 黑苹果
 description: Using Clover to "hotpatch" ACPI 
 tags:
 - Hacintosh

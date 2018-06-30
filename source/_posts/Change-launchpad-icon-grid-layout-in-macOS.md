@@ -3,7 +3,7 @@ title: 修改 launchpad 图标布局
 copyright: true
 date: 2017-10-26 09:32:26
 description: Change launchpad icon grid layout in your MAC
-categories: Study
+categories: 黑苹果
 tags:
 - launchpad
 ---

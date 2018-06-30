@@ -3,7 +3,7 @@ title: 黑苹果声卡 cx20751/2 驱动方法
 abbrlink: 942dd3f5
 copyright: true
 date: 2018-05-02 23:10:57
-categories: Hackintosh
+categories: 黑苹果
 description: 黑苹果 cx20751/2 驱动方法
 tags: 
 - cx20751

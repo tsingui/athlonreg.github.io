@@ -2,7 +2,7 @@
 title: OSI 七层模型详解
 copyright: true
 date: 2018-04-09 16:36:53
-categories: Linux
+categories: 学习
 description: OSI 七层模型
 tags: 
 - OSI

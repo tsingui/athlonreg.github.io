@@ -2,9 +2,7 @@
 title: 实现 MAC 原生读写 NTFS 分区
 copyright: true
 date: 2017-10-27
-categories: 
-- Hackintosh
-- 黑苹果
+categories: 黑苹果
 description: 实现 MAC 原生读写 NTFS 分区
 tags:
 - Hacintosh

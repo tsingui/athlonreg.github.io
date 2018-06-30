@@ -1,7 +1,7 @@
 ---
 title: macOS Mojave 10.14 beta1 原版镜像
 date: 2018-06-13 12:32:49
-categories: Hackintosh
+categories: 黑苹果
 description: macOS Mojave 10.14 beta1 with Clover 4513 18A293u 原版镜像
 tags: 
 - macOS Mojave

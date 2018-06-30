@@ -2,7 +2,7 @@
 title: 黑苹果常见补丁
 copyright: true
 date: 2018-04-09 10:08:56
-categories: Hackintosh
+categories: 黑苹果
 description: 黑苹果常见补丁
 tags: 
 - patch

@@ -2,7 +2,7 @@
 title: 利用 AppleIntelInfo 查看变频
 copyright: true
 date: 2017-09-05
-categories: Hackintosh
+categories: 黑苹果
 description: 利用 AppleIntelInfo 查看变频
 tags:
 - AppleIntelInfo

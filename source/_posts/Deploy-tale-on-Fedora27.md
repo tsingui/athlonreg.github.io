@@ -2,7 +2,7 @@
 title: 在 Fedora27 部署国人开源博客 Tale
 date: 2018-04-15 09:30:10
 copyright: true
-categories: Linux
+categories: 学习
 description: 在 Fedora27 部署国人开源博客 Tale
 tags: 
 - Tale

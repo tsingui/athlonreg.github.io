@@ -2,7 +2,7 @@
 title: 利用 AppleALC 驱动声卡
 copyright: true
 date: 2017-11-06
-categories: Hackintosh
+categories: 黑苹果
 description: 利用 AppleALC 驱动声卡
 tags:
 - Hacintosh

@@ -2,7 +2,7 @@
 title: struts2 中 s:iterator 标签的使用详解
 copyright: true
 date: 2018-04-11 10:12:17
-categories: Study
+categories: 学习
 description: struts2中s:iterator 标签的使用详解
 tags: 
 - struts2

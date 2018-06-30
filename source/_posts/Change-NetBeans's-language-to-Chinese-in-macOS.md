@@ -2,7 +2,7 @@
 title: macOS 修改 NetBeans 语言为简体中文
 copyright: true
 date: 2017-12-09 02:36:23
-categories: Study
+categories: 学习
 description: macOS 下修改 NetBeans 的界面语言
 tags:
 - NetBeans

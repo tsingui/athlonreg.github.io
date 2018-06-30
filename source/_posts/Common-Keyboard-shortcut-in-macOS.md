@@ -2,7 +2,7 @@
 title: MAC 常用快捷键整理
 copyright: true
 date: 2017-10-26 08:14:21
-categories: Study
+categories: 学习
 description: MAC 常用快捷键整理
 tags: 
 - 快捷键 

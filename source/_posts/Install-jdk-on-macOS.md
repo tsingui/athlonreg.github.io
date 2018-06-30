@@ -2,7 +2,7 @@
 title: macOS 搭建 JDK 开发环境
 copyright: true
 date: 2017-08-28
-categories: Study
+categories: 学习
 description: Mac 下搭建 Java 开发环境
 tags:
 - Java

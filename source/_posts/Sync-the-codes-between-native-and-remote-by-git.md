@@ -2,9 +2,7 @@
 title: 利用 git 实现本地和远程之间代码的同步
 copyright: true
 date: 2017-09-27 22:54:26
-categories: 
-- Study
-- 学习
+categories: 学习
 description: 利用 git 实现本地和远程之间代码的同步
 tags: 
 - git 
