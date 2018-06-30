@@ -1,8 +1,10 @@
 ---
-title: The simplest case demo about client and server
+title: 最简单的客户机与服务器案例演示
 copyright: true
 date: 2017-09-07
-categories: Study
+categories: 
+- Study
+- 学习
 description: 最简单的客户机与服务器案例演示
 tags:
 - Java
@@ -10,12 +12,9 @@ tags:
 - 客户机与服务器
 ---
 
-最简单的客户机与服务器案例演示
-<!--more-->
-
 # EchoClient.java
 
-```
+```java
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates

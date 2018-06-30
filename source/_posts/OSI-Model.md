@@ -1,5 +1,5 @@
 ---
-title: OSI Model
+title: OSI 七层模型详解
 copyright: true
 date: 2018-04-09 16:36:53
 categories: Linux
@@ -8,9 +8,6 @@ tags:
 - OSI
 - 七层模型
 ---
-
-## OSI 七层模型
-<!--more-->
 
 ## 定义
 OSI（Open System Interconnection）参考模型是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系，一般称为OSI参考模型或七层模型。

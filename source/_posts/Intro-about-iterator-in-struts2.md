@@ -1,5 +1,5 @@
 ---
-title: Intro about iterator in struts2
+title: struts2 中 s:iterator 标签的使用详解
 copyright: true
 date: 2018-04-11 10:12:17
 categories: Study
@@ -9,9 +9,6 @@ tags:
 - iterator
 - 框架
 ---
-
-## struts2中s:iterator 标签的使用详解
-<!--more-->
 
 ### 简单的`Demo`
 > s:iterator 标签有三个属性：

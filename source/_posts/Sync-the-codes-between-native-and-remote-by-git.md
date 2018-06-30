@@ -1,21 +1,16 @@
 ---
-title: Sync the codes between native and remote by git 
+title: 利用 git 实现本地和远程之间代码的同步
 copyright: true
 date: 2017-09-27 22:54:26
-categories: Study
+categories: 
+- Study
+- 学习
 description: 利用 git 实现本地和远程之间代码的同步
 tags: 
 - git 
 - 同步 
 - github 
 ---
-
-## 利用 git 实现本地和远程之间代码的同步
-<!--more-->
-
-## 前言
-> Sync the codes between native and remote by git
-> 转载请注明[原出处](https://blog.iamzhl.top/2017/09/27/Sync%20the%20codes%20between%20native%20and%20remote%20by%20git/)
 
 ## 代码放到 git 仓库，然后本地修改同步至仓库，这在生活中是很常见的，下面是一个最简单的案例
 

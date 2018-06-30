@@ -1,15 +1,14 @@
 ---
-title: Supported codecs by AppleALC
+title: AppleALC 目前支持的 Codec
 date: 2018-04-18 20:41:37
-categories: Hackintosh
+categories:  
+- Hackintosh
+- 黑苹果
 description: AppleALC 目前支持的 Codec
 tags: 
 - AppleALC
 - codec
 ---
-
-## AppleALC 目前支持的 Codec
-<!--more-->
 
 #### Currently supported codecs
 | Vendor | Codec | Revisions | MinKernel | MaxKernel |

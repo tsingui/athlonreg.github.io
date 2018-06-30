@@ -1,17 +1,16 @@
 ---
-title: Statistical problem
+title: 统计数字问题
 copyright: true
 date: 2017-08-29
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 统计数字问题
 tags:
 - C语言
 - 算法
 - 统计数字
 ---
-
-## 统计数字问题
-<!--more-->
 
 # 问题描述
 

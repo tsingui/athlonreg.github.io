@@ -1,5 +1,5 @@
 ---
-title: Install and config mysql on mac
+title: macOS 安装和配置 MySQL
 copyright: true
 date: 2017-12-20 17:01:00
 categories: Study
@@ -8,9 +8,6 @@ tags:
 - MySQL
 - Mac
 ---
-
-## 在 Mac 安装和配置 MySQL
-<!--more-->
 
 ## 准备
 ### 安装`HomeBrew`

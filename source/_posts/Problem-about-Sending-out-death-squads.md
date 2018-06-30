@@ -1,17 +1,16 @@
 ---
-title: Problem about Sending out death squads
+title: 派遣敢死队问题
 copyright: true
 date: 2017-09-18
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 派遣敢死队问题
 tags:
 - C语言
 - 算法
 - 派遣敢死队
 ---
-
-## 派遣敢死队问题
-<!--more-->
 
 # 问题描述
 

@@ -1,17 +1,16 @@
 ---
-title: Problem about low-carbon lifestyle answering
+title: 低碳生活答题问题
 copyright: true
 date: 2017-09-12
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 低碳生活答题问题
 tags:
 - 算法
 - 低碳生活答题问题
 - C语言
 ---
-
-## 低碳生活答题问题
-<!--more-->
 
 # 问题描述
     

@@ -1,8 +1,10 @@
 ---
-title: Reverse part of array
+title: 数组部分逆置问题
 copyright: true
 date: 2018-01-17 16:23:37
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 将数组从指定位置逆置，如从4开始逆置{1，4，2，6，8，5，7，3}，则输出{8，5，7，3，1，4，2，6}。
 tags: 
 - algorithm
@@ -10,10 +12,8 @@ tags:
 - 逆置
 ---
 
-## 将数组从指定位置逆置，如从4开始逆置{1，4，2，6，8，5，7，3}，则输出{8，5，7，3，1，4，2，6}
-<!--more-->
-
 ### 代码
+
 ```
 //
 //  main.c

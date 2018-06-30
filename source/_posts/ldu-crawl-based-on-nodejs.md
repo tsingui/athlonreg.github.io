@@ -1,17 +1,11 @@
 ---
-title: Ldu crawl based on nodejs
+title: 基于 Nodejs 实现的网络爬虫
 copyright: true
 date: 2018-01-10 19:40:02
 categories: Study
-description: 基于Nodejs实现的网络爬虫
+description: 基于 Nodejs 实现的网络爬虫
 tags:
-- Nodejs
-- crawl
-- 爬虫
 ---
-
-## 基于Nodejs实现的网络爬虫
-<!--more-->
 
 ### 简介
 基于Nodejs实现的网络爬虫，爬取鲁东大学官网指定数量的新闻保存至本地。

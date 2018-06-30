@@ -1,5 +1,5 @@
 ---
-title: Make a boot img of OS X with Clover
+title: 集成 CLOVER 引导的黑苹果原版镜像制作教程
 date: 2018-06-14 10:27:33
 categories: Hackintosh
 description: 制作集成CLOVER引导的黑苹果原版镜像
@@ -8,9 +8,6 @@ tags:
 - 原版镜像
 - 黑苹果镜像
 ---
-
-# 制作集成CLOVER引导的黑苹果原版镜像
-<!--more-->
 
 # 准备工作
 - `macOS`环境(虚拟机实机均可)
@@ -38,10 +35,16 @@ tags:
 打开终端，输入命令来将镜像写进刚才我们新建的那个空盘，命令的大体格式如下：
 
 ```
-sudo createinstallmedia制作工具 --volume 空盘 –applicationpath app镜像 --nointeraction
+$ sudo createinstallmedia制作工具 --volume 空盘 –applicationpath app镜像 --nointeraction
 ```
 
-> 由于命令较长，在此稍作说明，方便朋友们理解首先输入`sudo `后边跟一个空格，然后找到`app`镜像，右键显示包内容，依次进入`/Contents/Resources`,找到一个名为`createinstallmedia`的文件，将其拖到终端，然后空格输入`--volume`再空格，然后将磁盘工具新建的那个空白镜像自动挂载后的空磁盘拖进来，空格输入`--applicationpath`，再空格将整个`app`镜像拖进来，空格输入`--nointeraction`,最后空格回车输入密码再回车，静静等待写入完成即可。
+> 从`macOS Mojave`开始，`--applicationpath`参数被抛弃，因此，`10.14`以后的写入命令为下面的
+
+```bash
+$ sudo createinstallmedia制作工具 --volume 空盘 --nointeraction
+```
+
+> 由于命令较长，在此稍作说明，方便朋友们理解，以支持更为广泛的命令为例，首先输入`sudo `后边跟一个空格，然后找到`app`镜像，右键显示包内容，依次进入`/Contents/Resources`,找到一个名为`createinstallmedia`的文件，将其拖到终端，然后空格输入`--volume`再空格，然后将磁盘工具新建的那个空白镜像自动挂载后的空磁盘拖进来，空格输入`--applicationpath`，再空格将整个`app`镜像拖进来，空格输入`--nointeraction`,最后空格回车输入密码再回车，静静等待写入完成即可。
 
 ![](http://ovefvi4g3.bkt.clouddn.com/15289444930934.jpg)
 

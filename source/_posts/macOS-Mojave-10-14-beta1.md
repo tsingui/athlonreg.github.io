@@ -1,16 +1,13 @@
 ---
-title: macOS Mojave 10.14 beta1
+title: macOS Mojave 10.14 beta1 原版镜像
 date: 2018-06-13 12:32:49
 categories: Hackintosh
-description: macOS Mojave 10.14 beta1 with Clover 4513 18A293u原版镜像
+description: macOS Mojave 10.14 beta1 with Clover 4513 18A293u 原版镜像
 tags: 
 - macOS Mojave
 - 10.14
 - 18A293u
 ---
-
-## macOS Mojave 10.14 beta1 with Clover 4513 18A293u原版镜像
-<!--more-->
 
 ## 前言
 随着WWDC大会的召开，`apple`带来了我们期待已久的`10.14`，代号`macOS Mojave`，下面是本次的支持列表

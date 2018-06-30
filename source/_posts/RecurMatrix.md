@@ -1,8 +1,10 @@
 ---
-title: RecurMatrix
+title: 矩阵连乘问题
 copyright: true
 date: 2018-01-17 15:54:02
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 矩阵连乘问题
 tags: 
 - 矩阵连乘问题
@@ -10,10 +12,8 @@ tags:
 - algorithm
 ---
 
-## 矩阵连乘问题
-<!--more-->
-
 ### 代码
+
 ```
 //
 //  main.c

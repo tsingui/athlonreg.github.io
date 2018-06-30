@@ -1,21 +1,16 @@
 ---
-title: Sync your hexo with several terminal
+title: 多设备之间同步 hexo 搭建的 blog 
 copyright: true
 date: 2017-10-14 23:35:54
-categories: Study
+categories: 
+- Study
+- 学习
 description: 对多设备之间 hexo 搭建的 blog 进行同步
 tags: 
 - git 
 - 同步 
 - github
 ---
-
-对多设备之间`hexo`搭建的`blog`进行同步
-<!--more-->
-
-## 前言
-> Sync your hexo with several terminal
-> 转载请注明[原出处](https://blog.iamzhl.top/2017/10/14/Sync-your-hexo-with-several-terminal/)
 
 ## 准备工作
 
@@ -25,7 +20,7 @@ tags:
 
 在本地博客根目录下使用 git 指令上传项目到 GitHub 的 hexo 分支
 
-```
+```bash
 $ git init           
 $ git remote add origin 仓库地址    
 $ git checkout -b hexo     

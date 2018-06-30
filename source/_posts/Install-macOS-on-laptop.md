@@ -1,5 +1,5 @@
 ---
-title: Install macOS on laptop
+title: 笔记本原版黑苹果安装教程
 copyright: true
 date: 2017-12-12 00:28:15
 categories: Hackintosh
@@ -8,9 +8,6 @@ tags:
 - Hacintosh
 - 黑苹果
 ---
-
-## struts2中s:iterator 标签的使用详解
-<!--more-->
 
 ### 前言
 Clover支持两种启动方式，启动过程如下：

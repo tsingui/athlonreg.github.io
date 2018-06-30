@@ -1,5 +1,5 @@
 ---
-title: Problem about coin array
+title: 金币阵列问题
 copyright: true
 date: 2017-09-03
 categories: algorithm
@@ -9,9 +9,6 @@ tags:
 - 算法
 - 金币阵列
 ---
-
-## 金币阵列问题
-<!--more-->
 
 # 问题描述
 有m*n枚金币在桌面上排列成一个m行n列的金币阵列。每一枚金币或正面朝上，或背面朝上。用数字表示金币状态，0表示正面朝上，1表示背面朝上。

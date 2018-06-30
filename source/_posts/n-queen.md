@@ -1,5 +1,5 @@
 ---
-title: n queen
+title: n 皇后问题
 copyright: true
 date: 2018-01-17 16:04:05
 categories: algorithm
@@ -9,9 +9,6 @@ tags:
 - 算法
 - algorithm
 ---
-
-## n皇后问题
-<!--more-->
 
 ### 代码
 ```

@@ -1,17 +1,16 @@
 ---
-title: Problem about police and gangster 110
+title: 警匪110问题
 copyright: true
 date: 2017-09-18
-categories: algorithm
+categories: 
+- algorithm
+- 算法
 description: 警匪110问题
 tags:
 - C语言
 - 算法
 - 警匪110
 ---
-
-## 警匪110问题
-<!--more-->
 
 # 问题描述
 
