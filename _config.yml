@@ -107,6 +107,23 @@ baidushare: false
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# hexo-neat
+neat_enable: true
+neat_html:
+  enable: true
+  exclude:
+neat_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+neat_js:
+  enable: true
+  mangle: true
+  output:
+  compress:
+  exclude:
+    - '*.min.js'
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
