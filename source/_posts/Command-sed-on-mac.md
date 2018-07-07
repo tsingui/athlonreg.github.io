@@ -1,5 +1,5 @@
 ---
-title: Command sed on mac
+title: mac 上使用字符串处理神器 sed 的正确姿势
 date: 2018-07-07 22:04:34
 categories: 学习
 description: mac上使用字符串处理神器sed的正确姿势
