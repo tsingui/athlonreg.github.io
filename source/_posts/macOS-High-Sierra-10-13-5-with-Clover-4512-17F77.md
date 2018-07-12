@@ -9,9 +9,6 @@ tags:
 - 17F77
 ---
 
-## macOS High Sierra 10.13.5 with Clover 4512 17F77原版镜像
-<!--more-->
-
 ## 前言
 `Apple`于`2018-6-2`凌晨两点推送了`macOS High Sierra 10.13.5`正式版更新包，版本号为`17F77`
 

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/canvas/shell/python3/main_upimg.py", line 3, in <module>
+    from sanic import Sanic
+ModuleNotFoundError: No module named 'sanic'
