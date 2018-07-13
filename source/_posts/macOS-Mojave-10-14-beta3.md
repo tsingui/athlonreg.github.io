@@ -42,6 +42,9 @@ PS: 镜像内驱动和`config`是为新手准备，老鸟勿喷
 > 百度网盘：
 > 链接: https://pan.baidu.com/s/1ItsM4v5u5XlPk6IOk7fB8Q 密码: epwr
 
+> Google 云盘
+> [https://drive.google.com/open?id=1yGA_W8aNjPGij6SnQgUnhHbx5J31J_n5](https://drive.google.com/open?id=1yGA_W8aNjPGij6SnQgUnhHbx5J31J_n5)
+
 ## 镜像校验
 为防止下载文件损坏，请尽量进行校验，`MD5`、`SHA1`、`SHA256`如下
 
