@@ -1,5 +1,5 @@
 ---
-title: High Sierra and Mojave Images update
+title: High Sierra 和 Mojave 镜像大全
 date: 2018-07-15 15:58:04
 categories: 黑苹果
 keywords: 原版镜像, macOS Mojave, 10.14, 10.13, macOS High Sierra, 黑苹果镜像
