@@ -21,23 +21,111 @@ tags:
 
 ## 最近一次更新内容
 
-`Apple`于`2018-7-10`凌晨两点推送了`macOS High Sierra 10.13.6`正式版更新包，版本号为`17G65`
+新款`MacBook Pro`上市之后，`Apple`推出特供版本以支持八代`CPU`，依然是`10.13.6`，此次版本号为`17G2112`，经测试，已原生支持八代机器
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/04/2d744aee780747cc28e13880d1f21e.png)
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/25/b5aa43f4a1a170328a5d9af626d004.jpg)
 
-这次更新提高了`Mac`的稳定性、性能以及安全性，增加了针对`iTunes`的`隔空播放 2`多房间音频支持。建议所有用户安装本更新。
+此外,`Clover`也及时跟新了`mbp15,1`以及`mbp15,2`的`SMBIOS`，推荐大家使用，低压本用`mbp15,2`，其他`mbp15,1`，下面是`SMBIOS`，大家可以直接套用，记得修改`BoardSerialNumber`为自己之前正在用的。
 
-> 针对`iTunes`的`隔空播放 2`
+> MacBook Pro 15,1
 
-- 控制全屋的家庭音频系统和启用了`隔空播放 2`的扬声器
-- 在家中启用了`隔空播放 2`的多个扬声器上同时、同步播放音乐
+```
+<key>SMBIOS</key>
+<dict>
+	<key>BiosReleaseDate</key>
+	<string>06/26/2018</string>
+	<key>BiosVendor</key>
+	<string>Apple Inc.</string>
+	<key>BiosVersion</key>
+	<string>MBP151.88Z.0178.B00.1806260902</string>
+	<key>Board-ID</key>
+	<string>Mac-937A206F2EE63C01</string>
+	<key>BoardManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>BoardSerialNumber</key>
+	<string>C02418108QXF64WCB</string>
+	<key>BoardType</key>
+	<integer>11</integer>
+	<key>BoardVersion</key>
+	<string>1.0</string>
+	<key>ChassisAssetTag</key>
+	<string>MacBook-Aluminum</string>
+	<key>ChassisManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>ChassisType</key>
+	<string>0x09</string>
+	<key>Family</key>
+	<string>MacBook Pro</string>
+	<key>FirmwareFeatures</key>
+	<string>0xFC0FE137</string>
+	<key>FirmwareFeaturesMask</key>
+	<string>0xFF1FFF3F</string>
+	<key>LocationInChassis</key>
+	<string>Part Component</string>
+	<key>Manufacturer</key>
+	<string>Apple Inc.</string>
+	<key>Mobile</key>
+	<true/>
+	<key>PlatformFeature</key>
+	<string>0x1A</string>
+	<key>ProductName</key>
+	<string>MacBookPro15,1</string>
+	<key>SerialNumber</key>
+	<string>C02X1HACKGYG</string>
+	<key>Version</key>
+	<string>1.0</string>
+</dict>
+```
 
-> 其他改进和修复
+> MacBook Pro 15,2
 
-- 解决了可能导致`照片`无法识别部分相机的`AVCHD`媒体的问题
-- 解决了可能导致`邮件`用户无法将`Gmail`邮件移动到其他帐户的问题
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/da/dc394d6394410fe7e85b0a87586290.png)
+```
+<key>SMBIOS</key>
+<dict>
+	<key>BiosReleaseDate</key>
+	<string>06/26/2018</string>
+	<key>BiosVendor</key>
+	<string>Apple Inc.</string>
+	<key>BiosVersion</key>
+	<string>MBP152.88Z.0178.B00.1806260902</string>
+	<key>Board-ID</key>
+	<string>Mac-827FB448E656EC26</string>
+	<key>BoardManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>BoardSerialNumber</key>
+	<string>C02418108QXF64WCB</string>
+	<key>BoardType</key>
+	<integer>11</integer>
+	<key>BoardVersion</key>
+	<string>1.0</string>
+	<key>ChassisAssetTag</key>
+	<string>MacBook-Aluminum</string>
+	<key>ChassisManufacturer</key>
+	<string>Apple Inc.</string>
+	<key>ChassisType</key>
+	<string>0x09</string>
+	<key>Family</key>
+	<string>MacBook Pro</string>
+	<key>FirmwareFeatures</key>
+	<string>0xFC0FE137</string>
+	<key>FirmwareFeaturesMask</key>
+	<string>0xFF1FFF3F</string>
+	<key>LocationInChassis</key>
+	<string>Part Component</string>
+	<key>Manufacturer</key>
+	<string>Apple Inc.</string>
+	<key>Mobile</key>
+	<true/>
+	<key>PlatformFeature</key>
+	<string>0x1A</string>
+	<key>ProductName</key>
+	<string>MacBookPro15,2</string>
+	<key>SerialNumber</key>
+	<string>C02X1HACKGYG</string>
+	<key>Version</key>
+	<string>1.0</string>
+</dict>
+```
 
 ## 镜像内容
 

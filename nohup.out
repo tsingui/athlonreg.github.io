@@ -2,3 +2,21 @@ Traceback (most recent call last):
   File "/Users/canvas/shell/python3/main_upimg.py", line 3, in <module>
     from sanic import Sanic
 ModuleNotFoundError: No module named 'sanic'
+[2018-07-20 13:03:04 +0800] [8168] [INFO] Goin' Fast @ http://127.0.0.1:7000
+[2018-07-20 13:03:04 +0800] [8168] [INFO] Starting worker [8168]
+[master 7edf92f] Added some imgs
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Images/b8/847de187a667d431036df4a77966d9.jpg
+To https://github.com/athlonreg/BlogImages.git
+   d9c3f59..7edf92f  master -> master
+ffd8ffe000104a464946
+[2018-07-20 13:03:51 +0800] - (sanic.access)[INFO][1:2]: POST http://127.0.0.1:7000/upimg  200 71
+[2018-07-20 13:03:56 +0800] [8168] [INFO] KeepAlive Timeout. Closing connection.
+[master 8c7e55a] Added some imgs
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Images/25/b5aa43f4a1a170328a5d9af626d004.jpg
+To https://github.com/athlonreg/BlogImages.git
+   7edf92f..8c7e55a  master -> master
+ffd8ffe000104a464946
+[2018-07-20 13:08:29 +0800] - (sanic.access)[INFO][1:2]: POST http://127.0.0.1:7000/upimg  200 71
+[2018-07-20 13:08:34 +0800] [8168] [INFO] KeepAlive Timeout. Closing connection.
