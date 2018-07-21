@@ -11,7 +11,7 @@ tags:
 
 **加粗显示**
 
-<a href="" style="font-color: red;">h5测试</a>
+<a href="" style="color: red;">h5测试</a>
 
 ```
 代码块
