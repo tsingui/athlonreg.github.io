@@ -20,3 +20,5 @@ To https://github.com/athlonreg/BlogImages.git
 ffd8ffe000104a464946
 [2018-07-20 13:08:29 +0800] - (sanic.access)[INFO][1:2]: POST http://127.0.0.1:7000/upimg  200 71
 [2018-07-20 13:08:34 +0800] [8168] [INFO] KeepAlive Timeout. Closing connection.
+[2018-07-20 13:26:46 +0800] [8168] [INFO] Stopping worker [8168]
+[2018-07-20 13:26:46 +0800] [8168] [INFO] Server Stopped
