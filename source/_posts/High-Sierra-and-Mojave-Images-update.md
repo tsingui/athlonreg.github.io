@@ -144,7 +144,7 @@ tags:
 每出一个版本都写一个帖子的话太麻烦，所以决定直接写一个镜像的集合贴，下面是各个版本的链接：
 
 ```
-链接: https://pan.baidu.com/s/1oWDZu0G821u6gwuZM5UVTQ 密码: 24ec
+链接: https://pan.baidu.com/s/19LCSpejCcTctub3x2ArbwA 密码: 67ph
 ```
 
 ## 镜像校验
@@ -188,3 +188,4 @@ tags:
     - macOS Mojave 10.14 DP3 18A326h
     - macOS Mojave 10.14 DP4 18A336e
     - macOS Mojave 10.14 DP5 18A347e
+    - macOS Mojave 10.14 DP6 18A353d
