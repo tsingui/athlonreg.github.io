@@ -144,7 +144,7 @@ tags:
 每出一个版本都写一个帖子的话太麻烦，所以决定直接写一个镜像的集合贴，下面是各个版本的链接：
 
 ```
-链接: https://pan.baidu.com/s/19LCSpejCcTctub3x2ArbwA 密码: 67ph
+链接: https://pan.baidu.com/s/1j8Xt9rf5I5Gij4ezXQrnIw 密码: nr1y
 ```
 
 ## 镜像校验
