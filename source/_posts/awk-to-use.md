@@ -66,3 +66,26 @@ tags:
   ```bash
   $ awk '/ERROR/{print $1}' fresh.log
   ```
+  
+# `START` `END`
+
+> `awk`提供了一个简单的方式在利用`awk`处理编程需求时的问题，例如制表时需在表前打印表头、表后打印表尾。
+
+> 举一个案例，制表显示`/etc/passwd`的行号、列号和用户名
+
+> 思路是首先在开头打印"Line Col User"，然后依次打印`/etc/passwd`每一行的行号、列号和用户名，最后另起一行打印`--------`并在中间加入`awk`操作的文件名以结束制表
+
+```bash
+$ awk -F ':' 'BEGIN{print "Line    Col    User"}{print NR,NF,$1}END{print "------",FILENAME,"------"}' /etc/passwd | grep -v "#"
+```
+
+> 其中的`grep -v "#"`用以过滤掉`/etc/passwd`中开头的无用说明信息
+
+## 运行结果
+
+> 为截图方便这里只截了前面的一些行和最后的一些行
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/93/04d33ecfbe22a469a95806f4d7e33f.jpg)
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6a/599d7e553eddcb04e05d87118fe358.jpg)
+
