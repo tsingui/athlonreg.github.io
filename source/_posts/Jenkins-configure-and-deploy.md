@@ -1,5 +1,5 @@
 ---
-title: Jenkins configure and deploy
+title: Jenkins配置部署
 date: 2018-08-16 18:55:05
 categories: 
 - Linux
@@ -298,9 +298,9 @@ Hello world
 * 恢复：恢复的时候需要先停止jenkins。
 #### 移动，删除或修改jobs&emsp;&emsp;对于移动或删除jobs，只需要简单地移动或删除`$JENKINS_HOME/jobs`目录。对于修改jobs的名字，只需要简单地修改`$JENKINS_HOME/jobs`下对应job的文件夹的名字。对于不经常使用的job，只需要对`$JENKINS_HOME/jobs`下对应的jobs的目录zip或tar后存储到其他的地方。
 #### Jenkins 启动时的命令行参数 
-| --httpPort=$HTTP_PORT | 用来设置jenkins运行时的web端口。  |
+| `--httpPort=$HTTP_PORT` | 用来设置jenkins运行时的web端口。  |
 | --- | --- |
-| --httpsPort=$HTTP_PORT | 表示使用https协议。 |
+| `--httpsPort=$HTTP_PORT` | 表示使用https协议。 |
 | --httpListenAddress=$HTTP_HOST | 用来指定jenkins监听的ip范围，默认为所有的ip都可以访问此jenkins server。 |
 #### 修改jenkins的timezone&emsp;&emsp;如果jenkins所在的server的timezone不同于用户的timezone，这时候需要修改jenkins的timezone，需要在jenkins启动的时候增加下列参数-Dorg.apache.commons.jelly.tags.fmt.timeZone=TZ。
 #### 查看jenkins的系统信息&emsp;&emsp;以在jenkins的管理页面下的系统信息中，查看所有的jenkins的信息，例如jenkins的启动配置，所依赖的系统的环境变量，所安装的plugins。
