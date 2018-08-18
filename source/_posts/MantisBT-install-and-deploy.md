@@ -106,7 +106,7 @@ Bye
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e8/b5fe383c27b5215e7d1abffba5dfb9.jpg)
 
 #### 安装
-&#160;&#160;&#160;&#160;打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为http://IP:端口/解压到(/var/www/html下面mantis的文件夹名称，这时就会自动跳转到php安装向导的页面
+&#160;&#160;&#160;&#160;打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为http://IP:端口/mantis文件夹名称，这时就会自动跳转到php安装向导的页面: 
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/13/430b174ae372e2c4854b5804123ab1.jpg)
 
@@ -119,11 +119,11 @@ Bye
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/c3e84af9570ae5c9d61d788d482a69.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f4/2302c64875ae7556c732820ffe6c2f.jpg)
-## 邮件配置> 修改MantisBT/config_defaults_inc.php配置文件，具体如下：
+## 邮件配置* 修改MantisBT下config_defaults_inc.php配置文件，具体如下：
 
-```$g_webmaster_email ='lijie_weibo@sina.com'；$g_from_email ='lijie_weibo@sina.com'；$g_from_name＝'Mantis Bug Tracker'；$g_return_path_email ='lijie_weibo@sina.com'；g_administrator_email ='lijie_weibo@sina.com'；g_enable_email_notification =ON；
+```$g_webmaster_email ='15563836030@163.com'；$g_from_email ='15563836030@163.com'；$g_from_name＝'Mantis Bug Tracker'；$g_return_path_email ='15563836030@163.com'；g_administrator_email ='15563836030@163.com'；g_enable_email_notification =ON；
 ```
-> 修改MantisBT/config/config_inc.php文件```$g_phpMailer_method = PHPMAILER_METHOD_SMTP；$g_smtp_host = 'smtp.sina.com.cn'；//可以设置内网邮件服务$g_smtp_username = 'lijie_weibo'；$g_smtp_password = 'xxxx'；$g_administrator_email  = 'lijie_weibo@sina.com'；$g_webmaster_email      = 'lijie_weibo@sina.com'；$g_from_email           = 'lijie_weibo@sina.com'；
+* 修改MantisBT/config/config_inc.php文件```$g_phpMailer_method = PHPMAILER_METHOD_SMTP；$g_smtp_host = 'smtp.163.com'；//可以设置内网邮件服务$g_smtp_username = '15563836030'；$g_smtp_password = 'xxxx'；$g_administrator_email  = '15563836030@163.com'；$g_webmaster_email      = '15563836030@163.com'；$g_from_email           = '15563836030@163.com'；
 ```
 ## 中文配置&#160;&#160;&#160;&#160;修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将'english'改为'chinese_simplified'。
 
@@ -143,7 +143,11 @@ Bye
 &#160;&#160;&#160;&#160;目前本系统的访问地址为：http://IP:port/mantis/login_page.php，用户可以通过首页显示的"注册一个新帐号"进行新用户注册。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7d/1aa6506c45bdc101125dbf0eb471cb.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e0/c44b7bd62656a42effb30cbe072d8d.jpg)
-&#160;&#160;&#160;&#160;点击邮箱内的激活邮件，进行用户名与密码的设置。&#160;&#160;&#160;&#160;自己页面注册的用户是一个报告者，管理员可以对用户的角色、所属的项目以及一些其他的情况进行对应的配置。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7e/8a3bf7d3b7d54549861c08cc2b8695.jpg)
+&#160;&#160;&#160;&#160;然后点击邮箱内的激活邮件，进行用户名与密码的设置。也可以通过管理员创建新用户
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f3/3984a7b93cb83f5018a886334554f3.jpg)
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/38/81f16e90a837e3b2e4753481d53d49.jpg)
+&#160;&#160;&#160;&#160;管理员可以对用户的角色、所属的项目以及一些其他的情况进行对应的配置。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7e/8a3bf7d3b7d54549861c08cc2b8695.jpg)
 &#160;&#160;&#160;&#160;各种具体的配置以及各种角色用户的权限可参见管理员的管理视图。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/64/fb372744682c06a5abf50d6d08e3c3.jpg)
 **操作流程**&#160;&#160;&#160;&#160;首先，说明一下系统中的角色和一般所对应的人员：观察者（复查员）、报告者（测试员）、升级者（审核员）、开发人员（开发员）、经理（项目经理）、管理员（系统管理员）。还要简单说明一下问题状态及相关含义（以上的两点只是中文理解和中文翻译的问题，可以在mantisbt-2.15.0/lang/strings_chinese_simplified.txt中修改）：
 
