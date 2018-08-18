@@ -28,6 +28,15 @@ tags:
 # yum -y install php72w php72w-cli php72w-mysql php72w-mbstring
 ```
 
+### 安装PHPMailer
+```
+https://github.com/Synchro/PHPMailer/releases/tag/v5.2.13
+```
+
+下载解压到/var/www/html/mantis/PHPMailer-5.2.13/
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0b/f7ba2cdc89ecb4edee3d7c32861ad1.jpg)
+
 ### 安装apache mysql等必要软件
 ```bash
 # yum -y install httpd mysql mysql-server
