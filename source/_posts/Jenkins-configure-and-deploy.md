@@ -301,7 +301,7 @@ Hello world
 | `--httpPort=$HTTP_PORT` | 用来设置jenkins运行时的web端口。  |
 | --- | --- |
 | `--httpsPort=$HTTP_PORT` | 表示使用https协议。 |
-| --httpListenAddress=$HTTP_HOST | 用来指定jenkins监听的ip范围，默认为所有的ip都可以访问此jenkins server。 |
+| ~~~~--httpListenAddress=$HTTP_HOST | 用来指定jenkins监听的ip范围，默认为所有的ip都可以访问此jenkins server。 |
 #### 修改jenkins的timezone&emsp;&emsp;如果jenkins所在的server的timezone不同于用户的timezone，这时候需要修改jenkins的timezone，需要在jenkins启动的时候增加下列参数-Dorg.apache.commons.jelly.tags.fmt.timeZone=TZ。
 #### 查看jenkins的系统信息&emsp;&emsp;以在jenkins的管理页面下的系统信息中，查看所有的jenkins的信息，例如jenkins的启动配置，所依赖的系统的环境变量，所安装的plugins。
 
