@@ -119,11 +119,11 @@ Bye
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/c3e84af9570ae5c9d61d788d482a69.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f4/2302c64875ae7556c732820ffe6c2f.jpg)
-## 邮件配置* 修改MantisBT下config_defaults_inc.php配置文件，具体如下：
+## 邮件配置&#160;&#160;&#160;&#160;修改MantisBT下config_defaults_inc.php配置文件，具体如下：
 
 ```$g_webmaster_email ='15563836030@163.com'；$g_from_email ='15563836030@163.com'；$g_from_name＝'Mantis Bug Tracker'；$g_return_path_email ='15563836030@163.com'；g_administrator_email ='15563836030@163.com'；g_enable_email_notification =ON；
 ```
-* 修改MantisBT/config/config_inc.php文件```$g_phpMailer_method = PHPMAILER_METHOD_SMTP；$g_smtp_host = 'smtp.163.com'；//可以设置内网邮件服务$g_smtp_username = '15563836030'；$g_smtp_password = 'xxxx'；$g_administrator_email  = '15563836030@163.com'；$g_webmaster_email      = '15563836030@163.com'；$g_from_email           = '15563836030@163.com'；
+&#160;&#160;&#160;&#160;修改MantisBT/config/config_inc.php文件```$g_phpMailer_method = PHPMAILER_METHOD_SMTP；$g_smtp_host = 'smtp.163.com'；//可以设置内网邮件服务$g_smtp_username = '15563836030'；$g_smtp_password = 'xxxx'；$g_administrator_email  = '15563836030@163.com'；$g_webmaster_email      = '15563836030@163.com'；$g_from_email           = '15563836030@163.com'；
 ```
 ## 中文配置&#160;&#160;&#160;&#160;修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将'english'改为'chinese_simplified'。
 
