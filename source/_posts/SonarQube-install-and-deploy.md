@@ -143,7 +143,7 @@ mysql> grant all privileges on sonar.* to 'sonar'@'localhost';
 
 &#160; &#160; &#160; &#160;如上图所示，成功启动后，访问本地 http://IP:9000，SonarQube 初始管理员账号为 admin，默认密码为 admin，登录后可修改密码。
 
-**PS: 若启动成功无法访问请切换为sonar用户登录**
+**PS: 若启动成功无法访问请切换为sonar用户启动**
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/25/5b9f14a21cdaf024ea8b3ce551dd7a.jpg)
 
@@ -237,4 +237,3 @@ sonar.sources=/root/helloworld/src  //项目的源码目录，多目录以英文
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/97/221636aa330d56dea8bb870957f29a.jpg)
 
-##  其他说明&#160; &#160; &#160; &#160;Sonar社区版支持10种编程语言不包括（C/C++），60+种插件。* languages:Java, JavaScript, C#, TypeScript, Go, Flex, Python, PHP, Web & XML.* 扫描其他语言，需编辑sonar-project.properties文件* Sonarqube可以通过Jenkins插件进行集成
