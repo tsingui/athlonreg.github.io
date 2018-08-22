@@ -101,7 +101,6 @@
   {% include '_third-party/exturl.swig' %}
   {% include '_third-party/bookmark.swig' %}
   {% include '_third-party/copy-code.swig' %}
-  <script type="text/javascript" src="/js/src/love.js"></script>
   <script>
     (function(){
         var bp = document.createElement('script');
@@ -116,5 +115,7 @@
         s.parentNode.insertBefore(bp, s);
     })();
   </script>
+  <!--  红心特效  -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>
