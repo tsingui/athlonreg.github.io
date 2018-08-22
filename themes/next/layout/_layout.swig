@@ -16,6 +16,8 @@
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
+  <link rel="stylesheet" href="dist/css/share.min.css">
+  <script src="dist/js/social-share.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
@@ -68,7 +70,10 @@
         {% endif %}
       </div>
     {% endif %}
-
+    
+    <!--  share.js    -->
+    <div class="social-share"></div>
+    
     {% if theme.needmoreshare2.enable and theme.needmoreshare2.float.enable %}
       <div id="needsharebutton-float">
         <span class="btn">
@@ -116,6 +121,6 @@
     })();
   </script>
   <!--  红心特效  -->
-  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!--   <script type="text/javascript" src="/js/src/love.js"></script> -->
 </body>
 </html>

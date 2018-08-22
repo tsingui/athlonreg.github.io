@@ -544,7 +544,7 @@ jiathis: false
   ##uid: Get this uid from http://www.jiathis.com/
 
 #ShareSDK
-sharesdk: true
+sharesdk: false
 shareSDKappkey: 256898a22bf64
 
 #add_this_id:
