@@ -35,8 +35,8 @@
           "title": "套陆的博客",
           "images": [
             "https://github.com/athlonreg/BlogImages/blob/master/Images/dog.jpg"
-          ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
-          "pubDate": "2018-08-22T17:00:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
+          ],
+          "pubDate": "{{ moment(post.date).format('YYYY-MM-DD') }}T{{ moment(post.date).format('HH:mm:ss') }}"
         }
       </script>
 

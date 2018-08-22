@@ -42,7 +42,7 @@
           {% endif %}
           <div id="content" class="content">
             {% block content %}{% endblock %}
-            <script>cambrian.render('head')</script>
+            <script>cambrian.render('tail')</script>
           </div>
           {% include '_partials/comments.swig' %}
         </div>
