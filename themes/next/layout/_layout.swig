@@ -115,5 +115,7 @@
         s.parentNode.insertBefore(bp, s);
     })();
   </script>
+  <script>cambrian.render('head')</script>
+  <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
 </body>
 </html>
