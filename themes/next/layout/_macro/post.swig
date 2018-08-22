@@ -26,6 +26,19 @@
       <meta itemprop="description" content="{{ theme.signature }}">
       <meta itemprop="image" content="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}">
     </span>
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
+          "@id": "https://www.example.com/******",
+          "appid": "1609421336308919",
+          "title": "套陆的博客",
+          "images": [
+            "https://github.com/athlonreg/BlogImages/blob/master/Images/dog.jpg"
+          ], //请在此处添加希望在搜索结果中展示图片的url，可以添加0个、1个或3个url
+          "pubDate": "2018-08-22T17:00:01" // 需按照yyyy-mm-ddThh:mm:ss格式编写时间，字母T不能省去
+        }
+      </script>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="{{ config.title }}">

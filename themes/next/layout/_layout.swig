@@ -15,6 +15,7 @@
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
+  <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
@@ -41,6 +42,7 @@
           {% endif %}
           <div id="content" class="content">
             {% block content %}{% endblock %}
+            <script>cambrian.render('head')</script>
           </div>
           {% include '_partials/comments.swig' %}
         </div>
@@ -74,7 +76,6 @@
         </span>
       </div>
     {% endif %}
-
   </div>
 
   {% include '_scripts/vendors.swig' %}
@@ -115,7 +116,5 @@
         s.parentNode.insertBefore(bp, s);
     })();
   </script>
-  <script>cambrian.render('head')</script>
-  <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
 </body>
 </html>
