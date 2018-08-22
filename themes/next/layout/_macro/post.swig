@@ -30,7 +30,7 @@
     <script type="application/ld+json">
         {
           "@context": "https://ziyuan.baidu.com/contexts/cambrian.jsonld",
-          "@id": "https://www.example.com/******",
+          "@id": "{{ config.url }}{{ url_for(post.path) }}",
           "appid": "1609421336308919",
           "title": "套陆的博客",
           "images": [
