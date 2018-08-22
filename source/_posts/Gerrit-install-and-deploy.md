@@ -1,5 +1,5 @@
 ---
-title: Gerrit install and deploy
+title:  CentOS安装部署Gerrit
 date: 2018-08-22 11:36:45
 categories: 
 - Linux
@@ -13,7 +13,7 @@ tags:
 - 代码审查
 ---
 
-<cneter>## `Gerrit`安装配置过程</center>
+## <cneter>`Gerrit`安装配置过程</center>
 
 # 环境配置
 
