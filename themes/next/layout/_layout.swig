@@ -16,8 +16,8 @@
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
-  <link rel="stylesheet" href="dist/css/share.min.css">
-  <script src="dist/js/social-share.min.js"></script>
+  <link rel="stylesheet" href="https://github.com/athlonreg/share.js/blob/master/dist/css/share.min.css">
+  <script src="https://github.com/athlonreg/share.js/blob/master/dist/js/social-share.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
