@@ -494,7 +494,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: k1qv17ho3MJ13J73ybcPSzdS-gzGzoHsz # your leancloud application appid
   appkey: vXRKLu09Vu3krwPWN3hXIuBQ # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
@@ -528,6 +528,15 @@ gitment:
   client_secret: 5447e3b58a359bae698dcac5318ec956949b2163 # EITHER this or proxy_gateway, Github access secret token for the Gitment
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
+
+gitalk:
+  enable: true
+  githubID: athlonreg  # 例：asdfv1929   
+  repo: gittalk   # 例：asdfv1929.github.io
+  ClientID: 2fa40fcfb4a9f851c22b
+  ClientSecret: 6fa9995849a674bf227662f9dff8a02f03c23dfa
+  adminUser: athlonreg #指定可初始化评论账户
+  distractionFreeMode: true
 
 # Baidu Share
 # Available value:
