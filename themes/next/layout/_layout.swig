@@ -45,6 +45,8 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
             <script>cambrian.render('tail')</script>
+            <!--  share.js    -->
+            <div class="social-share"></div>
           </div>
           {% include '_partials/comments.swig' %}
         </div>
@@ -70,10 +72,7 @@
         {% endif %}
       </div>
     {% endif %}
-    
-    <!--  share.js    -->
-    <div class="social-share"></div>
-    
+
     {% if theme.needmoreshare2.enable and theme.needmoreshare2.float.enable %}
       <div id="needsharebutton-float">
         <span class="btn">
