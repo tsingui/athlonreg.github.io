@@ -455,7 +455,7 @@ server {
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/be/9f93d938c07e52f25347f4852e2d3a.jpg)
 
-## 步骤五：安装配置`gitweb`
+## 步骤七：安装配置`gitweb`
 ### 1) 安装`gitweb`,最好在联网环境下安装，或者在离线环境下下载对应的依赖包
 
 * 在线安装：
@@ -493,7 +493,7 @@ server {
 ```bash# service nginx restart
 ```
 
-## 步骤六：测试
+## 步骤八：测试
 访问http://10.211.55.19，用gerrit用户登录，登录界面如下
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/74/51196a5c04235cfbd07cf5a09e1b95.jpg)
