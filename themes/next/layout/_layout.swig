@@ -16,13 +16,19 @@
   {% include '_third-party/analytics/index.swig' %}
   {{ partial('_scripts/noscript.swig', {}, {cache: theme.cache.enable}) }}
   <script src="//msite.baidu.com/sdk/c.js?appid=1609421336308919"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
-
+  
+  <!--  music plugins start  -->
+  <link rel="stylesheet" href="/dist/APlayer.min.css">
+  <div id="aplayer"></div>
+  <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+  <script type="text/javascript" src="/dist/music.js"></script>
+  <!--  music plugins end  -->
+  
   {% set container_class = "container " %}
   {% if theme.sidebar.position %}
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
@@ -67,17 +73,6 @@
 
     {% if not theme.sidebar.b2t %}
       <div class="back-to-top">
-        <div id="aplayer">
-          const ap = new APlayer({
-            container: document.getElementById('aplayer'),
-            audio: [{
-              name: 'name',
-              artist: 'artist',
-              url: 'url.mp3',
-              cover: 'cover.jpg'
-            }]
-          });
-        </div>
         <i class="fa fa-arrow-up"></i>
         {% if theme.sidebar.scrollpercent %}
           <span id="scrollpercent"><span>0</span>%</span>
@@ -133,7 +128,5 @@
   </script>
   <!--  红心特效  -->
   <!--   <script type="text/javascript" src="/js/src/love.js"></script> -->
-  <!--  APlayer  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script>
 </body>
 </html>
