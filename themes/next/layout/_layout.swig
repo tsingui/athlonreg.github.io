@@ -44,9 +44,9 @@
           {% endif %}
           <div id="content" class="content">
             {% block content %}{% endblock %}
-            <script>cambrian.render('tail')</script>
             <!--  share.js    -->
             <div class="social-share" align="center"></div>
+            <script>cambrian.render('tail')</script>
           </div>
           {% include '_partials/comments.swig' %}
         </div>
