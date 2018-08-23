@@ -52,7 +52,7 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
             <!--  share.js    -->
-            <div class="social-share" align="center" data-mobile-sites="weibo,qq,qzone,wechat,douban" data-disabled="tencent"></div>
+            <div class="social-share" align="center" data-mobile-sites="weibo,qq,qzone,wechat,douban" data-disabled="tencent" data-wechat-qrcode-title="微信扫一扫分享到朋友圈"></div>
             <script>cambrian.render('tail')</script>
           </div>
           {% include '_partials/comments.swig' %}
