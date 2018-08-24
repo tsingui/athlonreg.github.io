@@ -61,7 +61,7 @@ passwd：所有的身份验证令牌已经成功更新。
 * 设置环境变量，编辑`~/.bashrc`，
 
 ```bash
-$ vim ~/.bashrc
+# vim ~/.bashrc
 ```
 
 在文件的末尾添加以下行
@@ -74,7 +74,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 
 使环境配置生效
 ```bash
-$ source ~/.bashrc
+# source ~/.bashrc
 ```
 
 * 测试`Java`环境，在终端输入：`java -version`查看是否正常显示版本信息，若显示则安装成功

@@ -25,7 +25,10 @@ tags:
 | PHP | 7.2.8 | PHP 环境 |
 # 部署过程## 软件安装### 安装PHP
 ```bash
-# yum -y install php72w php72w-cli php72w-mysql php72w-mbstring
+# rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+# rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+# yum -y install libicu libicu-devel libicu-doc
+# yum -y install php70w php70w-gd php70w-xml php70w-mysql php70w-mbstring php70w-ldap php70w-xmlrpc php70w-odbc php70w-pear php70w-soap php70w-snmp
 ```
 
 ### 安装PHPMailer

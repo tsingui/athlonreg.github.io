@@ -105,9 +105,9 @@ mysql> set password for root@localhost=password('root');
 ```
 
 ```mysql
-mysql> create user 'sonar'@'localhost' identified by 'sonar';
+mysql> create user 'sonar'@'%' identified by 'sonar';
 mysql> CREATE DATABASE sonar CHARACTER SET utf8 COLLATE utf8_general_ci;
-mysql> grant all privileges on sonar.* to 'sonar'@'localhost';
+mysql> grant all privileges on sonar.* to 'sonar'@'%';
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/cf/692f219591871f934a8cb6ea997ce3.jpg)
@@ -120,7 +120,7 @@ mysql> grant all privileges on sonar.* to 'sonar'@'localhost';
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6a/26a9500fc57a82b25190b9bb190fc5.jpg)
 
 ```bash
-# unzip sonarqube-6.7.5.zip
+# unzip sonarqube-6.7.5.zip  //若提示unzip命令找不到，用yum -y install unzip安装即可
 # mv sonarqube-6.7.5 /usr/local/sonarqube
 ```
 
