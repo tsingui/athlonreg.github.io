@@ -126,7 +126,7 @@ mysql> set password for root@localhost=password('root');
 创建gerrit2用户
 
 ```mysql
-mysql> CREATE USER 'gerrit2'@'localhost' IDENTIFIED BY 'gerrit';
+mysql> CREATE USER 'gerrit'@'%' IDENTIFIED BY 'gerrit';
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/98/52b52578bf76764014561e33521243.jpg)
@@ -142,7 +142,7 @@ mysql> CREATE DATABASE ReviewDB;
 把ReviewDB的所有权限赋给gerrit2
 
 ```mysql
-mysql> GRANT ALL ON ReviewDB.* TO 'gerrit2'@'localhost'; 
+mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%'; 
 ```
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/73/94a9f46a5dd2572e26ac02b13ec1d8.jpg)
 
