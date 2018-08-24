@@ -61,7 +61,7 @@ passwd：所有的身份验证令牌已经成功更新。
 * 设置环境变量，编辑`~/.bashrc`，
 
 ```bash
-# vim ~/.bashrc
+$ vim ~/.bashrc
 ```
 
 在文件的末尾添加以下行
@@ -74,7 +74,7 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 
 使环境配置生效
 ```bash
-# source ~/.bashrc
+$ source ~/.bashrc
 ```
 
 * 测试`Java`环境，在终端输入：`java -version`查看是否正常显示版本信息，若显示则安装成功
@@ -281,11 +281,11 @@ Open Gerrit with a JavaScript capable browser:
 * 修改`gerrit`配置文件，说明如下
 
 ```bash
-# vim review_site/etc/gerrit.config
+$ vim review_site/etc/gerrit.config
 ```
 
 ```
-[gerrit]        basePath = git                          //指定被gerrit管理的所有git库存放位置，即review_site_project/git/        canonicalWebUrl = http://10.211.55.19:8080/project   //指定web访问gerrit的网址//填自己的ip和端口号[database]        type = mysql                             //指定gerrit所默认数据库类型，可以选用mysql，安装并创建gerrit账户        database = /home/gerrit/review_site/db/ReviewDB[auth]        type = HTTP                           //指定浏览器登录gerrit时的认证方式[sendemail]        smtpServer = localhost                //局域网邮件服务器，可使用hMailSever搭建[container]        user = gerrit                             //指定gerrit所在机器的用户身份与上文创建的用户对应一致,可以是root        javaHome = /usr/java/jdk1.8.0_161/jre[sshd]        listenAddress = *:29418                   //指定sshd服务监听的端口号[httpd]        listenUrl = http://*:8080/                //指定http代理地址[cache]        directory = cache                        //缓存位置
+[gerrit]        basePath = git                          //指定被gerrit管理的所有git库存放位置，即review_site_project/git/        canonicalWebUrl = http://10.211.55.19:8081/project   //指定web访问gerrit的网址//填自己的ip和端口号[database]        type = mysql                             //指定gerrit所默认数据库类型，可以选用mysql，安装并创建gerrit账户        database = /home/gerrit/review_site/db/ReviewDB[auth]        type = HTTP                           //指定浏览器登录gerrit时的认证方式[sendemail]        smtpServer = localhost                //局域网邮件服务器，可使用hMailSever搭建[container]        user = gerrit                             //指定gerrit所在机器的用户身份与上文创建的用户对应一致,可以是root        javaHome = /usr/java/jdk1.8.0_161/jre[sshd]        listenAddress = *:29418                   //指定sshd服务监听的端口号[httpd]        listenUrl = http://*:8081/                //指定http代理地址[cache]        directory = cache                        //缓存位置
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/31/8e586e93c265a2f6ff36d3db0454e7.jpg)
@@ -317,7 +317,12 @@ $ review_site/bin/gerrit.sh restart
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/c6/250a18522916525a4f9b12e1e9b2e6.jpg)
 
-* 安装`nginx`：
+* 安装启动`nginx`并设置自启动
+
+```bash
+# rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
+# yum update && yum -y install nginx 
+```
 
 ```
 [root@centos-7 gerrit]# yum -y install nginx
@@ -382,21 +387,6 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service t
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/5c/50f71bcee60f9c81980a98b9b3a6f6.jpg)
 
-* 安装`nginx`：
-
-```bash
-# rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
-# yum update && yum -y install nginx 
-```
-
-* 开机启动：
-
-```bash
-# systemctl enable nginx
-```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f6/83dd6e7c5fa9d3eafee53526f2df54.jpg)
-
 ### 2) 配置`nginx`：
 
 ```bash
@@ -437,7 +427,9 @@ server {
 启动`nginx`服务：
 
 ```bash
-# setenforce 0   //临时关闭selinux以避免造成权限问题
+# setenforce 0                 //关闭selinux以避免造成权限问题
+# systemctl disable firewalld  //禁用防火墙
+# systemctl stop firewalld     //关闭防火墙
 # service nginx start
 ```
 
@@ -449,8 +441,8 @@ server {
 
 ```bash
 # yum -y install httpd
-# touch ./review_site/etc/passwd
-# htpasswd -b ./review_site/etc/passwd gerrit gerrit
+$ touch ./review_site/etc/passwd
+$ htpasswd -b ./review_site/etc/passwd gerrit gerrit
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/be/9f93d938c07e52f25347f4852e2d3a.jpg)
@@ -474,8 +466,10 @@ server {
 
 修改/home/gerrit/review_site/etc/gerrit.config,添加：
 
+
 ```[gitweb]		type=gitweb		cgi=/var/www/git/gitweb.cgi
 ```
+
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/9d/b0b9039fc3682a7cdfae62ce5387d9.jpg)
 
@@ -483,14 +477,14 @@ server {
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bc/d4431e93f304e1a913b244cadfd492.jpg)
 
-**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法就是两条命令"chmod 755 /home/gerrit/ && chown   gerrit:gerrit /home/gerrit/review_site/etc/password"**
+**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法就是两条命令"chmod -R 755 /home/gerrit/ && chown   gerrit:gerrit /home/gerrit/**
 ### 4) 重启`gerrit`服务和`Nginx`服务重启`gerrit`服务：
 
-```bash# /home/gerrit/review_site/bin/gerrit.sh stop  #停止# /home/gerrit/review_site/bin/gerrit.sh start  #启动
+```bash$ /home/gerrit/review_site/bin/gerrit.sh stop  #停止$ /home/gerrit/review_site/bin/gerrit.sh start  #启动
 ```
 重启`Nginx`服务：
 
-```bash# service nginx restart
+```bash$ service nginx restart
 ```
 
 ## 步骤八：测试
