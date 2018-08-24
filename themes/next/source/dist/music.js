@@ -4,6 +4,12 @@ const ap = new APlayer({
     autoplay: false,
     audio: [
       {
+        name: "怀念青春",
+        artist: '刘刚',
+        url: 'http://music.163.com/song/media/outer/url?id=29800567.mp3',
+        cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/huainianqingchun.jpg',
+      },
+      {
         name: "一首关于理想的歌",
         artist: '小闯',
         url: 'http://music.163.com/song/media/outer/url?id=406752046.mp3',
