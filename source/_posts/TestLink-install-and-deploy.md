@@ -1,10 +1,10 @@
 ---
 title: TestLink安装部署
 date: 2018-08-26 19:51:29
+categories: 
 - Linux
 - 运维
-keywords: 
-- TestLink
+keywords: TestLink
 description: TestLink安装部署
 tags: 
 - TestLink
