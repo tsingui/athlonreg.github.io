@@ -1,14 +1,3 @@
----
-title: Jenkins配置部署
-date: 2018-08-16 18:55:05
-categories: 
-- Linux
-- 运维
-keywords: Jenkins
-description: Jenkins配置部署
-tags: 
-- Jenkins
----
 
 # <center>`Jenkins`配置部署</center>
 
@@ -112,8 +101,6 @@ export CATALINA_BASE=/usr/local/apache-tomcat-8.5.32export TOMCAT_HOME=/usr/loc
 ```
 # wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/97/169dde525ae2cf9e018cc780e72836.jpg)
 
 #### 安装Jenkins
 &emsp;&emsp;将下载后的war包放到/usr/local/apache-tomcat-8.5.32/webapps/目录下，启动tomcat即可， 或者用命令`java -jar jenkins.war`，其默认启动端口8080,如果需要修改，打开安装目录下的jenkins.xml文件，修改<arguments>-Xrs -Xmx256m -Dhudson.lifecycle=hudson.lifecycle.WindowsServiceLifecycle -jar "%BASE%\jenkins.war" --httpPort=8081</arguments>后保存，启动jenkins服务。

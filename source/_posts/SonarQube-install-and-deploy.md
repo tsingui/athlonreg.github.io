@@ -60,8 +60,6 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 # yum -y install mysql mysql-server mysql-devel
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b9/4df1b9cd3c228ae829afa2269a30bc.jpg)
-
 &#160; &#160; &#160; &#160;安装完成后MySQL服务启动会报错，这是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
 
 ```bash
@@ -69,8 +67,6 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 # rpm -ivh mysql57-community-release-el7-9.noarch.rpm
 # yum -y install mysql-server
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4f/b836cb42db397fcd892bc1ede06ec8.jpg)
 
 启动MySQL服务
 
@@ -115,11 +111,6 @@ mysql> grant all privileges on sonar.* to 'sonar'@'%';
 ### 安装SonarQube
 ```bash
 # wget https://sonarsource.bintray.com/Distribution/sonarqube/sonarqube-6.7.5.zip
-```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6a/26a9500fc57a82b25190b9bb190fc5.jpg)
-
-```bash
 # unzip sonarqube-6.7.5.zip  //若提示unzip命令找不到，用yum -y install unzip安装即可
 # mv sonarqube-6.7.5 /usr/local/sonarqube
 ```

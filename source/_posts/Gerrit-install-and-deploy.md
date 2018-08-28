@@ -34,18 +34,6 @@ tags:
 # mkdir /home/gerrit  //创建专有工作目录
 ```
 
-```
-[root@centos-7 ~]# adduser gerrit
-[root@centos-7 ~]# passwd gerrit
-更改用户 gerrit 的密码 。
-新的 密码：
-无效的密码： 密码少于 8 个字符
-重新输入新的 密码：
-passwd：所有的身份验证令牌已经成功更新。
-[root@centos-7 ~]# mkdir -p /home/gerrit
-[root@centos-7 ~]#
-```
-
 ## 步骤二：配置`Java`环境
 * 去官网下载`JDK`：[http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html)
 
@@ -86,8 +74,6 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 # yum -y install mysql mysql-server mysql-devel
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b9/4df1b9cd3c228ae829afa2269a30bc.jpg)
-
 &#160; &#160; &#160; &#160;安装完成后MySQL服务启动会报错，这是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
 
 ```bash
@@ -95,8 +81,6 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 # rpm -ivh mysql57-community-release-el7-9.noarch.rpm
 # yum -y install mysql-server
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4f/b836cb42db397fcd892bc1ede06ec8.jpg)
 
 启动MySQL服务
 
@@ -150,8 +134,6 @@ mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%';
 ```bash
 # yum -y install git
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a4/2a768c96440e0cb6a7ae5055e09496.jpg)
 
 ## 步骤五：下载安装`gerrit`
 * 从官网下载`gerrit`，存放于`/home/gerrit`目录：[https://www.gerritcodereview.com/download/gerrit-2.14.war](https://www.gerritcodereview.com/download/gerrit-2.14.war)
@@ -267,16 +249,11 @@ Open Gerrit with a JavaScript capable browser:
 [gerrit@centos-7 ~]$
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6f/c21cc69bc8ada5694dc8c08beec531.jpg)
-
-
 授权文件夹权限给gerrit用户： 
 
 ```bash
 # chown -R gerrit:gerrit review_site 
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/d8/9347a75e5a94e2ed6972c6ffa69c37.jpg)
 
 * 修改`gerrit`配置文件，说明如下
 
@@ -296,8 +273,6 @@ $ vim review_site/etc/gerrit.config
 $ review_site/bin/gerrit.sh restart
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/ae/34e5ce4bd77b4dbd3d42bc84c377cb.jpg)
-
 设置gerrit服务开机启动
 
 ```bash
@@ -315,77 +290,15 @@ $ review_site/bin/gerrit.sh restart
 # yum -y install gcc-c++ pcre pcre-devel zlib zlib-devel openssl
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/c6/250a18522916525a4f9b12e1e9b2e6.jpg)
-
 * 安装启动`nginx`并设置自启动
 
 ```bash
 # rpm -Uvh http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm
 # yum update && yum -y install nginx 
-```
-
-```
-[root@centos-7 gerrit]# yum -y install nginx
-已加载插件：fastestmirror
-Loading mirror speeds from cached hostfile
- * base: mirrors.huaweicloud.com
- * extras: mirrors.neusoft.edu.cn
- * updates: mirrors.huaweicloud.com
-正在解决依赖关系
---> 正在检查事务
----> 软件包 nginx.x86_64.1.1.14.0-1.el7_4.ngx 将被 安装
---> 解决依赖关系完成
-
-依赖关系解决
-
-============================================================================================================================================
- Package                      架构                          版本                                         源                            大小
-============================================================================================================================================
-正在安装:
- nginx                        x86_64                        1:1.14.0-1.el7_4.ngx                         nginx                        750 k
-
-事务概要
-============================================================================================================================================
-安装  1 软件包
-
-总下载量：750 k
-安装大小：2.6 M
-Downloading packages:
-nginx-1.14.0-1.el7_4.ngx.x86_64.rpm                                                                                  | 750 kB  00:02:35
-Running transaction check
-Running transaction test
-Transaction test succeeded
-Running transaction
-警告：RPM 数据库已被非 yum 程序修改。
-  正在安装    : 1:nginx-1.14.0-1.el7_4.ngx.x86_64                                                                                       1/1
-----------------------------------------------------------------------
-
-Thanks for using nginx!
-
-Please find the official documentation for nginx here:
-* http://nginx.org/en/docs/
-
-Please subscribe to nginx-announce mailing list to get
-the most important news about nginx:
-* http://nginx.org/en/support.html
-
-Commercial subscriptions for nginx are available on:
-* http://nginx.com/products/
-
-----------------------------------------------------------------------
-  验证中      : 1:nginx-1.14.0-1.el7_4.ngx.x86_64                                                                                       1/1
-
-已安装:
-  nginx.x86_64 1:1.14.0-1.el7_4.ngx
-
-完毕！
-[root@centos-7 gerrit]# systemctl enable nginx
+# systemctl enable nginx
 Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service to /usr/lib/systemd/system/nginx.service.
-[root@centos-7 gerrit]# systemctl start nginx
-[root@centos-7 gerrit]#
+# systemctl start nginx
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/5c/50f71bcee60f9c81980a98b9b3a6f6.jpg)
 
 ### 2) 配置`nginx`：
 
@@ -454,8 +367,6 @@ $ htpasswd -b ./review_site/etc/passwd gerrit gerrit
 
 ```bash
 # yum -y install gitweb```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/15/b3d3c14eb03034a7d970060954b8b9.jpg)
 * 离线安装依赖包安装如下：
 
   - perl-Git-1.8.3.1-12.el7_4.noarch  - git-1.8.3.1-12.el7_4.x86_64  - gitweb-1.8.3.1-12.el7_4.noarch  - perl-Git-1.8.3.1-6.el7_2.1.noarch  - git-1.8.3.1-6.el7_2.1.x86_64

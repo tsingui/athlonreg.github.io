@@ -13,7 +13,7 @@ tags:
 - Bug追踪
 ---
 
-**<center>MantisBT软件安装部署过程</center>**
+# **<center>MantisBT软件安装部署过程</center>**
 
 # 简介
 &#160;&#160;&#160;&#160;Mantis是一个基于PHP技术的轻量级的开源缺陷跟踪系统，以Web操作的形式提供项目管理及缺陷跟踪服务。在功能上、实用性上足以满足中小型项目的管理及跟踪。更重要的是其开源，不需要负担任何费用。
@@ -60,15 +60,11 @@ https://github.com/Synchro/PHPMailer/releases/tag/v5.2.13
 # wget https://sourceforge.net/projects/mantisbt/files/mantis-stable/2.16.0/mantisbt-2.16.0.tar.gz/download
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/88/fd45c33bcf60c4cc8b2eaa6875fe7d.jpg)
-
 #### 解压重命名
 ```bash
 # tar zxvf download
 # mv download mantis
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/8f/d157a7b973b67bab6839d5b669e9c3.jpg)
 
 #### 修改用户组
 ```bash
@@ -115,10 +111,8 @@ Bye
 [root@centos-7 html]#
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e8/b5fe383c27b5215e7d1abffba5dfb9.jpg)
-
 #### 安装
-&#160;&#160;&#160;&#160;打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为http://IP:端口/mantis文件夹名称，这时就会自动跳转到php安装向导的页面: 
+&#160;&#160;&#160;&#160;打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为 `http://IP:端口/mantis文件夹名称`，这时就会自动跳转到php安装向导的页面: 
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/13/430b174ae372e2c4854b5804123ab1.jpg)
 

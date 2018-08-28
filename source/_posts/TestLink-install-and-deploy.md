@@ -16,8 +16,6 @@ tags:
 # yum -y install mysql mysql-server mysql-devel
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b9/4df1b9cd3c228ae829afa2269a30bc.jpg)
-
 &#160; &#160; &#160; &#160;安装完成后MySQL服务启动会报错，这是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
 
 ```bash
@@ -25,8 +23,6 @@ tags:
 # rpm -ivh mysql57-community-release-el7-9.noarch.rpm
 # yum -y install mysql-server
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4f/b836cb42db397fcd892bc1ede06ec8.jpg)
 
 启动MySQL服务
 
@@ -99,7 +95,11 @@ mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%';
 # vim /var/www/html/info.php
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/6c/6936a8cdc72e9ddfaddf8f3d22a9e0.jpg)
+```php
+<?php
+    phpinfo();
+?>
+```
 
 浏览器打开`http://IP:httpd端口/info.php`
 
@@ -113,15 +113,11 @@ mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%';
 # wget https://sourceforge.net/projects/testlink/files/TestLink%201.9/TestLink%201.9.17/testlink-1.9.17.tar.gz/download
 ```
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/95/e0cde223f32ce03f30cab633730c58.jpg)
-
 ### 解压重命名
 ```bash
 # tar zxvf download
 # mv testlink-1.9.17 /var/www/html/testlink
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/9c/b30dab8b8a924e77e302d75f362ee3.jpg)
 
 ### 修改配置文件
 ```bash
