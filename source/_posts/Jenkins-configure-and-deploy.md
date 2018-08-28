@@ -1,4 +1,17 @@
-
+---
+title: Jenkins配置部署
+date: 2018-08-22 11:36:45
+categories: 
+- Linux
+- 运维
+keywords: 
+- Jenkins
+- 持续集成
+description: Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用；常用的版本管理系统有SVN、GIT，构建工具有Maven、Ant、Gradle。
+tags:
+- Jenkins
+- 持续集成
+---
 # <center>`Jenkins`配置部署</center>
 
 ## 简介&emsp;&emsp;Jenkins是一个开源的、提供友好操作界面的持续集成(CI)工具，起源于Hudson（Hudson是商用的），主要用于持续、自动的构建/测试软件项目、监控外部任务的运行。Jenkins用Java语言编写，可在Tomcat等流行的servlet容器中运行，也可独立运行。通常与版本管理工具(SCM)、构建工具结合使用；常用的版本管理系统有SVN、GIT，构建工具有Maven、Ant、Gradle。其具备以下特点：* 易于安装：不需要安装、不需要数据库，只需通过java -jar jenkins.war或部署到一个servlet容器中。* 易于配置：所有的配置都可能通过Jenkins提供的web界面完成，当然如果你喜欢，也可以通过手动修改xml文件进行配置。* 消息通知及测试报告：能够生成各类测试报告并通过消息通知机制（Email等）进行报告，包括单元测试、覆盖率测试、静态分析等。* 分布式构建：Jenkins支持多个Slave节点的动态挂载，完成分布式构建。* 资源动态调度：Jenkins的容器资源通过Kubernetes动态调度，动态扩容收缩。* 插件支持：Jenkins支持上千种插件，可以进行扩展，也可以根据需求近定制开发。
