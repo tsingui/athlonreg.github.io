@@ -53,8 +53,8 @@ mysql> set password for root@localhost=password('root');
 
 ```mysql
 mysql> CREATE USER 'testlink'@'%' IDENTIFIED BY 'root';
-mysql> CREATE DATABASE ReviewDB; 
-mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%'; 
+mysql> CREATE DATABASE testlink; 
+mysql> GRANT ALL ON testlink.* TO 'testlink'@'%'; 
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/71/942aecc699f1569206358f48c13b7d.jpg)
