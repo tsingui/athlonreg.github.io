@@ -22,3 +22,13 @@ ffd8ffe000104a464946
 [2018-07-20 13:08:34 +0800] [8168] [INFO] KeepAlive Timeout. Closing connection.
 [2018-07-20 13:26:46 +0800] [8168] [INFO] Stopping worker [8168]
 [2018-07-20 13:26:46 +0800] [8168] [INFO] Server Stopped
+[2018-08-31 14:24:47 +0800] [7569] [INFO] Goin' Fast @ http://127.0.0.1:7000
+[2018-08-31 14:24:47 +0800] [7569] [INFO] Starting worker [7569]
+[master 04180ac] Added some imgs
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Images/c2/85f52f71b24ae13db848eea21a1f75.jpg
+To https://github.com/athlonreg/BlogImages.git
+   e7ef637..04180ac  master -> master
+ffd8ffe000104a464946
+[2018-08-31 14:25:00 +0800] - (sanic.access)[INFO][1:2]: POST http://127.0.0.1:7000/upimg  200 71
+[2018-08-31 14:25:05 +0800] [7569] [INFO] KeepAlive Timeout. Closing connection.
