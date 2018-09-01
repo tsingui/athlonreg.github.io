@@ -6,8 +6,9 @@ description: iTerm2 + ohmyzsh + powerlevel9k + tmux 打造专属个性化终端
 tags: 
 - iTerm2
 - tmux
-- ohmyzsh
+- oh-my-zsh
 - 终端美化
+- archey
 ---
 
 # 先来张图镇楼

@@ -190,22 +190,28 @@ ssl = no
 ```
 
 ```
-og_path = /var/log/dovecot.log
+log_path = /var/log/dovecot.log
 info_log_path = /var/log/dovecot.info
 log_timestamp = "%Y-%m-%d %H:%M:%S "
 ```
-
 
 ```bash
 # cp auth-sql.conf.ext auth-sql.conf
 # vim auth-sql.conf
 ```
 
-
 ```
-passdb { driver = sql # Path for SQL configuration file, see example-config/dovecot-sql.conf.ext 
-args = /etc/dovecot/dovecot-sql.conf.ext}
-userdb { driver = sql args = /etc/dovecot/dovecot-sql.conf.ext}
+passdb { 
+    driver = sql 
+    
+    # Path for SQL configuration file, see example-config/dovecot-sql.conf.ext 
+    args = /etc/dovecot/dovecot-sql.conf.ext
+}
+
+userdb { 
+    driver = sql 
+    args = /etc/dovecot/dovecot-sql.conf.ext
+}
 ```
 
 编辑dovecot通过mysql认证的配置文件
@@ -422,8 +428,7 @@ chown -R postfix.postfix /var/www/extsuite/extmail/cgi/
 > 由于数据库不能识别TYPE= MyISAM ，所以这里直接导入会出错，先编辑extmail.sql数据库文件，将TYPE=MyISAM更改为ENGINE=MyISAM
 
 ```bash
-# vim docs/extmail.sql
-# sed -i -e "s/TYPE=MyISAM/ENGINE=MyISAM/g"
+# sed -i -e "s/TYPE=MyISAM/ENGINE=MyISAM/g" docs/extmail.sql
 ```
 
 导入还是会报错
@@ -506,7 +511,7 @@ Query OK, 0 rows affected (0.00 sec)
 ```bash
 # tar zxvf Unix-Syslog-1.1.tar.gz
 # mv Unix-Syslog-1.1 /usr/local/Unix-Syslog
-# cd Unix-Syslog-1.1
+# cd /usr/local/Unix-Syslog
 # perl Makefile.PL
 # make && make install
 ```
