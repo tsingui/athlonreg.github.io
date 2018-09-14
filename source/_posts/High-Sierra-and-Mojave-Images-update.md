@@ -193,4 +193,4 @@ tags:
     - macOS Mojave 10.14 DP8 18A371a
     - macOS Mojave 10.14 DP9 18A377a
     - macOS Mojave 10.14 DP10 18A384a
-    - macOS Mojave 10.14 Golden Master 18A384a
+    - macOS Mojave 10.14 Golden Master 18A389
