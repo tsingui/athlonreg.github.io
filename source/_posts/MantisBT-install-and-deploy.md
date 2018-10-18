@@ -41,37 +41,64 @@ https://github.com/Synchro/PHPMailer/releases/tag/v5.2.13
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0b/f7ba2cdc89ecb4edee3d7c32861ad1.jpg)
 
 ### 安装apache mysql等必要软件
+MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
+
 ```bash
-# yum -y install httpd mysql mysql-server
+# wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
+# rpm -ivh mysql57-community-release-el7-9.noarch.rpm
+# yum -y install mysql mysql-server mysql-devel
 ```
 
-设置MySQL apache启动与自启动
+启动MySQL服务
 
 ```bash
-# chkconfig mysqld on    //自启动
-# service mysqld start   //启动
-# chkconfig httpd on     //自启动
-# #service httpd restart //启动
+# systemctl start mysqld
+```
+
+获取安装MySQL时的初始密码并登录MySQL
+
+```bash
+# grep 'temporary password' /var/log/mysqld.log
+# mysql -u root -p
+```
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/4a/a001ae2bae5a494c7329cd78a477a3.jpg)
+
+登录成功后修改密码，首先修改安全策略为0，然后将密码长度限制修改为1，最后修改密码
+
+```mysql
+mysql> set global validate_password_policy=0;
+mysql> set global validate_password_length=1;
+mysql> set password for root@localhost=password('root');
+```
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a2/0f74ed53f3a426d1fe005228478d8f.jpg)
+
+安装apache httpd
+
+```bash
+# yum -y install httpd
+# systemctl enable httpd   //自启动
+# systemctl start httpd    //启动
 ```
 ### 安装mantis
 #### 下载
 ```bash
 # cd /var/www/html
-# wget https://sourceforge.net/projects/mantisbt/files/mantis-stable/2.16.0/mantisbt-2.16.0.tar.gz/download
+# wget https://jaist.dl.sourceforge.net/project/mantisbt/mantis-stable/2.18.0/mantisbt-2.18.0.zip
 ```
 
 #### 解压重命名
 ```bash
-# tar zxvf download
-# mv download mantis
+# tar zxvf mantisbt-2.16.0.tar.gz
+# mv mantisbt-2.16.0 mantis
+# mv mantis /var/www/html/
 ```
 
 #### 修改用户组
 ```bash
-# chown -R apache:apache mantis
+# chown -R apache:apache /var/www/html/mantis
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/10/b652d80634468939bbd1dad9575157.jpg)
 
 #### 创建数据库
 ```bash
@@ -92,7 +119,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> create database mantis;
 Query OK, 1 row affected (0.00 sec)
 
-mysql> grant all privileges on mantis.* to root@localhost identified by 'root';
+mysql> grant all privileges on mantis.* to root@localhost identified by '123456';
 ERROR 1819 (HY000): Your password does not satisfy the current policy requirements
 mysql> set global validate_password_policy=0;
 Query OK, 0 rows affected (0.00 sec)
@@ -100,7 +127,7 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> set global validate_password_length=1;
 Query OK, 0 rows affected (0.00 sec)
 
-mysql> grant all privileges on mantis.* to root@localhost identified by 'root';
+mysql> grant all privileges on mantis.* to root@localhost identified by '123456';
 Query OK, 0 rows affected, 1 warning (0.01 sec)
 
 mysql> flush privileges;
@@ -112,7 +139,7 @@ Bye
 ```
 
 #### 安装
-&#160;&#160;&#160;&#160;打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为 `http://IP:端口/mantis文件夹名称`，这时就会自动跳转到php安装向导的页面: 
+打开浏览器在地址栏输入 http://10.211.55.17:82/mantis  --  格式为 `http://IP:端口/mantis文件夹名称`，这时就会自动跳转到php安装向导的页面: 
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/13/430b174ae372e2c4854b5804123ab1.jpg)
 
@@ -120,31 +147,24 @@ Bye
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/86/f2dd1067427ccefb9829d5a3e2903e.jpg)
 #### 登录
-&#160;&#160;&#160;&#160;进入Mantis登录界面，输入用户密码：administrator/root ，登陆即可看到mantis主界面。
+进入Mantis登录界面，输入用户密码：administrator/root ，登陆即可看到mantis主界面。
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/c3e84af9570ae5c9d61d788d482a69.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f4/2302c64875ae7556c732820ffe6c2f.jpg)
-## 邮件配置&#160;&#160;&#160;&#160;修改MantisBT下config_defaults_inc.php配置文件，具体如下
-
-```
-$g_administrator_email = 'mailuser';$g_webmaster_email = 'mailuser'；$g_from_email = 'mailuser'；$g_from_name = 'Mantis Bug Tracker';$g_return_path_email = 'mailuser';$g_enable_email_notification = ON;
-$g_phpMailer_path = '/var/www/html/mantis/PHPMailer-5.2.13/';
-```
-&#160;&#160;&#160;&#160;修改MantisBT/config/config_inc.php文件
+## 邮件配置修改MantisBT/config/config_inc.php文件
 
 ```
 $g_enable_email_notification = ON;
-$g_administrator_email = 'mailuser';$g_webmaster_email = 'mailuser';$g_from_email = 'mailuser';$g_from_name = 'Mantis Bug Tracker';
+$g_administrator_email = 'mailuser';    # 邮箱地址$g_webmaster_email = 'mailuser';        # 邮箱地址$g_from_email = 'mailuser';             # 邮箱地址$g_from_name = 'Mantis Bug Tracker';
 $g_phpMailer_method = PHPMAILER_METHOD_SMTP;
-$g_smtp_host = 'smtp.163.com'; # SMTP 服务器
-$g_smtp_username = 'mailuser';
-$g_smtp_password = 'mailpwd'; 
+$g_smtp_host = 'smtp.163.com';          # SMTP 服务器
+$g_smtp_username = 'mailuser';          # 邮箱地址
+$g_smtp_password = 'mailpwd';           # 邮箱密码
 $g_use_phpMailer = ON; 
-$g_return_path_email = 'mailuser';
-$g_phpMailer_path = '/var/www/html/mantis/PHPMailer-5.2.13/';
+$g_return_path_email = 'mailuser';      # 邮箱地址
 ```
-## 中文配置&#160;&#160;&#160;&#160;修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将'english'改为'chinese_simplified'。
+## 中文配置修改/var/www/html/mantis/config_defaults_inc.php文件，在该文件中找到语言设置的地方，修改$g_default_language，将'english'改为'chinese_simplified'。懒得找的话直接复制下面的命令也可以。
 
 ```bash
 # sed -i -e "s/$g_default_language = 'auto'/$g_default_language = 'chinese_simplified'/g" /var/www/html/mantis/config_defaults_inc.php
@@ -152,26 +172,26 @@ $g_phpMailer_path = '/var/www/html/mantis/PHPMailer-5.2.13/';
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/17/52f55640c0580b49bb51e81728e32b.jpg)
 # 问题解决问题描述：配置完成后，无法发送邮件。
-解决方法：&#160;&#160;&#160;&#160;邮箱配置问题，添加本地邮箱服务器，设置本地邮箱，对于本地测试邮箱，设置$g_smtp_host=本地IP地址。
+解决方法：邮箱配置问题，添加本地邮箱服务器，设置本地邮箱，对于本地测试邮箱，设置$g_smtp_host=本地IP地址。
 # 实例运行* 为了便于理解，先给出BUG跟踪流程图：
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b7/a17671861ee0f1c0ef2d34063c1f7e.png)
 
 * Mantis使用流程图：![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/36/e0cd2969561f3a3847f00064f10d86.jpg)
 
 * 新用户创建与登录
-&#160;&#160;&#160;&#160;目前本系统的访问地址为：http://IP:port/mantis/login_page.php，用户可以通过首页显示的"注册一个新帐号"进行新用户注册。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7d/1aa6506c45bdc101125dbf0eb471cb.jpg)
+目前本系统的访问地址为：http://IP:port/mantis/login_page.php，用户可以通过首页显示的"注册一个新帐号"进行新用户注册。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7d/1aa6506c45bdc101125dbf0eb471cb.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e0/c44b7bd62656a42effb30cbe072d8d.jpg)
-&#160;&#160;&#160;&#160;然后点击邮箱内的激活邮件，进行用户名与密码的设置。也可以通过管理员创建新用户
+然后点击邮箱内的激活邮件，进行用户名与密码的设置。也可以通过管理员创建新用户
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/f3/3984a7b93cb83f5018a886334554f3.jpg)
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/38/81f16e90a837e3b2e4753481d53d49.jpg)
-&#160;&#160;&#160;&#160;管理员可以对用户的角色、所属的项目以及一些其他的情况进行对应的配置。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7e/8a3bf7d3b7d54549861c08cc2b8695.jpg)
-&#160;&#160;&#160;&#160;各种具体的配置以及各种角色用户的权限可参见管理员的管理视图。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/64/fb372744682c06a5abf50d6d08e3c3.jpg)
-**操作流程**&#160;&#160;&#160;&#160;首先，说明一下系统中的角色和一般所对应的人员：观察者（复查员）、报告者（测试员）、升级者（审核员）、开发人员（开发员）、经理（项目经理）、管理员（系统管理员）。还要简单说明一下问题状态及相关含义（以上的两点只是中文理解和中文翻译的问题，可以在mantisbt-2.15.0/lang/strings_chinese_simplified.txt中修改）：
+管理员可以对用户的角色、所属的项目以及一些其他的情况进行对应的配置。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7e/8a3bf7d3b7d54549861c08cc2b8695.jpg)
+各种具体的配置以及各种角色用户的权限可参见管理员的管理视图。![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/64/fb372744682c06a5abf50d6d08e3c3.jpg)
+**操作流程**首先，说明一下系统中的角色和一般所对应的人员：观察者（复查员）、报告者（测试员）、升级者（审核员）、开发人员（开发员）、经理（项目经理）、管理员（系统管理员）。还要简单说明一下问题状态及相关含义（以上的两点只是中文理解和中文翻译的问题，可以在mantisbt-2.15.0/lang/strings_chinese_simplified.txt中修改）：
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/32/a9311c413f72019f384eb9fdb64e91.jpg)
-* 新建：新提交的报告，默认状态为新建* 反馈：修正的问题经过测试后仍不完善* 认可：报告的问题确实存在* 已确认：通常为项目经理确认时使用* 已分配：分派给具体开发人员* 已解决：修改后的问题，可以进行测试* 已关闭：测试通过的问题，或者在报告周期内判定为无需修改的问题。&#160;&#160;&#160;&#160;下面介绍一下简单的操作流程，这里以管理员和报告者作为示例，这里为了方便示例，示例中管理员包含了其他角色属性。观察者、升级者以及经理可以根据具体情况进行添加。
+* 新建：新提交的报告，默认状态为新建* 反馈：修正的问题经过测试后仍不完善* 认可：报告的问题确实存在* 已确认：通常为项目经理确认时使用* 已分配：分派给具体开发人员* 已解决：修改后的问题，可以进行测试* 已关闭：测试通过的问题，或者在报告周期内判定为无需修改的问题。下面介绍一下简单的操作流程，这里以管理员和报告者作为示例，这里为了方便示例，示例中管理员包含了其他角色属性。观察者、升级者以及经理可以根据具体情况进行添加。
 * 提交问题
 **权限：**全部角色**必填信息：**分类、摘要、描述、查看权限**选填信息：**出现频率、严重性、优先级、选择平台设置、重现步骤、辅助、标签、上传文件。**问题单状态：**新建![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/7a/b1f51f397d2700ccd2ae21cc7edbc7.jpg)
 * 审核问题

@@ -12,16 +12,13 @@ tags:
 
 # <center>TestLink安装部署</center>
 ## 安装MySQL
-```bash
-# yum -y install mysql mysql-server mysql-devel
-```
 
-&#160; &#160; &#160; &#160;安装完成后MySQL服务启动会报错，这是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
+MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
 
 ```bash
 # wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 # rpm -ivh mysql57-community-release-el7-9.noarch.rpm
-# yum -y install mysql-server
+# yum -y install mysql mysql-server mysql-devel
 ```
 
 启动MySQL服务
@@ -55,15 +52,14 @@ mysql> set password for root@localhost=password('root');
 mysql> CREATE USER 'testlink'@'%' IDENTIFIED BY 'root';
 mysql> CREATE DATABASE testlink; 
 mysql> GRANT ALL ON testlink.* TO 'testlink'@'%'; 
+mysql> flush privileges;
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/71/942aecc699f1569206358f48c13b7d.jpg)
 
 设置MySQL启动与自启动
 
 ```bash
-# chkconfig mysqld on    //自启动
-# service mysqld start   //启动
+# systemctl enable mysqld    //自启动
+# systemctl start mysqld     //启动
 ```
 
 ## 安装httpd
@@ -84,8 +80,7 @@ mysql> GRANT ALL ON testlink.* TO 'testlink'@'%';
 ```bash
 # rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 # rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
-# yum -y install libicu libicu-devel libicu-doc
-# yum -y install php70w php70w-gd php70w-xml php70w-mysql php70w-mbstring php70w-ldap php70w-xmlrpc php70w-odbc php70w-pear php70w-soap php70w-snmp
+# yum -y install `yum search php | grep php56w | grep -v "===" | grep -v mysqlnd | awk -F '.' '{print $1}'`
 ```
 
 ### 测试一下PHP环境
@@ -107,19 +102,31 @@ mysql> GRANT ALL ON testlink.* TO 'testlink'@'%';
 
 如图，PHP环境安装完成。
 
+**Note: **
+PHP无法正确解析，网页显示源码的解决方法：
+
+```bash
+$ vi /etc/php.ini 
+```
+
+将short_open_tag = Off修改为short_open_tag = On，然后重启httpd服务即可
+
 ## 安装TestLink
 ### 下载
 ```bash
-# wget https://sourceforge.net/projects/testlink/files/TestLink%201.9/TestLink%201.9.17/testlink-1.9.17.tar.gz/download
+# wget https://jaist.dl.sourceforge.net/project/testlink/TestLink%201.9/TestLink%201.9.18/testlink-1.9.18.tar.gz
 ```
 
 ### 解压重命名
 ```bash
-# tar zxvf download
-# mv testlink-1.9.17 /var/www/html/testlink
+# tar zxvf testlink-1.9.18.tar.gz
+# mv testlink-1.9.18 testlink
+# mv testlink /var/www/html/
+# chown -R apache:apache /var/www/html/testlink
 ```
 
 ### 修改配置文件
+
 ```bash
 # sed -i -e "s/AllowOverride None/AllowOverride All/g" /etc/httpd/conf/httpd.conf
 # sed -i -e "s/DirectoryIndex index.html/DirectoryIndex index.html index.php index.shtm/g" /etc/httpd/conf/httpd.conf
@@ -144,7 +151,7 @@ mysql> GRANT ALL ON testlink.* TO 'testlink'@'%';
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/23/c132221e0b416226f6f7df1e63b12c.jpg)
 
 ### 安装
-浏览器打开http://IP:port/testlink/install(将IP换成自己主机IP，端口号换为自己主机的Apache服务端口号)。如图，点击New installation开始安装
+浏览器打开`http://IP:port/testlink/install`(将IP换成自己主机IP，端口号换为自己主机的Apache服务端口号)。如图，点击New installation开始安装
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/14/da839143e11bec790a2a77f7247529.jpg)
 
@@ -158,21 +165,7 @@ mysql> GRANT ALL ON testlink.* TO 'testlink'@'%';
 
 如图，设定数据库管理员登录账户密码，自定义TestLink的数据库登录账户密码，其余均保持默认，点击Process TestLink Setup
 
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/3f/4d7722d05d821a6e353880832b86ea.jpg)
-
-若出现下图所示报错，可以根据提示新建一个config_db.inc.php文件
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/fd/239b7929144c1dbb0893000808994c.jpg)
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/48/6ee9ca937b2859f8aeee3bf720ff18.jpg)
-
-然后赋予权限刷新即可成功安装
-
-```bash
-# chmod 777 config_db.inc.php
-```
-
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/58/736d782618beafcda69918ffca7749.jpg)
 
 ## 登录
-浏览器打开http://IP:port/testlink(将IP换成自己主机IP，端口号换为自己主机的Apache服务端口号)，会自动跳转到登录页面，默认用户admin/admin
+安装完成网址输入http://IP/testlink即可自动跳转到登录页面，默认用户admin/admin

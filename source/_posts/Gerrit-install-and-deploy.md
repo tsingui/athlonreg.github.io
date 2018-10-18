@@ -15,26 +15,16 @@ tags:
 
 ## <cneter>`Gerrit`安装配置过程</center>
 
-# 环境配置
-
-| 环境/软件 | 描述 | 版本 |
-| --- | --- | --- |
-| CentOS | RedHat Linux 社区版 | 7.0(1804) |
-| gerrit | 代码审查工具 | 2.5.2 |
-| nginx | httpd和反向代理服务 | 1.14.0 |
-| JDK | Java环境 | 1.8.0_161 |
-| gitweb | 网页版 | 1.8.3.1 |
-
 # 安装过程如下
 ## 步骤一：创建专用账户和工作目录
 
 ```bash
 # adduser gerrit  // 创建专用账户
 # passwd gerrit  //为专有账户设置密码
-# mkdir /home/gerrit  //创建专有工作目录
 ```
 
 ## 步骤二：配置`Java`环境
+
 * 去官网下载`JDK`：[http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html](http://www.oracle.com/technetwork/java/javase/downloads/java-archive-javase8-2177648.html)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/81/1b33b7e9dbe92a1515154d0193194f.jpg)
@@ -70,16 +60,13 @@ export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CL
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/2f/49c7d622b298ae690db3c13754c1b1.jpg)
 
 ## 步骤三：安装MySQL
-```bash
-# yum -y install mysql mysql-server mysql-devel
-```
 
-&#160; &#160; &#160; &#160;安装完成后MySQL服务启动会报错，这是因为CentOS 7上把MySQL从默认软件列表中移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
+MySQL的Server在CentOS 7上从默认软件列表中被移除了，用MariaDB来代替，所以这导致我们必须要去官网上进行下载，找到链接，用wget打开，然后再安装：
 
 ```bash
 # wget http://dev.mysql.com/get/mysql57-community-release-el7-9.noarch.rpm
 # rpm -ivh mysql57-community-release-el7-9.noarch.rpm
-# yum -y install mysql-server
+# yum -y install mysql mysql-server mysql-devel
 ```
 
 启动MySQL服务
@@ -107,13 +94,11 @@ mysql> set password for root@localhost=password('root');
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a2/0f74ed53f3a426d1fe005228478d8f.jpg)
 
-创建gerrit2用户
+创建gerrit用户
 
 ```mysql
-mysql> CREATE USER 'gerrit'@'%' IDENTIFIED BY 'gerrit';
+mysql> CREATE USER 'gerrit'@'%' IDENTIFIED BY '123456';
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/98/52b52578bf76764014561e33521243.jpg)
 
 创建gerrit要用的数据表
 
@@ -123,27 +108,36 @@ mysql> CREATE DATABASE ReviewDB;
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/d2/49b9ee020b217374593ca9bf2333b3.jpg)
 
-把ReviewDB的所有权限赋给gerrit2
+把ReviewDB的所有权限赋给gerrit
 
 ```mysql
 mysql> GRANT ALL ON ReviewDB.* TO 'gerrit'@'%'; 
 ```
+
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/73/94a9f46a5dd2572e26ac02b13ec1d8.jpg)
 
 ## 步骤四：安装Git
+
 ```bash
 # yum -y install git
 ```
 
 ## 步骤五：下载安装`gerrit`
-* 从官网下载`gerrit`，存放于`/home/gerrit`目录：[https://www.gerritcodereview.com/download/gerrit-2.14.war](https://www.gerritcodereview.com/download/gerrit-2.14.war)
+
+* 从官网下载`gerrit`，存放于`/home/gerrit`目录：
+
+```bash
+# wget https://gerrit-releases.storage.googleapis.com/gerrit-2.15.5.war
+```
+
 * 安装`gerrit`：
 
 首先切换为gerrit用户，然后运行gerrit的war包
 
 ```bash
 # su gerrit
-$ java -jar gerrit-2.14.war init -d review_site
+$ cd 
+$ java -jar gerrit-2.15.war init -d review_site
 ```
 
 一路回车默认安装(其中的认证方式处改为HTTP)
@@ -153,11 +147,11 @@ $ java -jar gerrit-2.14.war init -d review_site
 [gerrit@centos-7 ~]$ ll
 总用量 83864
 -rwxr-xr-x. 1 root root 85872756 8月  21 12:49 gerrit-2.14.war
-[gerrit@centos-7 ~]$ java -jar gerrit-2.14.war init -d review_site
+[gerrit@centos-7 ~]$ java -jar gerrit-2.15.5.war init -d review_site
 Using secure store: com.google.gerrit.server.securestore.DefaultSecureStore
 [2018-08-21 12:51:37,463] [main] INFO  com.google.gerrit.server.config.GerritServerConfigProvider : No /home/gerrit/review_site/etc/gerrit.config; assuming defaults
 
-*** Gerrit Code Review 2.14
+*** Gerrit Code Review 2.15.5
 ***
 
 Create '/home/gerrit/review_site' [Y/n]?
@@ -203,8 +197,8 @@ SMTP username                  :
 
 Run as                         [gerrit]:
 Java runtime                   [/usr/java/jdk1.8.0_161/jre]:
-Copy gerrit-2.14.war to review_site/bin/gerrit.war [Y/n]?
-Copying gerrit-2.14.war to review_site/bin/gerrit.war
+Copy gerrit-2.15.5.war to review_site/bin/gerrit.war [Y/n]?
+Copying gerrit-2.15.5.war to review_site/bin/gerrit.war
 
 *** SSH Daemon
 ***
@@ -230,12 +224,12 @@ Canonical URL                  [http://centos-7.shared:8080/]:
 ***
 
 Installing plugins.
-Install plugin commit-message-length-validator version v2.14 [y/N]?
-Install plugin download-commands version v2.14 [y/N]?
-Install plugin hooks version v2.14 [y/N]?
-Install plugin replication version v2.14 [y/N]?
-Install plugin reviewnotes version v2.14 [y/N]?
-Install plugin singleusergroup version v2.14 [y/N]?
+Install plugin commit-message-length-validator version v2.15.5 [y/N]?
+Install plugin download-commands version v2.15.5 [y/N]?
+Install plugin hooks version v2.15.5 [y/N]?
+Install plugin replication version v2.15.5 [y/N]?
+Install plugin reviewnotes version v2.15.5 [y/N]?
+Install plugin singleusergroup version v2.15.5 [y/N]?
 Initializing plugins.
 No plugins found with init steps.
 
@@ -343,10 +337,8 @@ server {
 # setenforce 0                 //关闭selinux以避免造成权限问题
 # systemctl disable firewalld  //禁用防火墙
 # systemctl stop firewalld     //关闭防火墙
-# service nginx start
+# systemctl start nginx
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/3d/ebc3deefbece01ee78608c4a4a87fd.jpg)
 
 ### 3) 设置第一个`gerrit`用户的账号和密码
 
@@ -355,21 +347,14 @@ server {
 ```bash
 # yum -y install httpd
 $ touch ./review_site/etc/passwd
-$ htpasswd -b ./review_site/etc/passwd gerrit gerrit
+$ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```
-
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/be/9f93d938c07e52f25347f4852e2d3a.jpg)
 
 ## 步骤七：安装配置`gitweb`
 ### 1) 安装`gitweb`,最好在联网环境下安装，或者在离线环境下下载对应的依赖包
 
-* 在线安装：
-
 ```bash
 # yum -y install gitweb```
-* 离线安装依赖包安装如下：
-
-  - perl-Git-1.8.3.1-12.el7_4.noarch  - git-1.8.3.1-12.el7_4.x86_64  - gitweb-1.8.3.1-12.el7_4.noarch  - perl-Git-1.8.3.1-6.el7_2.1.noarch  - git-1.8.3.1-6.el7_2.1.x86_64
 
 ### 2)	 配置`gitweb`,与`gerrit`集成修改`gitweb`的配置文件（/etc/gitweb.conf），将配置项 "$projectroot"修改为`gerrit`的`git`仓库目录。
 
@@ -388,18 +373,22 @@ $ htpasswd -b ./review_site/etc/passwd gerrit gerrit
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bc/d4431e93f304e1a913b244cadfd492.jpg)
 
-**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法就是两条命令"chmod -R 755 /home/gerrit/ && chown   gerrit:gerrit /home/gerrit/**
+**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法如下
+
+```bash
+# chown -R gerrit:gerrit /home/gerrit/*
+```
 ### 4) 重启`gerrit`服务和`Nginx`服务重启`gerrit`服务：
 
 ```bash$ /home/gerrit/review_site/bin/gerrit.sh stop  #停止$ /home/gerrit/review_site/bin/gerrit.sh start  #启动
 ```
 重启`Nginx`服务：
 
-```bash$ service nginx restart
+```bash# systemctl restart nginx
 ```
 
 ## 步骤八：测试
-访问http://10.211.55.19，用gerrit用户登录，登录界面如下
+访问http://localhost，用gerrit用户登录，登录界面如下
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/74/51196a5c04235cfbd07cf5a09e1b95.jpg)
 
