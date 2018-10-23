@@ -371,16 +371,16 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bc/d4431e93f304e1a913b244cadfd492.jpg)
 
-**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法如下
+**注意：如果你是在root用户下输入上面的命令 创建了password文件到/home/gerrit/review_site/etc目录中,你会发现在登录的时候永远登录不成功,永远会得到服务器500的错误页面。原因是password文件的权限问题。我们知道,/home/gerrit/是我们之前新建的gerrit用户的,那么这个文件夹的权限是700,也就是只允许gerrit用户访问,其他组的用户是访问不了的,虽然这个文件的权限拥有root用户的所有权限,但是因为它放在700权限的文件夹下面,所以同样其他用户是访问不到的。解决方法如下**
 
 ```bash
-# chown -R gerrit:gerrit /home/gerrit/*
+# chown -R gerrit:gerrit /home/gerrit
 ```
-### 重启`gerrit`服务和`Nginx`服务重启`gerrit`服务：
+### 重启gerrit服务和Nginx服务重启gerrit服务：
 
 ```bash$ /home/gerrit/review_site/bin/gerrit.sh stop  #停止$ /home/gerrit/review_site/bin/gerrit.sh start  #启动
 ```
-重启`Nginx`服务：
+重启Nginx服务：
 
 ```bash# systemctl restart nginx
 ```
