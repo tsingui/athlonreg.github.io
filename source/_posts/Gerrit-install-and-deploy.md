@@ -276,7 +276,7 @@ $ review_site/bin/gerrit.sh restart
 ## 步骤六：配置反向代理服务(nginx)
 > 说明： 局域网本地安装，设置本地`repo`库
 
-### 1) 安装`nginx`反向代理服务器
+### 安装`nginx`反向代理服务器
 
 * 安装`gcc-c++ pcre pcre-devel zlib zlib-devel openssl`： 
 
@@ -294,7 +294,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/nginx.service t
 # systemctl start nginx
 ```
 
-### 2) 配置`nginx`：
+### 配置`nginx`：
 
 ```bash
 # vim /etc/nginx/conf.d/default.conf
@@ -340,7 +340,7 @@ server {
 # systemctl start nginx
 ```
 
-### 3) 设置第一个`gerrit`用户的账号和密码
+### 设置第一个`gerrit`用户的账号和密码
 
 要用到htpasswd命令需要首先安装有httpd
 
@@ -351,25 +351,26 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```
 
 ## 步骤七：安装配置`gitweb`
-### 1) 安装`gitweb`,最好在联网环境下安装，或者在离线环境下下载对应的依赖包
+### 安装`gitweb`,最好在联网环境下安装，或者在离线环境下下载对应的依赖包
 
 ```bash
 # yum -y install gitweb```
 
-### 2)	 配置`gitweb`,与`gerrit`集成修改`gitweb`的配置文件（/etc/gitweb.conf），将配置项 "$projectroot"修改为`gerrit`的`git`仓库目录。
+### 配置`gitweb`,与`gerrit`集成
+修改`gitweb`的配置文件（/etc/gitweb.conf），将配置项 "$projectroot"修改为`gerrit`的`git`仓库目录。
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/35/3723767206d90e1f1fbf859d5df6ba.jpg)
 
 修改/home/gerrit/review_site/etc/gerrit.config,添加：
 
 
-```[gitweb]		type=gitweb		cgi=/var/www/git/gitweb.cgi
+```[gitweb]    type=gitweb    cgi=/var/www/git/gitweb.cgi
 ```
 
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/9d/b0b9039fc3682a7cdfae62ce5387d9.jpg)
 
-### 3)	 配置gerrit权限使用管理员账号登录`gerrit`,修改`All-Projects`的权限，为`refs/*`和`refs/meta/config`的`Read`配置项配置合适的权限。
+### 配置gerrit权限使用管理员账号登录`gerrit`,修改`All-Projects`的权限，为`refs/*`和`refs/meta/config`的`Read`配置项配置合适的权限。
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bc/d4431e93f304e1a913b244cadfd492.jpg)
 
@@ -378,7 +379,7 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```bash
 # chown -R gerrit:gerrit /home/gerrit/*
 ```
-### 4) 重启`gerrit`服务和`Nginx`服务重启`gerrit`服务：
+### 重启`gerrit`服务和`Nginx`服务重启`gerrit`服务：
 
 ```bash$ /home/gerrit/review_site/bin/gerrit.sh stop  #停止$ /home/gerrit/review_site/bin/gerrit.sh start  #启动
 ```
@@ -388,6 +389,7 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```
 
 ## 步骤八：测试
+
 访问http://localhost，用gerrit用户登录，登录界面如下
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/74/51196a5c04235cfbd07cf5a09e1b95.jpg)
