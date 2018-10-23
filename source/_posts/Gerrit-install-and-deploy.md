@@ -363,10 +363,7 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 
 修改/home/gerrit/review_site/etc/gerrit.config,添加：
 
-
-```config[gitweb]    type=gitweb    cgi=/var/www/git/gitweb.cgi
-```
-
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/26/432e046271c2658c8a203b86c19d5f.jpg)
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/9d/b0b9039fc3682a7cdfae62ce5387d9.jpg)
 
