@@ -376,13 +376,10 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```bash
 # chown -R gerrit:gerrit /home/gerrit
 ```
-### 重启gerrit服务和Nginx服务重启gerrit服务：
+### 重启gerrit服务和Nginx服务重启`gerrit`和`nginx`服务
 
-```bash$ /home/gerrit/review_site/bin/gerrit.sh stop  #停止$ /home/gerrit/review_site/bin/gerrit.sh start  #启动
-```
-重启Nginx服务：
-
-```bash# systemctl restart nginx
+```bash$ /home/gerrit/review_site/bin/gerrit.sh restart
+# systemctl restart nginx
 ```
 
 ## 步骤八：测试
