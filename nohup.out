@@ -73,3 +73,5 @@ To https://github.com/athlonreg/BlogImages.git
    949db5c..cdd1d93  master -> master
 ffd8ffe000104a464946
 [2018-10-19 22:50:29 +0800] - (sanic.access)[INFO][1:2]: POST http://127.0.0.1:7000/upimg  200 71
+[2018-10-19 23:02:00 +0800] [69761] [INFO] Stopping worker [69761]
+[2018-10-19 23:02:00 +0800] [69761] [INFO] Server Stopped

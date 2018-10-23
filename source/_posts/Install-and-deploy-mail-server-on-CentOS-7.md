@@ -10,7 +10,7 @@ keywords:
 - SMTP
 - IMAP
 - POP3
-description:
+description: CentOS 7安装部署邮件服务器
 tags: 
 - 运维
 - Linux
