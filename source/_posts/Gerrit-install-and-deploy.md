@@ -364,7 +364,7 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 修改/home/gerrit/review_site/etc/gerrit.config,添加：
 
 
-```[gitweb]    type=gitweb    cgi=/var/www/git/gitweb.cgi
+```config[gitweb]    type=gitweb    cgi=/var/www/git/gitweb.cgi
 ```
 
 
