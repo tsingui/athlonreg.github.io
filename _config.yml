@@ -143,7 +143,7 @@ live2d:
   mobile:
     show: true
   model:
-    use: live2d-widget-model-wanko 
+    use: live2d-widget-model-tororo 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

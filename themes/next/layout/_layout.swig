@@ -34,6 +34,9 @@
     {% set container_class = container_class + 'sidebar-position-' + theme.sidebar.position %}
   {% endif %}
 
+  <!-- 宠物 -->
+  {{ live2d() }}
+
   <div class="{{ container_class }} {% block page_class %}{% endblock %}">
     <div class="headband"></div>
 
