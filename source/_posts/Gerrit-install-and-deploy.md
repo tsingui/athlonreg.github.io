@@ -11,6 +11,8 @@ description: CentOS安装部署代码审查工具--Gerrit
 tags:
 - Gerrit
 - 代码审查
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/79/114d466e1f80823db828265ede65ee.jpg
 ---
 
 ## <cneter>`Gerrit`安装配置过程</center>

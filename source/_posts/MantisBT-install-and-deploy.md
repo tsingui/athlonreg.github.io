@@ -11,6 +11,8 @@ description: MantisBT是一个基于PHP技术的轻量级的开源缺陷跟踪�
 tags: 
 - MantisBT
 - Bug追踪
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b1/c3e84af9570ae5c9d61d788d482a69.jpg
 ---
 
 # **<center>MantisBT软件安装部署过程</center>**

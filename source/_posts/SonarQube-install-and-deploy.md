@@ -11,6 +11,8 @@ description: SonarQube安装部署以及代码分析实例过程小记
 tags: 
 - SonarQube
 - sonar-scanner
+photos: 
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/83/71e7da548917e52b08eb37f385e000.jpg
 ---
 
 # <center>SonarQube安装部署</center>
