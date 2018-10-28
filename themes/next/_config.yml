@@ -648,7 +648,7 @@ rating:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
+  enable: true
   app_id: k1qv17ho3MJ13J73ybcPSzdS-gzGzoHsz #<app_id>
   app_key: vXRKLu09Vu3krwPWN3hXIuBQ #<app_key>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
@@ -676,13 +676,7 @@ busuanzi_count:
   total_views: true
   total_views_icon: eye
   post_views: true
-  post_views_icon: eye
-  page_pv: true
-  page_pv_header: 本文总阅读量
-  page_pv_footer: 次
-  site_pv: true
-  site_pv_header: 本站总访问量
-  site_pv_footer: 次
+  post_views_icon: eye 
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
