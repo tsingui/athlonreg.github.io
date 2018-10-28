@@ -23,6 +23,7 @@
     "hexo-generator-searchdb": "^1.0.8",
     "hexo-generator-sitemap": "^1.2.0",
     "hexo-generator-tag": "^0.2.0",
+    "hexo-helper-live2d": "^3.1.0",
     "hexo-helper-qrcode": "^1.0.2",
     "hexo-neat": "^1.0.4",
     "hexo-renderer-ejs": "^0.3.0",
@@ -33,6 +34,6 @@
     "hexo-symbols-count-time": "^0.4.2",
     "hexo-tag-aplayer": "^2.0.1",
     "hexo-wordcount": "^2.0.1",
-    "npm": "^6.1.0"
+    "npm": "^6.4.1"
   }
 }
