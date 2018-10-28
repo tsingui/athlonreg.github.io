@@ -677,6 +677,18 @@ busuanzi_count:
   total_views_icon: eye
   post_views: true
   post_views_icon: eye 
+  # custom uv span for the whole site
+  site_uv: true
+  site_uv_header: <i class="fa fa-user"></i> 访问人数
+  site_uv_footer: 人
+  # custom pv span for the whole site
+  site_pv: true
+  site_pv_header: <i class="fa fa-eye"></i> 总访问量
+  site_pv_footer: 次
+  # custom pv span for one page only
+  page_pv: true
+  page_pv_header: <i class="fa fa-file-o"></i> 阅读数
+  page_pv_footer: 
 
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
