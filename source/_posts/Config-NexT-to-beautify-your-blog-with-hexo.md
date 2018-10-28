@@ -8,6 +8,8 @@ tags:
 - 静态博客
 - NexT
 - hexo
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/33/c34d64930294988c890c454b747cf9.jpg
 ---
 
 ## 前言
@@ -24,6 +26,7 @@ Hexo 安装主题的方式非常简单，只需要将主题文件拷贝至站点
 ### 下载主题
 
 在终端窗口下，定位到 Hexo 站点目录下。使用 Git checkout 代码：
+
 ```
 $ cd your-hexo-site
 $ git clone https://github.com/iissnan/hexo-theme-next themes/next

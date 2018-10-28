@@ -10,6 +10,8 @@ tags:
 - Window Server Service only ran for 0 seconds
 - Disable DGPU
 - 屏蔽独显
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/75/e1541f30e0486960fe6d0dd08e7738.jpg
 ---
 
 ## 写在前面

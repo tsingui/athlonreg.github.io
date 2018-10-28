@@ -9,6 +9,8 @@ tags:
 - 终端
 - Hacintosh
 - 任何来源
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/ee/6b66ba441c2c99506a691fd28b23ff.jpg
 ---
 
 ### Allow apps downloaded from anywhere on

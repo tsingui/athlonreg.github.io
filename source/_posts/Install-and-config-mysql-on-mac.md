@@ -7,6 +7,8 @@ description: 在 Mac 安装和配置 MySQL
 tags:
 - MySQL
 - Mac
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-12-20-3.png
 ---
 
 ## 准备

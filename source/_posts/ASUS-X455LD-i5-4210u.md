@@ -7,6 +7,8 @@ description: Install macOS High Sierra on ASUS X455LD i5 4210u
 tags:
 - Hacintosh
 - X455LD
+photos:
+- https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Backlight-Controller.png
 ---
 
 ## Install macOS High Sierra on ASUS X455LD i5 4210u
@@ -35,35 +37,52 @@ Wireless network adapter    Atheros AR956X
 ```
 
 ### Working
-![Snip20180331_7](http://ovefvi4g3.bkt.clouddn.com/Snip20180331_7.png)
 
-![2017-12-13-02](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-02.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Backlight-Controller.png)
 
-![2017-12-13-03](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-03.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Full-Power-Manager-1.png)
 
-![2017-12-13-04](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-04.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Full-Power-Manager-2.png)
 
-![2017-12-13-05](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-05.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/SmartTouchPad-1.png)
 
-![2017-12-13-06](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-06.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/SmartTouchPad-2.png)
 
-![2017-12-13-07](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-07.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/SmartTouchPad-3.png)
 
-![2017-12-13-08](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-08.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/FakeMouse.png)
 
-![2017-12-13-09](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-09.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Audio-Insert-Headphone.png)
 
-![2017-12-13-10](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-10.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Audio-Remove-Headphone.png)
 
-![2017-12-13-11](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-11.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Bluetooth.png)
 
-![2017-12-13-12](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-12.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Ethernet.png)
 
-![2017-12-13-13](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-13.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Wireless.png)
 
-![2017-12-13-14](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-14.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Graphics.png)
 
-![Snip20180331_4](http://ovefvi4g3.bkt.clouddn.com/Snip20180331_4.png)
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/USB.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Bettery.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/PCI-List.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Brightness-Control.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Audio-Control-1.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Audio-Control-2.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/About.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/Display-Built-In.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/HDMI-Audio-1.png)
+
+![](https://raw.githubusercontent.com/athlonreg/ASUS-F455LD-i5-4210u/master/Screens/HDMI-Audio-2.png)
 
 ### Notes
 #### About `ALCPlugFix`

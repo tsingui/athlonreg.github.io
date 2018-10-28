@@ -8,6 +8,8 @@ tags:
 - 矩阵连乘问题
 - 算法
 - algorithm
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-02.png
 ---
 
 ### 代码

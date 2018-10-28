@@ -7,6 +7,8 @@ description: Install macOS High Sierra on Dell Inspiron 15 7000 i7 8550u
 tags:
 - Hacintosh
 - 燃7000
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/A4C5E5590760CD1B634DB9526DCEFCA6.jpg
 ---
 
 ### Laptop Configuration 

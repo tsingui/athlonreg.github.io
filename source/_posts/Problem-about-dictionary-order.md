@@ -8,6 +8,8 @@ tags:
 - C语言
 - 算法
 - 字典序
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/20170831-zidianxu-1.png
 ---
 
 # 问题描述

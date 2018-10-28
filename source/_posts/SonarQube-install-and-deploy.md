@@ -12,7 +12,7 @@ tags:
 - SonarQube
 - sonar-scanner
 photos: 
-- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/83/71e7da548917e52b08eb37f385e000.jpg
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b4/92864641223d1537b6f4dfa27a6358.jpg
 ---
 
 # <center>SonarQube安装部署</center>

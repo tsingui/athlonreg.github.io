@@ -8,6 +8,8 @@ tags:
 - algorithm
 - 算法
 - 逆置
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-04.png
 ---
 
 ### 代码

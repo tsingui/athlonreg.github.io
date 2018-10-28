@@ -7,6 +7,8 @@ description: MAC 常用快捷键整理
 tags: 
 - 快捷键 
 - Mac
+photos:
+- http://ovefvi4g3.bkt.clouddn.com//2017-10-26-01.png
 ---
 
 ## 写在前面

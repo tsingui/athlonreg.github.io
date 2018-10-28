@@ -8,6 +8,8 @@ tags:
 - C语言
 - 算法
 - 警匪110
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-09-18-05-1.png
 ---
 
 # 问题描述

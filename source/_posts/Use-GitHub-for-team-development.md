@@ -8,6 +8,8 @@ tags:
 - GitHub
 - 团队开发
 - 分支管理
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018042201.png
 ---
 
 ### 创建项目

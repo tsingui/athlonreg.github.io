@@ -8,6 +8,8 @@ tags:
 - 0-1背包问题
 - algorithm
 - 算法
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-06.png
 ---
 
 ### 递归

@@ -8,6 +8,8 @@ tags:
 - Hacintosh
 - 黑苹果
 - NTFS
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-10-27-01.png
 ---
 
 ### 实现 MAC 原生读写 NTFS 分区

@@ -9,6 +9,8 @@ tags:
 - 变频
 - Hacintosh
 - 黑苹果
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-09-05-06-1.png
 ---
 
 # 前言

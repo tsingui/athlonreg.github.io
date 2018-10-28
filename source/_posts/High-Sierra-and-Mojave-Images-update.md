@@ -7,6 +7,8 @@ description: macOS High Sierra 以及 macOS Mojave 镜像大全(持续更新)
 tags: 
 - 原版镜像
 - 黑苹果镜像
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/89/2b0a9ae60f8cfa0161b2fc28da0808.jpg
 ---
 
 ## 前言

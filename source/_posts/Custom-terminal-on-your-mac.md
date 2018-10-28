@@ -9,10 +9,12 @@ tags:
 - oh-my-zsh
 - 终端美化
 - archey
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/5c/d74f1affaf72faac5b2887dc78625d.jpg
 ---
 
 # 先来张图镇楼
-![](http://ovefvi4g3.bkt.clouddn.com/15299827169656.jpg)
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/5c/d74f1affaf72faac5b2887dc78625d.jpg)
 
 # 首先搭建好安装`homebrew`环境
 

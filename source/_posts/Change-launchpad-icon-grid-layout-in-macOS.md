@@ -6,6 +6,8 @@ description: Change launchpad icon grid layout in your MAC
 categories: 黑苹果
 tags:
 - launchpad
+photos:
+- http://ovefvi4g3.bkt.clouddn.com//2017-10-26-09.png
 ---
 
 ### preface

@@ -7,6 +7,8 @@ tags:
 - dmg
 - 原版镜像
 - 黑苹果镜像
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/15289469712986.jpg
 ---
 
 # 准备工作

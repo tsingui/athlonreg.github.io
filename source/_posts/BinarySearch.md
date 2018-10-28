@@ -8,6 +8,8 @@ tags:
 - 算法
 - 二分查找
 - algorithm
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-01.png
 ---
 
 ### 代码

@@ -8,6 +8,8 @@ tags:
 - Hacintosh
 - 光影精灵
 - 暗影精灵
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/A4C5E5590760CD1B634DB9526DCEFCA6.jpg
 ---
 
 ### Laptop Configuration

@@ -7,6 +7,8 @@ description: OSI 七层模型
 tags: 
 - OSI
 - 七层模型
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/1099668-20170212153338135-125492424.jpg
 ---
 
 ## 定义

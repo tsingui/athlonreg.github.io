@@ -8,6 +8,8 @@ tags:
 - C语言
 - 算法
 - 价牌翻转
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-09-18-01-1.png
 ---
 
 ## 价牌翻转问题

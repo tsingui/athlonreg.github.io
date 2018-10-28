@@ -9,6 +9,8 @@ tags:
 - cx20751
 - cx20752
 - ALCPlugFix
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/38/b57d916d38a521cd1b26f81426b225.jpg
 ---
 
 ### 准备工作

@@ -6,9 +6,12 @@ keywords: 快速排序, 快排
 description: 快速排序算法实现
 tags: 
 - 快速排序
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/b8/847de187a667d431036df4a77966d9.jpg
 ---
 
 # 代码
+
 ```c
 #include "stdio.h"
 

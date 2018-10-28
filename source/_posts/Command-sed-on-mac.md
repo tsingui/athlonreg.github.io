@@ -7,6 +7,8 @@ tags:
 - sed
 - gnu-sed
 - xnu-sed
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/Xnip2018-07-07_22-37-25.png
 ---
 
 ## 简介

@@ -8,6 +8,8 @@ tags:
 - C语言
 - 算法
 - 派遣敢死队
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-09-18-03-1.png
 ---
 
 # 问题描述

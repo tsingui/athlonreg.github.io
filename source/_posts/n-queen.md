@@ -8,6 +8,8 @@ tags:
 - n皇后问题
 - 算法
 - algorithm
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-03.png
 ---
 
 ### 代码

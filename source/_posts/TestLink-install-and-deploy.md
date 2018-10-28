@@ -8,6 +8,8 @@ keywords: TestLink
 description: TestLink安装部署
 tags: 
 - TestLink
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/14/da839143e11bec790a2a77f7247529.jpg
 ---
 
 # <center>TestLink安装部署</center>

@@ -6,6 +6,8 @@ categories: 学习
 description: 在 CentOS7 部署国人开源博客 Tale
 tags: 
 - Tale
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/15236887060359.jpg
 ---
 
 ## 前言

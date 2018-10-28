@@ -8,6 +8,8 @@ tags:
 - C语言
 - 算法
 - 金币阵列
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/2017-09-03-1-1.png
 ---
 
 # 问题描述

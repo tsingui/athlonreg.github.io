@@ -11,6 +11,8 @@ description: Jenkins是一个开源的、提供友好操作界面的持续集成
 tags:
 - Jenkins
 - 持续集成
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bd/e3fd089257fe9caf4f4247f203d4bd.jpg
 ---
 
 # <center>`Jenkins`配置部署</center>

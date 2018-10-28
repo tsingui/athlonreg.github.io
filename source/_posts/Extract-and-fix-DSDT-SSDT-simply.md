@@ -8,6 +8,8 @@ tags:
 - DSDT
 - SSDT
 - 编译
+photos:
+- https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/2f/2435f6b8d50193ca967aef911063cf.jpg
 ---
 
 ## DSDT SSDT 简单提取修复

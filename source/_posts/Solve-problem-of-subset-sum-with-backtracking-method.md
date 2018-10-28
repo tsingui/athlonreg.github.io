@@ -7,6 +7,8 @@ description: 回溯法求子集和问题
 tags:
 - 子集和问题
 - 回溯
+photos:
+- http://ovefvi4g3.bkt.clouddn.com/Screen Shot 2017-12-12 at 2.26.24 PM.png
 ---
 
 ### 问题描述
