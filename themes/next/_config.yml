@@ -670,23 +670,19 @@ firestore:
 # Show Views/Visitors of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: true
-  total_visitors: true
-  total_visitors_icon: user
-  total_views: true
-  total_views_icon: eye
-  post_views: true
-  post_views_icon: eye 
+  enable: true 
   # custom uv span for the whole site
-  site_uv: true
+  site_uv: false
   site_uv_header: <i class="fa fa-user"></i> 访问人数
   site_uv_footer: 人
   # custom pv span for the whole site
   site_pv: true
-  site_pv_header: <i class="fa fa-eye"></i> 总访问量
-  site_pv_footer: 次
+  site_pv_header: <i class="fa fa-eye"></i> 您是本站第 
+  site_pv_footer: 位访客
+  # site_pv_header: <i class="fa fa-eye"></i> 总访问量
+  # site_pv_footer: 次
   # custom pv span for one page only
-  page_pv: true
+  page_pv: false
   page_pv_header: <i class="fa fa-file-o"></i> 阅读数
   page_pv_footer: 
 
