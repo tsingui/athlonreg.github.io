@@ -23,10 +23,10 @@
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
   
   <!--  music plugins start  -->
-  <link rel="stylesheet" href="../source/music/APlayer.min.css">
+  <link rel="stylesheet" href="/music/APlayer.min.css">
   <div id="aplayer"></div>
-  <script type="text/javascript" src="../source/music/APlayer.min.js"></script>
-  <script type="text/javascript" src="../source/music/music.js"></script>
+  <script type="text/javascript" src="/music/APlayer.min.js"></script>
+  <script type="text/javascript" src="/music/music.js"></script>
   <!--  music plugins end  -->
   
   {% set container_class = "container " %}
@@ -127,6 +127,6 @@
     })();
   </script>
   <!--  红心特效  -->
-  <script type="text/javascript" src="../source/js/src/love.js"></script>
+  <script type="text/javascript" src="/js/src/love.js"></script>
 </body>
 </html>
