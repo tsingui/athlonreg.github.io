@@ -1,12 +1,13 @@
 ---
 title: {{ title }}
 date: {{ date }}
-password:
+password: 
 categories: {{ categories }}
 keywords: {{ keywords }}
 description: {{ description }}
-tags:
-photos:
+tags: 
+photos: 
+top: 
 ---
 
 
