@@ -146,7 +146,7 @@ photos:
 每出一个版本都写一个帖子的话太麻烦，所以决定直接写一个镜像的集合贴，下面是各个版本的链接：
 
 ```
-链接:https://pan.baidu.com/s/1dkjtPXqoOOuCUu1FmnrKtA  密码:ywmj
+链接:https://pan.baidu.com/s/1_sRy8OO8GbZIrZ6sH0ta9g  密码:dc7p
 ```
 
 ## 镜像校验
@@ -198,3 +198,4 @@ photos:
     - macOS Mojave 10.14 Golden Master 18A389
     - macOS Mojave 10.14.0 18A389
     - macOS Mojave 10.14.1 18B75
+    - macOS Mojave 10.14.1 18B2107
