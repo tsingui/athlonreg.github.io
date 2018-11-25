@@ -11,9 +11,12 @@ top: 101
 ---
 
 ## 简介
-`CAS`全称`Central Authentication Service`，中央认证服务，一种独立开放指令协议。CAS 是 Yale 大学发起的一个开源项目，旨在为 Web 应用系统提供一种可靠的单点登录方法，CAS 在 2004 年 12 月正式成为 JA-SIG 的一个项目，目前是一种企业级的单点扥登录解决方案。
+
+`CAS`全称`Central Authentication Service`，中央认证服务，一种独立开放指令协议。CAS 是 Yale 大学发起的一个开源项目，旨在为 Web 应用系统提供一种可靠的单点登录方法，CAS 在 2004 年 12 月正式成为 JA-SIG 的一个项目，目前是一种企业级的单点登录解决方案。
 
 ## 协议介绍
+
+关于 oauth2.0 的原理及介绍可以参考[理解OAuth 2.0 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)，这里不做赘述。
 
 ## 环境准备
 `CAS`是基于Spring写的，因此需要准备Java环境，官方提供了一种非常好用的编译方法，我们在使用时可以根据自己的需求来决定依赖的选择，本文主要以openLDAP和oauth为例。编译时需要maven环境。运行时需要 Tomcat 容器，因此需要提前准备好 Tomcat 环境。后续我们会整合 openLDAP 做统一用户管理，因此请先安装好 openLDAP。
@@ -153,7 +156,6 @@ https://github.com/apereo/cas-overlay-template
 安装至此完成
 
 ## 开启 oauth 2.0 授权
-关于 oauth2.0 的原理及介绍可以参考[理解OAuth 2.0 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)，这里不做赘述。
 
 > application.properties 增加配置文件如下
 
