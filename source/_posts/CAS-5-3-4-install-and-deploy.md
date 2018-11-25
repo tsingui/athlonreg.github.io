@@ -233,7 +233,7 @@ cas.server.prefix=${cas.server.name}
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/66/574e93fdcc2b8ab686a46ec772627d.jpg)
 
-这次能正常跳转了，但是出现了`未认证授权的服务`，这是因为我们没有开启 http 协议支持，而我的博客是 https 协议支持的，因此需要再让我们的 CAS Server 支持 http 认证就行了
+这次能正常跳转了，但是出现了`未认证授权的服务`，这是因为我们没有开启 http 协议支持，因此只要再让我们的 CAS Server 支持 http 认证就行了
 
 ```bash
 # vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties
