@@ -348,3 +348,7 @@ Jenkins -> 系统管理 -> 管理节点，点击刚刚配置好的节点，上�
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/99/04a1d6c847be966e185435823bb110.jpg)
 
+### Jenkins 整合 LDAP 以及 CAS 单点登录
+
+参考另外一篇博客
+[Jenkins 整合 LDAP 以及 CAS 单点登录](https://blog.iamzhl.top/Jenkins-integrate-with-ldap-and-CAS.html)

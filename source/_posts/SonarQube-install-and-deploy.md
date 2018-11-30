@@ -246,3 +246,6 @@ sonar.sources=/root/helloworld/src  //项目的源码目录，多目录以英文
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/97/221636aa330d56dea8bb870957f29a.jpg)
 
+## SonarQube 整合 LDAP 和 CAS 单点登录
+
+`SonarQube`整合`LDAP`和`CAS`单点登录的过程请参考我的另一篇博客[SonarQube 整合 LDAP 和 CAS 单点登录](https://blog.iamzhl.top/SonarQube-integrate-with-ldap-and-CAS.html)
