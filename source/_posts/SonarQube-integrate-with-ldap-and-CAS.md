@@ -279,7 +279,7 @@ LoadModule auth_cas_module modules/mod_auth_cas.so
 ### 重启服务
 ```bash
 # mkdir /var/log/sonar
-# chown -R apache:apache /var/lo g/sonar
+# chown -R apache:apache /var/log/sonar
 # su sonar
 $ sonar restart
 # su 
@@ -287,7 +287,7 @@ $ sonar restart
 ```
 
 ### 测试
-打开网址`http://devops.iamzhl.top:83`，发现自动跳转到了`CAS`的登录界面，网址是http://devops.iamzhl.top:8080/cas/login?service=http%3a%2f%2fdevops.iamzhl.top%3a83%2f
+打开网址`http://devops.iamzhl.top:83`，发现自动跳转到了`CAS`的登录界面，网址是`http://devops.iamzhl.top:8080/cas/login?service=http%3a%2f%2fdevops.iamzhl.top%3a83%2f`
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/0b/b05aa63a31ffc624e42290d71c68e8.jpg)
 
@@ -300,5 +300,7 @@ $ sonar restart
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/e1/463c767ddd0147ed54fba65d91a0f7.jpg)
 
 如上图所示，点击注销，就会登出并跳转至`CAS`的登出界面
+
+![](https://gitee.com/athlonreg/picbed/raw/master/Images/e9/a067be6a85ec888bc9ab25bcf0d0e7.jpg)
 
 至此，`SonarQube`整合`CAS`单点登录完成。
