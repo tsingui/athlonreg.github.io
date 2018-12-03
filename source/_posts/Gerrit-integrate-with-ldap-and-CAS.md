@@ -19,6 +19,8 @@ photos:
 ## 背景介绍
 - Gerrit 版本：2.16
 - Gerrit URL：http://devops.iamzhl.top:82
+- openLDAP 服务：ldap://devops.iamzhl.top:389
+- CAS 服务：http://devops.iamzhl.top:8080/cas
 
 ## 整合 LDAP
 ### 修改 gerrit.config

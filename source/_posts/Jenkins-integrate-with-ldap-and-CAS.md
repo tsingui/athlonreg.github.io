@@ -17,10 +17,11 @@ photos:
 ---
 
 ## 背景介绍
+- Jenkins 版本：2.138.3
 - Jenkins 安装方式： Tomcat 容器部署 war 包
 - Jenkins 地址：http://devops.iamzhl.top:8080/jenkins
 - openLDAP 服务：ldap://devops.iamzhl.top:389
-- CAS 服务：http://devops.iamzhl.top:8080/cass
+- CAS 服务：http://devops.iamzhl.top:8080/cas
 
 ## 整合 openLDAP
 

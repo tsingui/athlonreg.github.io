@@ -19,6 +19,8 @@ photos:
 ## 背景介绍
 - `SonarQube`版本：7.4
 - `SonarQube` URL: http://devops.iamzhl.top:9000
+- openLDAP 服务：ldap://devops.iamzhl.top:389
+- CAS 服务：http://devops.iamzhl.top:8080/cas
 
 ## 整合`LDAP`
 
