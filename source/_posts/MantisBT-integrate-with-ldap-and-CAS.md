@@ -139,9 +139,6 @@ if ( CAS == config_get( 'login_method' ) ) {
 if( auth_is_user_authenticated() && !current_user_is_anonymous() ) {
 	print_header_redirect( config_get( 'default_home_page' ) );
 }
-if( auth_is_user_authenticated() && !current_user_is_anonymous() ) {
-        print_header_redirect( config_get( 'default_home_page' ) );
-}
 $f_username              = gpc_get_string( 'username', '' );
 # zhanghl start
 if( $f_username == '' ) {
@@ -159,9 +156,17 @@ if( $f_username == '' ) {
 ```php
 // 在文件开头的 require_once 部分增加对 phpCAS 的引入
 require_once( '/var/www/html/mantis/phpCAS/login_cas.php' );
-// 在 auth_logout(); 上面添加 phpCAS 的登出函数调用，处理 CAS 单点登出
+# Cache the current logout redirect page as it will be cleared by auth_logout()
+//$t_logout_redirect = auth_logout_redirect_page();
+
+//auth_logout();
+phpCAS::setDebug();
+phpCAS::setVerbose(true);
 phpCAS::handleLogoutRequests();
 phpCAS::logout();
+
+//print_header_redirect( $t_logout_redirect, true, false );
+print_header_redirect( config_get( 'logout_redirect_page' ), true, false );
 ```
 
 ### 修改验证逻辑
@@ -587,11 +592,13 @@ phpCAS::forceAuthentication();
 
 ```
 
-### 修改`phpCAS`源码取消`https`
+### 修改`CAS`的`Client.php`启用`http`连接(根据个人`CAS`服务器来定)
 
 ```bash
 # vi /var/www/html/mantis/phpCAS/source/CAS/Client.php
 ```
+
+> 将如下几个函数中的https改为http即可
 
 ```php
 private function _getServerBaseURL()
