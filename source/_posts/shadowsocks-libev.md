@@ -15,6 +15,7 @@ photos:
 
 ## 安装
 ```bash
+# yum -y install pcre pcre-devel git wget gcc gcc-c++
 # cd ~ && git clone https://github.com/shadowsocks/shadowsocks-libev.git
 # cd shadowsocks-libev && git submodule update --init --recursive
 # yum install gettext gcc autoconf libtool automake make asciidoc xmlto c-ares-devel libev-devel
