@@ -23,20 +23,22 @@ photos:
 
 ```
 iasl：https://bitbucket.org/RehabMan/acpica/downloads/
-MaciASL：链接:http://pan.baidu.com/s/1pKAksR5  密码:nxyr
+MaciASL：https://github.com/acidanthera/MaciASL/releases
 ```
-  
+
 将 iasl 放到 /usr/bin 
 
-![170830-1](http://ovefvi4g3.bkt.clouddn.com/170830-1-1.png)
+```bash
+$ sudo cp /path/to/iasl /usr/bin/
+```
 
-![170830-2](http://ovefvi4g3.bkt.clouddn.com/170830-2-1.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwo237h9j31p817adlu.jpg)
 
 然后安装 MaciASL 并添加补丁源：
 
-![170830-3](http://ovefvi4g3.bkt.clouddn.com/170830-3-1.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwoqrebhj30ww0vo48i.jpg)
 
-![170830-4](http://ovefvi4g3.bkt.clouddn.com/170830-4-1.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwp0zum8j30ww0voak2.jpg)
 
  Rehabman 补丁源：
 
@@ -51,16 +53,12 @@ URL：http://raw.github.com/RehabMan/Laptop-DSDT-Patch/master
 cd ~/Desktop/origin 
 ```
 
-回车
-
-![170830-5](http://ovefvi4g3.bkt.clouddn.com/170830-5-1.png)
-
-然后输入:
+回车进入 origin 目录然后输入:
 
 ```
 iasl –da –dl *.aml 
 ```
-  
+
 回车
 
 ![170830-6](http://ovefvi4g3.bkt.clouddn.com/170830-6-1.png)
@@ -76,7 +74,7 @@ iasl –da –dl *.aml
 ```
 rm –rf *.aml 
 ```
-  
+
 回车
 
 然后执行:
@@ -84,7 +82,7 @@ rm –rf *.aml
 ```
 rm –rf *x.dsl 
 ```
-  
+
 回车，这时就会发现终端只剩下了不带 x 的 dsl 文件
 
 ![170830-9](http://ovefvi4g3.bkt.clouddn.com/170830-9-1.png)
@@ -104,13 +102,13 @@ rm –rf *x.dsl
 
 1、 PARSEOP_ZERO 错误，定位后会发现一堆 zero 代码，直接将他们删掉即可   
 2、 Unexpected ‘}’ 错误：
-    
+​    
 定位后是这样：
 
 ![170830-12](http://ovefvi4g3.bkt.clouddn.com/170830-12-1.png)
 
 我们会发现这个错误位于 ADBG 的方法下，这时只需打个补丁即可：
-    
+​    
 点Patch
 
 ![170830-13](http://ovefvi4g3.bkt.clouddn.com/170830-13-1.png)

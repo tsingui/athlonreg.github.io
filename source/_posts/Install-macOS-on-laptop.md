@@ -27,11 +27,11 @@ UEFI -> CLOVERX64.efi -> OSLoader
 #### `CLOVER`的目录结构
 `CLOVER`正常工作需要的完整目录包括`config.plist`、`CLOVERX64.efi`两个文件以及`ACPI`、`drivers64UEFI`、`kexts`、和`themes`几个目录，如图所示：
 
-![2018-02-12-01](http://ovefvi4g3.bkt.clouddn.com/2018-02-12-01.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypx6z6l1uj31d00ug7cf.jpg)
 
 其中，`config.plist`是最核心的文件----配置文件，`CLOVER`所实现的多数功能都是通过这个文件进行配置的，对其进行配置修改的最好用的工具就是`Clover Configurator`，主页面如下：
 
-![2018-02-12-02](http://ovefvi4g3.bkt.clouddn.com/2018-02-12-02.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypx78r5udj32201804gw.jpg)
 
 详细的配置方法下面会有介绍。
 
@@ -102,63 +102,65 @@ Clover 可以根据硬件进行自动配置，但是自动配置组件并不总�
 
 正所谓前人种树，后人乘凉，很多黑果的热心朋友已经为我们做好了教程，这里我直接拿来用了。
 
-- ACPI
-![2018032502](http://ovefvi4g3.bkt.clouddn.com/2018032502.png)
+- ACPI-1
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121626u0o5h11990kh1r33.png)
 
-![2018032503](http://ovefvi4g3.bkt.clouddn.com/2018032503.png)
+- ACPI-2
+
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121629ijh2l2jdalnhra2n.png)
 
 - BOOT
-![2018032504](http://ovefvi4g3.bkt.clouddn.com/2018032504.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121658p0frjvu3sjz9z37r.png)
 
 - CPU
-![2018032505](http://ovefvi4g3.bkt.clouddn.com/2018032505.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121728lnyrccjxneyetxvv.png)
 
 - Device
-![2018032506](http://ovefvi4g3.bkt.clouddn.com/2018032506.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121744z1nnvyp70cbssk0y.png)
 
 - Disable Drivers
-![2018032507](http://ovefvi4g3.bkt.clouddn.com/2018032507.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121801fyyuyzdzdxkc1wxc.png)
 
 - GUI
-![2018032508](http://ovefvi4g3.bkt.clouddn.com/2018032508.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121819ba3c3r9mouvarrtm.png)
 
 - Graphics
-![2018032509](http://ovefvi4g3.bkt.clouddn.com/2018032509.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121831o2lsqlapp37a6l2z.png)
 
 - Kernel and Kext Patches
-![2018032510](http://ovefvi4g3.bkt.clouddn.com/2018032510.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121846xlpkzayr3jlct65t.png)
 
 - Rt Variables
-![2018032511](http://ovefvi4g3.bkt.clouddn.com/2018032511.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121920n772424sgkim24p0.png)
 
 - SMBIOS
-![2018032512](http://ovefvi4g3.bkt.clouddn.com/2018032512.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121933fj4gpa5jpjj1aacp.png)
 
 - System Parameters
-![2018032513](http://ovefvi4g3.bkt.clouddn.com/2018032513.png)
+  ![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/121945e61wtermr920qyar.png)
 
 不敢下手的没关系，我给一个最简单的模板，全按这个来就足可以装上最常见的。
-![201801](http://ovefvi4g3.bkt.clouddn.com/201801.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122340gw8bz7ku2ubjw7vz.png)
 
-![201802](http://ovefvi4g3.bkt.clouddn.com/201802.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122356absls8lhbxbxbxee.png)
 
-![Xnip2018-03-84_21-47-09](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-47-09.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122406pv9aybc2a2jrizk9.jpg)
 
-![Xnip2018-03-84_21-48-34](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-48-34.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122419njauccpvj2uybb91.jpg)
 
-![Xnip2018-03-84_21-53-09](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-53-09.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122434wsbghgcdn6scghcd.jpg)
 
-![Xnip2018-03-84_21-54-50](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-54-50.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122446qq8c4ppsewgqhvmj.jpg)
 
-![Xnip2018-03-84_21-56-51](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-56-51.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122459v7oogbi4oapbn4di.jpg)
 
-![Xnip2018-03-84_21-57-48](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-57-48.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122509pqz23ch3sw39yorz.jpg)
 
-![Xnip2018-03-84_21-58-35](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-58-35.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122525z5v2224w32275wjz.jpg)
 
-![Xnip2018-03-84_21-59-32](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_21-59-32.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122537avefcll6efmm0ecl.jpg)
 
-![Xnip2018-03-84_22-00-18](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-03-84_22-00-18.jpg)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/122549oxl774dd7uvt8kgg.jpg)
 
 敢下手了，没有`Mac`环境？没关系，送你们在线编辑器，点这里[传送门](http://cloudclovereditor.altervista.org/cce/index.php)。里面目前加入了一些常见的配置，帮你完成一部分工作。
 
@@ -209,9 +211,7 @@ Clover 可以根据硬件进行自动配置，但是自动配置组件并不总�
 - CsmVideoDxe.efi
 比`UEFI`里提供更多分辨率的显卡驱动。
 
-看了这么多，千万不要崩溃，我告诉大家一个经验，一般`Drivers64UEFI`目录只需要下面几个`.EFI`驱动就够了。
-
-![2018032501](http://ovefvi4g3.bkt.clouddn.com/2018032501.png)
+看了这么多，千万不要崩溃，我告诉大家一个经验，一般`Drivers64UEFI`目录只需要下面几个`.EFI`驱动就够了。![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypxgosqdqj31d00ug461.jpg))
 
 #### 进攻`ACPI`，完美黑苹果(进阶篇)
 论坛贡献会员[daxuexinsheng](http://i.pcbeta.com/space-uid-3322572.html)已经翻译了`RehabMan`的`DSDT`教程，可以说是非常详细，可以直接参考:[使用补丁修改DSDT/SSDT](http://i.pcbeta.com/space-uid-3322572.html)，以及[RehabMan的原贴](https://www.tonymacx86.com/threads/guide-patching-laptop-dsdt-ssdts.152573/)。
@@ -235,19 +235,20 @@ Clover 可以根据硬件进行自动配置，但是自动配置组件并不总�
 ### 安装步骤
 #### 利用`Transmac`将原版镜像写入u盘
 打开`TransMac`,右键选择欲制作的`USB`盘符，选择Restore with Disk Image,选择下载好的dmg文件,会弹出窗口,提示将要格式化USB磁盘,点击OK按钮继续，耐心等待写盘的完成。写入完成，若弹出对话框提示将其格式化，点击取消。
-![TransMac1](http://ovefvi4g3.bkt.clouddn.com/TransMac1.png)
 
-![TransMac2](http://ovefvi4g3.bkt.clouddn.com/TransMac2.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123110fb0rhybrbj5nndjt.png)
 
-![TransMac3](http://ovefvi4g3.bkt.clouddn.com/TransMac3.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123127oztcc33jllj2l0li.png)
 
-![TransMac4](http://ovefvi4g3.bkt.clouddn.com/TransMac4.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123137nl7xl0340ublz66b.png)
+
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123147b69lwm99q5p6jd5q.png)
 
 
 #### 利用鲁大师等软件查看自己机器的配置信息，来定制`config`和需要用的`kext`
 这一步想必不用我多说，大家利用鲁大师或者`AIDA64`看一下自己配置好了。有一点提示，尽量在安装过程中不考虑各种`kext`，尽量用少的驱动去安装，安装完成后再完善驱动，这样可以减少许多安装中的错误，也利于排错，但需要注意的必备的驱动一定要放，例如`FakeSMC.kext`、还有就是键盘驱动。当然老鸟无所谓了，直接把需要用到的都放上就`OK`了。以我自己机器为例，配置如下：
 
-```
+```properties
 主板       Asus X455LD Intel Haswell-ULT - Lynx Point-LP
 
 独立显卡    Nvidia GeForce 820M 2G 
@@ -265,70 +266,69 @@ Clover 可以根据硬件进行自动配置，但是自动配置组件并不总�
 
 #### 重启利用`U`盘启动选择安装盘
 开机按`esc`键进入启动项列表，不同厂商热键不同，参考下图：
-![BIOS](http://ovefvi4g3.bkt.clouddn.com/BIOS.JPG)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123342i0kax4jeex4kxl1l.jpg)
 
 选择`U`盘进入，这里就不介绍太多了，大家玩黑果的想必对`BIOS`不会陌生，不过需要注意的是需要将`BIOS`中的安全启动关掉。
 
 接下来就会进入`CLOVER`引导界面
-![XiaoMiCloverboot](http://ovefvi4g3.bkt.clouddn.com/XiaoMiCloverboot.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123436r9uzbziauaazi77d.png)
 
 通过键盘方向键选中`Boot OS X Install from ***`，`***`代表你的镜像名字，然后回车。
-![ParallelsPicture](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture.png)
-
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123450nxolxguuoyojuxh8.png)
 
 等待进入安装界面。
-![ParallelsPicture1](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture1.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123541p0mrznyycz33j0q7.png)
 
 这里选择自己擅长的语言好啦。
 
 #### 磁盘工具分区
 选择磁盘工具，并继续
-![ParallelsPicture0](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture0.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123624he2v5r5joo5jfyvy.png)
 
 选择`显示所有设备`
-![ParallelsPicture2](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture2.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123636dl8z3jh7px38h3i2.png)
 
 选择SSD Media,点击抹掉按钮,选择默认的`Mac OS`扩展(日志型)，在`10.13`中如果装在`SSD`上，也可以选择`APFS`,将名称修改为`Macintosh HD`（名字随意啦，自己喜欢就好，但要是英文）,点击抹掉按钮，抹掉完成后，点击完成按钮。
-![ParallelsPicture7](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture7.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123750eo7bfz0bp2gfqq72.png)
 
 然后退出磁盘工具，到这里，磁盘工具的动作就已经结束了。
 
 #### 退出磁盘工具，选择安装`macos`选中刚才抹掉的分区开始安装
 选择安装`macOS`，并继续
-![ParallelsPicture8](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture8.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123826uoc40cd7vzodvx5k.png)
 
 接下来按照提示一步一步来就好了，有一步需要注意的就是选择安装分区时，选择自己之前抹掉的那个分区。
-![ParallelsPicture 14](http://ovefvi4g3.bkt.clouddn.com/ParallelsPicture 14.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123849xx77k7nn5xr373s6.png)
 
 接下来静静等待，会有一次自动重启，依然用`U`盘启动，注意这次会在引导界面多出一个图标，选择除第一次选的图标外的另一个图标。然后继续等待
-![](http://ovefvi4g3.bkt.clouddn.com/15218990390224.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/123922tprp9szr9yv9vsgm.png)
 
 系统安装完成后,重启进入系统设置向导，接下来根据下面的图一步一步设置就好了
-![](http://ovefvi4g3.bkt.clouddn.com/15218990840183.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124016wh77dawhgh4e7dz7.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218990903045.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124102txilt1lltrrr7sll.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218990970841.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124134f93ibz7lqgi2qm79.png)
 
 这里选择现在不传输任何信息
-![](http://ovefvi4g3.bkt.clouddn.com/15218991032937.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124209s8fjumefqmf77leu.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991134189.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124311dfzzq5282vvf8q7q.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991182539.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124345dxbdfiiti3ip3jtb.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991276552.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124355klcgmlp7f97f4cuz.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991350935.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124417aiqch1qpt28ccc1x.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991452868.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124442lamc6vwc66vvvivc.png)
 
 这里注意，一定不要选择加密！！！
-![](http://ovefvi4g3.bkt.clouddn.com/15218991526744.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124453pjo4ulfrvju45d5j.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991591740.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124530rarc5swiqq2r21ip.png)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15218991634647.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/26/124541y2dcnv2d4nzfnilf.png)
 
 ### 转移`CLOVER`到硬盘`ESP`，摆脱`U`盘引导
 这里用到前期准备的`EasyUEFI`，在`Windows`下安装打开此软件，添加`CLOVER`启动项，并置顶。具体操作参考：[黑苹果安装从0开始----clover优盘引导改硬盘引导篇](http://bbs.pcbeta.com/viewthread-1683571-1-1.html)
@@ -358,10 +358,6 @@ Clover 可以根据硬件进行自动配置，但是自动配置组件并不总�
 楼主真的是懒到蜕皮(手动滑稽哈哈)帖子中图片很多是出自黑果小兵的博客：[macOS安装教程兼小米Pro安装过程记录](https://blog.daliansky.net/MacOS-installation-tutorial-XiaoMi-Pro-installation-process-records.html)。
 
 感谢各位黑果前辈的好帖子，引用太多，文中也有说明，就不一一列出了。
-
-如果你在帖子中有任何不明白的地方，欢迎加入`Hackintosh Club`（群号580864366），一起探讨，当然啦，此群只为讨论技术，伸手党不要进来哈，只接受有些技术的，进群会有一段时间的考核哦。
-
-![1A0A34E6-D9B0-497B-885E-71C65EE59AE3](http://ovefvi4g3.bkt.clouddn.com/1A0A34E6-D9B0-497B-885E-71C65EE59AE3.png)
 
 
 待续......

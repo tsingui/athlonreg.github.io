@@ -8,19 +8,17 @@ tags:
 - 矩阵连乘问题
 - 算法
 - algorithm
-photos:
-- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-02.png
 ---
 
 ### 代码
 
-```
+```c
 //
 //  main.c
-//  algorithm
+//  RecurMatrix
 //
-//  Created by athlonreg on 17/01/2018.
-//  Copyright © 2018 athlonreg. All rights reserved.
+//  Created by Canvas on 2018/12/31.
+//  Copyright © 2018 Canvas. All rights reserved.
 //
 
 #include <stdio.h>
@@ -58,11 +56,10 @@ int main(int argc, const char * argv[]) {
     traceback(1, n);
     return 0;
 }
-
 ```
 
 ### 运行结果
-![2018-01-17-02](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-02.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypywc48exj32c01fe7ml.jpg)
 
 
 

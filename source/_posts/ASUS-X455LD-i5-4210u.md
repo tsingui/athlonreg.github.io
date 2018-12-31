@@ -15,7 +15,7 @@ photos:
 <!--more-->
 
 ### Laptop Configuration
-```
+```properties
 Computer model              Asus F455LD Notebook
 
 CPU                         Intel Core i5-4210u
@@ -88,7 +88,7 @@ Wireless network adapter    Atheros AR956X
 #### About `ALCPlugFix`
 Firstly，Unzip `ALCPlugFix` to your desktop after you have installed Hackintosh。
 Secondly，open terminal：
-```
+```bash
 $ cd ~/Desktop/ALCPlugFix/alc_fix
 $ chmod +x install.sh
 $ ./install.sh
@@ -96,13 +96,11 @@ $ ./install.sh
 The script can fix your audio with good input and switch。
 
 #### About `一键开启HIDPI并注入EDID`
-![2017-12-13-15](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-15.png)
-
 Just double click `双击.command`，and input your password。
 
 Then it can working as Macintosh。
 
-![2017-12-13-08](http://ovefvi4g3.bkt.clouddn.com/2017-12-13-08.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypv9f7dyhj317c0yktmd.jpg)
 
 ### Clover EFI bootloader
 [ASUS-F455LD-i5-4210u](https://github.com/athlonreg/ASUS-F455LD-i5-4210u/releases)

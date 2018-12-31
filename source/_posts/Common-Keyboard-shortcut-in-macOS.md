@@ -8,7 +8,7 @@ tags:
 - 快捷键 
 - Mac
 photos:
-- http://ovefvi4g3.bkt.clouddn.com//2017-10-26-01.png
+- https://img.xclient.info/attachment/2015/10/bf74de6b-c1f0-7323-74a7-4042c0e566c1.jpg
 ---
 
 ## 写在前面
@@ -23,7 +23,7 @@ photos:
 
 > 如下
 
-![2017-10-26-01](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-01.png)
+![](https://img.xclient.info/attachment/2015/10/bf74de6b-c1f0-7323-74a7-4042c0e566c1.jpg)
 
 ## 正文
 ### 通用快捷键
@@ -37,7 +37,7 @@ photos:
 * Command + S 保存(Save)。
 * Command + F 查找(Find)。
 
-![2017-10-26-02](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-02.png)
+![](https://img.xclient.info/attachment/2015/10/51515ea4-d36d-622b-a164-2c3fcef60b1c.jpg)
 
 ### 系统快捷键
 * Option 开机后立即按下，将显示启动管理器。
@@ -46,7 +46,7 @@ photos:
 * Command + Option + Control + Power 退出所有应用程序，允许你进行文稿储存，然后关机。
 * 按住 Power 按钮 5 秒 强制 Mac 关机。
 
-![2017-10-26-03](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-03.png)
+![](https://img.xclient.info/attachment/2015/10/30c4390a-db0d-061b-cc0d-9fe08bc335a3.jpg)
 
 ### 截图
 * Command + Shift + 3 截取全部屏幕到文件。
@@ -54,7 +54,7 @@ photos:
 * Command + Shift + 4 截取所选屏幕区域到一个文件，或按空格键仅捕捉一个窗口。
 * Command + Shift + Control + 4 截取所选屏幕区域到剪贴板，或按空格键仅捕捉一个窗口。
 
-![2017-10-26-04](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-04.png)
+![](https://img.xclient.info/attachment/2015/10/87180b21-818c-1007-835a-e3e5a810b3b0.jpg)
 
 ### 文件管理器
 * Command + Shift + N (New) 新建文件夹。
@@ -67,14 +67,14 @@ photos:
 * Command + Shift + Delete 清倒废纸篓。
 * Space 快速查看选中的文件，也就是预览功能。
 
-![2017-10-26-05](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-05.png)
+![](https://img.xclient.info/attachment/2015/10/b50cb298-346f-4273-032f-e6f2860ed578.jpg)
 
 ### 切换
 * Command + Tab 在应用程序间切换。
 * Command + Shift + Tab 在应用程序间切换(反向)。
 * Command + ~ 在各应用中的窗口间切换。
 
-![2017-10-26-06](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-06.png)
+![](https://img.xclient.info/attachment/2015/10/6e814e0a-a4c1-33a1-6123-929094eedfc2.jpg)
 
 ### 浏览器
 * Command + L 光标直接跳至地址栏。
@@ -83,7 +83,7 @@ photos:
 * Command + '+'或'=' 放大页面。
 * Command + '-' 缩小页面。
 
-![2017-10-26-07](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-07.png)
+![](https://img.xclient.info/attachment/2015/10/f1878a65-814d-44c7-f32b-c2a6e4f625d6.jpg)
 
 ### 应用程序中
 * Command + H 隐藏(Hide)当前正在运行的应用程序窗口。

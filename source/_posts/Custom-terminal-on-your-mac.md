@@ -65,7 +65,7 @@ $ vim ~/.zshrc
 
 将`ZSH_THEME`设定为`powerlevel9k`，如图
 
-![](http://ovefvi4g3.bkt.clouddn.com/15299841414317.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypw3om3nij31p817atmw.jpg)
 
 然后保存退出，使配置文件重新生效
 

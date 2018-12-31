@@ -19,7 +19,7 @@ photos:
 ### 对比节点数据
 这里拿我的`CX20751`为例，`codec`整理的数据如下
 
-![2017-11-06-06](http://ovefvi4g3.bkt.clouddn.com/2017-11-06-06.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwbciiatj32701f6h20.jpg)
 
 看其中的`Line in`节点，即`Mic at Ext`，我的是`0x19`，那么我的`AppleALC`就需要注入`Layout-ID`为`28`，如果你的`CX20751/2`提取的数据中此节点是`0x18`，就需要注入`Layout-ID`为`3`。
 
@@ -27,35 +27,37 @@ photos:
 #### `DSDT`方式
 挂载你的`ESP`分区，打开`DSDT`，打上声卡`Layout-ID`注入补丁
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252748423044.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwc693jij31ke17i1ag.jpg)
 
 如图，`3`和`12`都可以，我拿`12`为例，点击此补丁，将如下图中的`12`改为`28`，然后点击`Apply`。
 
-![](http://ovefvi4g3.bkt.clouddn.com/15253241498583.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwdcqetkj31ru17idw8.jpg)
 
 如果你的需要注入`3`，只需直接打上那个为`3`的补丁即可
 
 #### `Hotpatch`方式
 将图中三个`SSDT`放入`/EFI/CLOVER/ACPI/patched`，三个文件分别做以下修改，我的是`28`改为`0x1C`，如果你的是`3`，则改为`0x03`。
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252751019326.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwghuvp8j30b60b845o.jpg)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252751161237.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwh26ts3j31aw118qdw.jpg)
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252751319904.jpg)
+![image-20181231141502091](/Users/canvas/Library/Application Support/typora-user-images/image-20181231141502091.png)
+
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwi1ni90j31ke17i19h.jpg)
 
 然后在`config.plist`中勾选以下选项
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252751877585.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwj5qbvwj32201801db.jpg)
 
 #### `config`方式
 同样勾选以下选项
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252751877585.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwj5qbvwj32201801db.jpg)
 
 然后注入`ID`，此处根据前面的`Layout-ID`决定注入`3`还是`28`
 
-![](http://ovefvi4g3.bkt.clouddn.com/15252754357190.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwl0wucij3220180tod.jpg)
 
 ### 放驱动
 将`AppleALC`、`Lilu`、`CodecCommander`三个驱动放到`/EFI/CLOVER/kexts/Other`

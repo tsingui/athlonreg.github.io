@@ -9,7 +9,7 @@ tags:
 - algorithm
 - 算法
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-06.png
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypv22cywpj32c01fewvf.jpg
 ---
 
 ### 递归
@@ -50,7 +50,7 @@ int main(int argc, const char * argv[]) {
 ```
 
 ### 运行结果
-![2018-01-17-05](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-05.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypv22cywpj32c01fewvf.jpg)
 
 ### 动态规划
 ```
@@ -92,7 +92,7 @@ int main(int argc, const char * argv[]) {
 ```
 
 ### 运行结果
-![2018-01-17-07](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-07.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypv4po8i8j32c01fetpm.jpg)
 
 ### 回溯
 ```
@@ -136,5 +136,5 @@ int main(int argc, const char * argv[]) {
 ```
 
 ### 运行结果
-![2018-01-17-06](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-06.png)
+![image-20181231132859422](/Users/canvas/Library/Application Support/typora-user-images/image-20181231132859422.png)
 

@@ -23,19 +23,19 @@ top: 98
 ### 查看`FB`以及`ig`
 首先，确定你当前加载的Framebuffer，终端执行以下命令
 
-```
+```bash
 $ kextstat | grep -y AppleIntel
 ```
 
-![163040bhnxihl6zjlv0uiv](http://ovefvi4g3.bkt.clouddn.com/163040bhnxihl6zjlv0uiv.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwub6t0ej31p817agtj.jpg)
 
 如图，看输出结果中带Framebuffer的就是我们需要的（haswell之前的是带FB的），图中我的就是AppleIntelFramebufferAzul然后执行以下命令查看当前使用的ig
 
-```
+```bash
 $ ioreg -l | grep ig-platform-id
 ```
 
-![163317lkkaa4c8k88h8gec](http://ovefvi4g3.bkt.clouddn.com/163317lkkaa4c8k88h8gec.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwujmt1cj31p817a479.jpg)
 
 如图我的就是`0x0a260006`,有朋友不清楚，不是`0600260a`吗，下次一定要知道，这种`id`将每两位一组分组，然后从后往前排序，最后由于是十六进制，我们在最前面加上`0x`来表示，就得出了`0x0a260006`，这就是我们的`id`，当然了，后面步骤中用到的还是`0600260a`。
 
@@ -46,29 +46,25 @@ $ ioreg -l | grep ig-platform-id
 ### 在`FB`中查找`ig`进行处理
 然后，在`/System/Library/Extensions`下找到和第一步找出的`Frambuffer`同名`kext`，以我的为例，就是`AppleIntelFramebufferAzul.kext`,右键显示包内容，在`/Contents/MacOS`下将`kext`的同名文件拷贝到桌面，以我的为例就是`AppleIntelFramebufferAzul`。
 
-右键此文件打开方式选我们刚才安装的`hexfiend`，如图
+右键此文件打开方式选我们刚才安装的`hexfiend`，快捷键`command + F`调出搜索框，输入刚才在第一步找到的`ig`，回车搜索，找到后面紧跟`01030303`的那一串字符，如图
 
-![165110qfihyri7ahijpxfi](http://ovefvi4g3.bkt.clouddn.com/165110qfihyri7ahijpxfi.png)
-
-快捷键`command + F`调出搜索框，输入刚才在第一步找到的`ig`，回车搜索，找到后面紧跟`01030303`的那一串字符，如图
-
-![165432j9e9ve5zw091q6mj](http://ovefvi4g3.bkt.clouddn.com/165432j9e9ve5zw091q6mj.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/29/165432j9e9ve5zw091q6mj.png)
 
 从搜索的`ig`后面第一串开始，到`00000060`结束，将这些字符串拷贝到一个文本文档，并八个数字一组，整理好，然后再复制一行，将第二行最后的`60`改为`80`，如图
 
-![165830l1ji7ero3hez1js6](http://ovefvi4g3.bkt.clouddn.com/165830l1ji7ero3hez1js6.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/29/165830l1ji7ero3hez1js6.png)
 
 第一串就是我们要做的`patch`的`Find`，第二串是`Replace`，而`Name`则是第一步中的`Framebuffer`名字，我这里就是`AppleIntelFramebufferAzul`，`Comment`就无所谓了，我写成`Change VRAM from 1536MB to 2048MB for HD4400`，这时我们的补丁就做好了。
 
-![170205ia9i0jppida5jai5](http://ovefvi4g3.bkt.clouddn.com/170205ia9i0jppida5jai5.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/29/170205ia9i0jppida5jai5.png)
 
 最后将`patch`打到`config.plist`
 
-![170356xpbiyid3del3byda](http://ovefvi4g3.bkt.clouddn.com/170356xpbiyid3del3byda.png)
+![](http://bbs.pcbeta.com/data/attachment/forum/201803/29/170356xpbiyid3del3byda.png)
 
 然后保存重启，就会发现关于本机的显存从原来的`1536MB`变成了`2048MB`
 
-![170543xxdf6b0wdrkkbh80](http://ovefvi4g3.bkt.clouddn.com/170543xxdf6b0wdrkkbh80.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwxgweqkj312s0pun6l.jpg)
 
 如果没效果，可以尝试重建缓存。
 

@@ -22,5 +22,7 @@ photos:
 sudo spctl --master-disable
 ```
 
-会提示输入密码，根据提示输入密码回车之后就可以在"安全性与隐私"中打开"任何来源"选项了
+会提示输入密码，根据提示输入密码回车之后就可以在"安全性与隐私"中打开"任何来源"选项了，如下图所示：
+
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypv6p8eivj317c122tgo.jpg)
 

@@ -8,7 +8,7 @@ tags:
 - gnu-sed
 - xnu-sed
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/Xnip2018-07-07_22-37-25.png
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypvvrfr68j31p818kn8n.jpg
 ---
 
 ## 简介
@@ -47,7 +47,7 @@ sed: 1: "1a\1234": extra characters after \ at the end of a command
 $ man sed
 ```
 
-![](http://ovefvi4g3.bkt.clouddn.com/Xnip2018-07-07_22-37-25.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvvrfr68j31p818kn8n.jpg)
 
 那么我想用我习惯的`Linux`的`GNU-sed`怎么解决呢，我们可以安装`gnu-sed`来代替系统内的`sed`，具体方法如下
 

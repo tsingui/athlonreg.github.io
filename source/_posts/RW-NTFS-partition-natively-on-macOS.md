@@ -8,8 +8,6 @@ tags:
 - Hacintosh
 - 黑苹果
 - NTFS
-photos:
-- http://ovefvi4g3.bkt.clouddn.com/2017-10-27-01.png
 ---
 
 ### 实现 MAC 原生读写 NTFS 分区
@@ -34,9 +32,7 @@ LABEL=Win\040Ntfs\040Drive none ntfs rw,auto,nobrowse
 
 > 注意
 
-**`Win\040Ntfs\040Drive` 这串字符中`\040`代表空格，`Win\040Ntfs\040Drive` 这一串出现在`diskutil list`那个屏幕里面，比如下图就是`HD-E1`**
-
-![2017-10-27-01](http://ovefvi4g3.bkt.clouddn.com/2017-10-27-01.png)
+**`Win\040Ntfs\040Drive` 这串字符中`\040`代表空格，`Win\040Ntfs\040Drive` 这一串出现在`diskutil list`那个屏幕里面
 
 > 最后一步
 

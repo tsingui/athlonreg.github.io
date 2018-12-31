@@ -42,7 +42,7 @@ $ defaults write com.apple.dock springboard-columns -int 7;defaults write com.ap
 
 > The settings change is immediate after the Dock refreshes:
 
-![2017-10-26-09](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-09.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvik4dgkj32gw1e0npd.jpg)
 
 ### How to return to the default setting
 If you want to return to the default setting, just change the column and row counts back to what yours was originally. The default on my MacBook Pro Retina display is a 5 x 7 grid, but yours may be different depending on screen size and screen resolution.
@@ -55,7 +55,7 @@ $ defaults write com.apple.dock springboard-columns -int 7;defaults write com.ap
 > 
 > $ defaults write com.apple.dock springboard-columns -int 7;defaults write com.apple.dock springboard-rows -int 5;defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 
-![2017-10-26-10](http://ovefvi4g3.bkt.clouddn.com//2017-10-26-10.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvowzl3qj32nj120b29.jpg)
 
 #### The commands for customizing the Launchpad layout can also be split apart if desired like so:
 

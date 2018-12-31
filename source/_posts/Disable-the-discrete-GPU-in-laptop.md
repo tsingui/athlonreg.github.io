@@ -61,7 +61,7 @@ SSDT-9.dsl
 
 * 依次打开这四个表单搜索 _OFF ，找到一个类似于下面这个函数：
 
-![2017-10-04-01](http://ovefvi4g3.bkt.clouddn.com/2017-10-04-01.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypwailo2hj31ee16kwuq.jpg)
 
 * 图片左下角的路径就是我们最终所需要的: 
 
@@ -84,11 +84,11 @@ $ iasl SSDT-Disable_DGPU.dsl
 
 * 打开编译后得到的 aml 文件
 
-![2017-10-04-02](http://ovefvi4g3.bkt.clouddn.com/2017-10-04-02.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypw7fmi6oj31t017iaoe.jpg)
 
-* 按照这个格式添加自己的路径
+* 按照这个格式修改为自己的路径
 
-![2017-10-04-03](http://ovefvi4g3.bkt.clouddn.com/2017-10-04-03.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypw8t1hp2j31t017inbi.jpg)
 
 * 保存放到 /EFI/CLOVER/ACPI/patched 
 

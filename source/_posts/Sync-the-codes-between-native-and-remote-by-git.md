@@ -87,14 +87,6 @@ $ git push -u origin master
 
 > 这时终端会让你输入你的 github 用户名和密码，根据提示输入完，就推送完成了，再去 github 网页端就发现仓库已经更新至和本地相同了。
 
-### Windows 用户安装好 git 可以利用 git bash 来操作
-
-> 下面是我在 Windows 下利用 git bash 工具的一些截图，大家可以作参考
-
-![2017-09-27](http://ovefvi4g3.bkt.clouddn.com/2017-09-27-2017-09-27-03.PNG)
-
-![2017-09-27-04](http://ovefvi4g3.bkt.clouddn.com/2017-09-27-2017-09-27-04.PNG)
-
 
 
 

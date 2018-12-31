@@ -9,11 +9,11 @@ tags:
 - 二分查找
 - algorithm
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-01.png
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypvgc3ii4j32701f64fp.jpg
 ---
 
 ### 代码
-```
+```c
 //
 //  main.c
 //  algorithm
@@ -50,7 +50,7 @@ int main(int argc, const char * argv[]) {
 ```
 
 ### 运行结果
-![2018-01-17-01](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-01.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvgc3ii4j32701f64fp.jpg)
 
 
 

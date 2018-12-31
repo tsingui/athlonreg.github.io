@@ -8,14 +8,14 @@ tags:
 - OSI
 - 七层模型
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/1099668-20170212153338135-125492424.jpg
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypy5q4ps0j30ra0esac0.jpg
 ---
 
 ## 定义
 OSI（Open System Interconnection）参考模型是国际标准化组织（ISO）制定的一个用于计算机或通信系统间互联的标准体系，一般称为OSI参考模型或七层模型。
 
 ## 模型图
-![1099668-20170212153338135-125492424](http://ovefvi4g3.bkt.clouddn.com/1099668-20170212153338135-125492424.jpg)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypy5q4ps0j30ra0esac0.jpg)
 
 ### 各层描述
 ### 物理层

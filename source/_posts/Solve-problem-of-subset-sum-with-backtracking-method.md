@@ -8,7 +8,7 @@ tags:
 - 子集和问题
 - 回溯
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/Screen Shot 2017-12-12 at 2.26.24 PM.png
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypyog7y2mj32c01fewuq.jpg
 ---
 
 ### 问题描述
@@ -33,7 +33,15 @@ photos:
 ```
 
 ### 代码实现
-```
+```c
+//
+//  main.c
+//  subset-sum
+//
+//  Created by Canvas on 2018/12/31.
+//  Copyright © 2018 Canvas. All rights reserved.
+//
+
 #include <stdio.h>
 
 #define n 5
@@ -76,11 +84,10 @@ int main()
     }
     return 0;
 }
-
 ```
 
 ### 结果输出
-![Screen Shot 2017-12-12 at 2.26.24 PM](http://ovefvi4g3.bkt.clouddn.com/Screen Shot 2017-12-12 at 2.26.24 PM.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypyog7y2mj32c01fewuq.jpg)
 
 
 

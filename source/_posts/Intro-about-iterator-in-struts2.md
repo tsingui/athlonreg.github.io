@@ -18,7 +18,7 @@ tags:
 - status: 迭代元素的索引
 
 #### `jsp`页面定义元素写法 数组或`list`
-```
+```jsp
 <s:iterator value="{'1','2','3','4','5'}" >
     <s:property value='number'/>A
 </s:iterator>
@@ -36,7 +36,7 @@ tags:
 - boolean isLast() -- 当前是否最后一个元素
 - boolean isOdd() -- 当前元素索引是否奇数
 
-```
+```jsp
 <s:iterator value="{'a','b','c'}" status='st'>
     <s:if test="#st.Even">
         现在的索引是奇数为:<s:property value='#st.index'/>
@@ -46,9 +46,9 @@ tags:
 ```
 
 #### 遍历`map`
-`value`可以直接定义为：
+`value`可以直接定义为: 
 
-```
+```xml
 value="#{"1":"a","2":"b"}"
 ```
 
@@ -58,7 +58,7 @@ value="#{"1":"a","2":"b"}"
 
 > 遍历写法如下：
 
-```
+```jsp
 <s:iterator value="map" status="st">
     key : <s:property value='key'/>
     value:<s:property vlaue='value'/>
@@ -67,7 +67,7 @@ value="#{"1":"a","2":"b"}"
 当然`key`和`value`都可以是`java`的 `Object`。
 
 #### 遍历数据栈 -- 简单的`List`类
-```
+```jsp
 List<Attr> class Attr{
     String attrName;
     String getAttrName()
@@ -83,14 +83,14 @@ List<Attr> class Attr{
 当然`value`还可以写成`value="%{label}"`，`label`可以用`.`操作`label`的属性`List`，可以写成`value="%{label.list}"`，相当于: `getLabel().getList()`；
 
 #### 遍历 2 个`list`
-```
+```jsp
 List<AttrName> attrN {color,size,style}
 List<AttrValue> attrV {red,20,gay}
 ```
 
 这 2 个`list`的元素是一一对应的，一个attrN对应一个attrV
 
-```
+```jsp
 <s:iterator value="%{attrN}" status="status">
     index    is : <s:property value='status.index'/>
     attrName is : <s:property value='id'/> or <s:property value='%{id}'/>
@@ -114,7 +114,7 @@ List<AttrValue> attrV {red,20,gay}
 
 - 如果需要引用`valueStack`中的值，需要使用这样的形式。
 
-```
+```jsp
 <s:iterator value="#userList" /> //userList
 ```
 
@@ -122,13 +122,13 @@ List<AttrValue> attrV {red,20,gay}
 
 - 如果集合的值是通过`action`的方法，假设我们的`action`中有一个`getListMenu`方法，返回一个`List`集合。我们可以使用如下的形式来引用这个集合，并用`s:iterator`来输出。
 
-```
+```jsp
 <s:iterator value="listMenu" />
 ```
 
 - `iterator`的`value`使用定义好的方式，如：
 
-```
+```jsp
 <s:iterator value="{1,2,3,4}" />    //这样跌代输出的值就是1.2.3.4这四个值。
 ```
 
@@ -136,13 +136,13 @@ List<AttrValue> attrV {red,20,gay}
 如果，在上面我们的`list`中的对象，有两个属性，都是`String`类型，一个是`name`，一个是`url`。
 我们可以这样来引用。
 
-```
+```jsp
 <s:property value="name" />     //这样我们将可以输出迭代对象的name属性值。
 ```
 
 如果我们希望使用`<s:url />`来将跳转过后的`url`进行处理，该如何来做？
 
-```
+```jsp
 <s:url value="%{url}"/>     //%{}ognl的表达式，这样的值能够将url的值进行<s:url/>的处理
 实际上就是转为绝对路径。这样，我们就可以对付一些因跳转换产生的路径问题。
 ```
@@ -151,7 +151,7 @@ List<AttrValue> attrV {red,20,gay}
 因为`<s:iteratotr />`以后，当前的对象应该就在`ValueStack`顶部了，这样当然的`url`实际上就是对象的`url`属性了。
 
 ### 使用ognl输出对应的值
-```
+```jsp
 <s:textfield value="%{#request.loginNames}"/>
 ```
 
@@ -164,7 +164,7 @@ List<AttrValue> attrV {red,20,gay}
 **注：**
 - `${}`是`EL`语言的`%{}`这样的形式是`ognl`表达式语言的，在`struts2`的标签内部，使用`%{}`这样的形式，在标签外部可以使用`${}` `EL`语言的方式。如果在`struts2`的标签内部使用`${}`这样的方式，会出现以下的错误提示：
 
-```
+```verilog
 According to TLD or attribute directive in tag file, attribute value does not accept any expressions
 ```
 
@@ -175,21 +175,21 @@ According to TLD or attribute directive in tag file, attribute value does not ac
 如`User`中有`username`和`password`字段
 
 - 获取`username`属性
-```
+```jsp
 <s:property value="user.username" />
 ```
 - 获取`password`属性
-```
+```jsp
 <s:property value="user.password" />
 ```
 
 若`User`中又包含定义了`address`对象，`address`对象中包含有`addr`属性，则可以这样访问获取`addr`属性: 
-```
+```jsp
 <s:property value="user.address.addr" />
 ```
 
 若`User`中还包含一个`get()`的普通方法，可以这样调用
-```
+```jsp
 <s:property value="user.get()" />
 ```
 
@@ -199,7 +199,7 @@ According to TLD or attribute directive in tag file, attribute value does not ac
 
 调用`action`中的静态方法`get()`，普通方法不能直接调用
 
-```
+```jsp
 <s:property value="@com.netshuai.action.ManagerAction@get()" />
 ```
 
@@ -209,13 +209,13 @@ According to TLD or attribute directive in tag file, attribute value does not ac
 
 调用`JDK`中类的静态方法
 
-```
+```jsp
 <s:property value="@java.lang.Math@floor(32.56)" />
 ```
 
 上例也可写成
 
-```
+```jsp
 <s:property value="@@floor(32.56)" />
 ```
 
@@ -225,7 +225,7 @@ According to TLD or attribute directive in tag file, attribute value does not ac
 
 调用普通类中的静态属性
 
-```
+```jsp
 <s:property value="@com.netshuai.model.Address@city" />
 ```
 
@@ -235,7 +235,7 @@ According to TLD or attribute directive in tag file, attribute value does not ac
 
 调用普通类的构造方法，如构造方法为
 
-```
+```java
 public User(String username)
 {
     this.username=username;
@@ -244,7 +244,7 @@ public User(String username)
 
 调用方法为
 
-```
+```jsp
 <s:property value="new com.netshuai.model.User('hello').username" />
 ```
 
@@ -254,25 +254,25 @@ public User(String username)
 
 - 获取`List`
 
-```
+```jsp
 <s:property value="list" />
 ```
 
 - 获取`List`中的某一个元素
 
-```
+```jsp
 <s:property value="list[0]" />
 ```
 
 - 获取`List`的大小
 
-```
+```jsp
 <s:property value="list.size" />
 ```
 
 - 获取`Set`
 
-```
+```jsp
 <s:property value="set" />
 ```
 
@@ -280,31 +280,31 @@ public User(String username)
 
 - 获取`Map`
 
-```
+```jsp
 <s:property value="map" />
 ```
 
 - 获取`Map`中所有`key`的值
 
-```
+```jsp
 <s:property value="map.keys" />
 ```
 
 - 获取`Map`中所有`value`的值
 
-```
+```jsp
 <s:property value="map.values" />
 ```
 
 - 获取`Map`中的某一个元素
 
-```
+```jsp
 <s:property value="map['k1']" />
 ```
 
 - 获取`List`所有对象
 
-```
+```jsp
 <s:property value="listObject" />
 ```
 
@@ -312,73 +312,73 @@ public User(String username)
 
 - 利用投影获取`List`中所有对象的`username`属性
 
-```
+```jsp
 <s:property value="listObject.{username}" />
 ```
 
 - 利用投影获取`List`中第一个对象的`username`属性
 
-```
+```jsp
 <s:property value="listObject.{username}[0]" />
 ```
 
 - 利用选择获取`List`中年龄大于 30 的对象
 
-```
+```jsp
 <s:property value="listObject.{?#this.age>30}" />
 ```
 
 - 利用选择获取`List`中年龄大于 30 的对象的`username`
 
-```
+```jsp
 <s:property value="listObject.{?#this.age>30}.{username}" />
 ```
 
 - 利用选择获取`List`中年龄大于 30 的第一个对象的`username`
 
-```
+```jsp
 <s:property value="listObject.{?#this.age>30}.{username}[0]" />
 ```
 
 或
 
-```
+```jsp
 <s:property value="listObject.{^#this.age>30}.{username}" />
 ```
 
 - 利用选择获取`List`中年龄大于 30 的最后一个对象的`username`
 
-```
+```jsp
 <s:property value="listObject.{$#this.age>30}.{username}" />
 ```
 
 - 获取`parameters`中的属性
 
-```
+```jsp
 <s:property value="#parameters.name" />
 ```
 
 - 获取`request`中的属性
 
-```
+```jsp
 <s:property value="#request.name" />
 ```
 
 - 获取`session`中的属性
 
-```
+```jsp
 <s:property value="#session.name" />
 ```
 
 - 获取`application`中的属性
 
-```
+```jsp
 <s:property value="#application.name" />
 ```
 
 - 按顺序遍历上面四个对象，然后返回首先找到的值
 
-```
+```jsp
 <s:property value="#attr.name" />
 ```
 
@@ -388,31 +388,31 @@ public User(String username)
 
 - 使用`top`获取值栈中第二个对象
 
-```
+```jsp
 <s:property value="[1].top.user"/>
 ```
 
 - 使用`top`获取值栈中第二个对象的属性
 
-```
+```jsp
 <s:property value="[1].user"/>
 ```
 
 - 调用值栈中`action`的静态方法(`vs`也可写做`vs1`)
 
-```
+```jsp
 get()<s:property value="@vs@get()"/>
 ```
 
 - 调用值栈中第二个`action`的静态方法
 
-```
+```jsp
 get()<s:property value="@vs2@get()"/>
 ```
 
 - 将一个对象放入值栈
 
-```
+```java
 ActionContext.getContext().getValueStack().push(user);
 ```
 

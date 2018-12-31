@@ -553,7 +553,7 @@ Now you can run diffmerge to see the differences between DSDT.dsl and DSDT_patch
 `$ diffmerge DSDT.dsl DSDT_patched.dsl`
 
 The initial diffmerge window will look something like this:
-![batthot_diffmerge_initial](http://ovefvi4g3.bkt.clouddn.com/batthot_diffmerge_initial.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvstpmgaj30u40nljze.jpg)
 
 From there, we can examine the parts that have changes by clicking on the markers in the left column.
 
@@ -1918,7 +1918,7 @@ Else
 ```
 
 With all the nodes expanded in MaciASL, our work looks like this:
-![ssd_with_nodes_expanded](http://ovefvi4g3.bkt.clouddn.com/ssd_with_nodes_expanded.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypvtw1v2ej30r10hr41s.jpg)
 
 ### Resolving errors
 
@@ -3580,6 +3580,7 @@ And the mixed listing for the target _INI in SSDT-7.dsl:
     03E8: 35 50 45 47 50 5F 41 44 52                       // 5PEGP_ADR
 
   
+
 
 ​            
 

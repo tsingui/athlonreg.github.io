@@ -9,12 +9,12 @@ tags:
 - 算法
 - algorithm
 photos:
-- http://ovefvi4g3.bkt.clouddn.com/2018-01-17-03.png
+- https://ws1.sinaimg.cn/large/006dLY5Ily1fypy499b85j32c01fewv3.jpg
 ---
 
 ### 代码
 
-```
+```c
 //
 //  main.c
 //  algorithm
@@ -68,7 +68,7 @@ int main(int argc, const char * argv[]) {
 ```
 
 ### 运行结果
-![2018-01-17-03](http://ovefvi4g3.bkt.clouddn.com/2018-01-17-03.png)
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fypy499b85j32c01fewv3.jpg)
 
 
 
