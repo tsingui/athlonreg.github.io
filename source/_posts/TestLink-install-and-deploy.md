@@ -169,5 +169,15 @@ $ vi /etc/php.ini
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/58/736d782618beafcda69918ffca7749.jpg)
 
+**这里有一点提示，如上图中黑体所说 ，需要手动导入`udf0`结尾的`sql`文件，只需在`mysql`命令行中执行`source /var/www/html/testlink/install/sql/mysql/testlink_create_udf0.sql`即可，需要说明的是，需要手动修改其中的`use`字段，如下图，修改为`mysql`新建的`testlink`数据库名**
+
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fytosr0ucnj31p818kk2a.jpg)
+
+*如果安装到最后出现了打印数据库调试信息，请检查`php`的`mysql`模块，命令是`php -m | grep mysql`，如下图则是正常的*
+
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fytouqtrwgj31p818k7a4.jpg)
+
+*如果提示动态库无法加载之类的错误，只需重新安装`php-mysql`，然后重启`php-fpm`和`httpd`即可*
+
 ## 登录
 安装完成网址输入http://IP/testlink即可自动跳转到登录页面，默认用户admin/admin

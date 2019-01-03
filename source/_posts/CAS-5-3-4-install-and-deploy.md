@@ -160,7 +160,7 @@ https://github.com/apereo/cas-overlay-template
 > application.properties 增加配置文件如下
 
 ```bash
-# vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.propertiesvi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties
+# vi /usr/local/tomcat/webapps/cas/WEB-INF/classes/application.properties
 ```
 
 ```properties
