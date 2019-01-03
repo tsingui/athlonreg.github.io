@@ -1,5 +1,5 @@
 ---
-title:  CentOS安装部署Gerrit
+title:  CentOS 安装部署 Gerrit
 date: 2018-08-22 11:36:45
 categories: 
 - Linux
@@ -15,7 +15,7 @@ photos:
 - https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/79/114d466e1f80823db828265ede65ee.jpg
 ---
 
-## <cneter>`Gerrit`安装配置过程</center>
+## <cneter>`Gerrit` 安装配置过程</center>
 
 # 安装过程如下
 ## 步骤一：创建专用账户和工作目录
@@ -47,7 +47,10 @@ photos:
 在文件的末尾添加以下行
 
 ```
-export JAVA_HOME=/usr/java/jdk1.8.0_161export JRE_HOME=$JAVA_HOME/jreexport CLASSPATH=$JAVA_HOME/libexport PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH
+export JAVA_HOME=/usr/java/jdk1.8.0_161
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=$JAVA_HOME/lib
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin:$CLASSPATH
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/49/6ac74e90a641e355b29b9c4d17deb9.jpg)
@@ -258,7 +261,25 @@ $ vim review_site/etc/gerrit.config
 ```
 
 ```
-[gerrit]        basePath = git                          //指定被gerrit管理的所有git库存放位置，即review_site_project/git/        canonicalWebUrl = http://10.211.55.19:8081/project   //指定web访问gerrit的网址//填自己的ip和端口号[database]        type = mysql                             //指定gerrit所默认数据库类型，可以选用mysql，安装并创建gerrit账户        database = /home/gerrit/review_site/db/ReviewDB[auth]        type = HTTP                           //指定浏览器登录gerrit时的认证方式[sendemail]        smtpServer = localhost                //局域网邮件服务器，可使用hMailSever搭建[container]        user = gerrit                             //指定gerrit所在机器的用户身份与上文创建的用户对应一致,可以是root        javaHome = /usr/java/jdk1.8.0_161/jre[sshd]        listenAddress = *:29418                   //指定sshd服务监听的端口号[httpd]        listenUrl = http://*:8081/                //指定http代理地址[cache]        directory = cache                        //缓存位置
+[gerrit]
+        basePath = git                          //指定被gerrit管理的所有git库存放位置，即review_site_project/git/
+        canonicalWebUrl = http://10.211.55.19:8081/project   //指定web访问gerrit的网址//填自己的ip和端口号
+[database]
+        type = mysql                             //指定gerrit所默认数据库类型，可以选用mysql，安装并创建gerrit账户
+        database = /home/gerrit/review_site/db/ReviewDB
+[auth]
+        type = HTTP                           //指定浏览器登录gerrit时的认证方式
+[sendemail]
+        smtpServer = localhost                //局域网邮件服务器，可使用hMailSever搭建
+[container]
+        user = gerrit                             //指定gerrit所在机器的用户身份与上文创建的用户对应一致,可以是root
+        javaHome = /usr/java/jdk1.8.0_161/jre
+[sshd]
+        listenAddress = *:29418                   //指定sshd服务监听的端口号
+[httpd]
+        listenUrl = http://*:8081/                //指定http代理地址
+[cache]
+        directory = cache                        //缓存位置
 ```
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/31/8e586e93c265a2f6ff36d3db0454e7.jpg)
@@ -332,8 +353,10 @@ server {
         root   /usr/share/nginx/html;
     }
 ```
-![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a1/7b9e070ca210075f5fec8631a40d8b.jpg)
-启动`nginx`服务：
+
+![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/a1/7b9e070ca210075f5fec8631a40d8b.jpg)
+
+启动`nginx`服务：
 
 ```bash
 # setenforce 0                 //关闭selinux以避免造成权限问题
@@ -356,10 +379,12 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ### 安装`gitweb`,最好在联网环境下安装，或者在离线环境下下载对应的依赖包
 
 ```bash
-# yum -y install gitweb```
+# yum -y install gitweb
+```
 
 ### 配置`gitweb`,与`gerrit`集成
-修改`gitweb`的配置文件（/etc/gitweb.conf），将配置项 "$projectroot"修改为`gerrit`的`git`仓库目录。
+
+修改`gitweb`的配置文件（/etc/gitweb.conf），将配置项 "$projectroot"修改为`gerrit`的`git`仓库目录。
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/35/3723767206d90e1f1fbf859d5df6ba.jpg)
 
@@ -369,7 +394,8 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/9d/b0b9039fc3682a7cdfae62ce5387d9.jpg)
 
-### 配置gerrit权限使用管理员账号登录`gerrit`,修改`All-Projects`的权限，为`refs/*`和`refs/meta/config`的`Read`配置项配置合适的权限。
+### 配置gerrit权限
+使用管理员账号登录`gerrit`,修改`All-Projects`的权限，为`refs/*`和`refs/meta/config`的`Read`配置项配置合适的权限。
 
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/bc/d4431e93f304e1a913b244cadfd492.jpg)
 
@@ -378,9 +404,13 @@ $ htpasswd -b ./review_site/etc/passwd gerrit 123456
 ```bash
 # chown -R gerrit:gerrit /home/gerrit
 ```
-### 重启gerrit服务和Nginx服务重启`gerrit`和`nginx`服务
 
-```bash$ /home/gerrit/review_site/bin/gerrit.sh restart
+### 重启gerrit服务和Nginx服务
+
+重启`gerrit`和`nginx`服务
+
+```bash
+$ /home/gerrit/review_site/bin/gerrit.sh restart
 # systemctl restart nginx
 ```
 

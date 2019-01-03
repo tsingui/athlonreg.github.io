@@ -1,5 +1,5 @@
 ---
-title: CentOS 7安装部署邮件服务器
+title: CentOS 7 安装部署邮件服务器
 date: 2018-10-19 21:31:24
 categories: 
 - 运维
