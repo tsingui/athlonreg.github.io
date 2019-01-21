@@ -150,6 +150,6 @@ live2d:
 deploy:
 - type: git
   repository: 
-    coding: https://git.coding.net/iamzhl/iamzhl.coding.me.git
+    coding: https://git.dev.tencent.com/iamzhl/iamzhl.coding.me.git
   branch: master
 - type: baidu_url_submitter
