@@ -152,4 +152,8 @@ deploy:
   repository: 
     coding: https://git.dev.tencent.com/iamzhl/iamzhl.coding.me.git
   branch: master
+- type: git
+  repository:
+    github: https://github.com/athlonreg/athlonreg.github.io.git
+  branch: master
 - type: baidu_url_submitter
