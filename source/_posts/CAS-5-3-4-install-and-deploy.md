@@ -1,7 +1,7 @@
 ---
 title: CAS 5.3.4 安装部署
 date: 2018-11-24 20:59:49
-password: geovis
+password:
 categories: 运维
 keywords: CAS
 description: CAS 5.3.4 安装部署
@@ -370,3 +370,38 @@ cas.authn.ldap[0].baseDn=ou=People,dc=iamzhl,dc=top
 ![](https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/c3/cf45af8f7ab6b3aa80267f95cb6a42.jpg)
 
 至此，CAS 5.3 整合 openLDAP 结束。
+
+## 自定义登出跳转界面
+
+某些时候，我们可能需要对登出进行定制，比如等出后跳转到等出界面，在`CAS 5.3`以后的版本中，直接修改前端的`HTML`页面无法完成登出的定制跳转，不过官方提供了更为方便的设置方法，我们可以通过修改配置文件`application.properties`来实现，在文件中添加以下内容
+
+```properties
+cas.logout.followServiceRedirects=true
+cas.logout.redirectParameter=service
+cas.logout.redirectUrl=https://default.cas.com
+cas.logout.confirmLogout=false
+cas.logout.removeDescendantTickets=true
+```
+
+_请根据需要将其中的`redirectUrl`改为要定制的登出跳转链接_
+
+## 自定义默认的登录跳转界面
+
+登出跳转可以定制，登录的也可以，有些时候，可能需要在直接访问的`CAS`的时候，登陆成功后直接跳转到指定的界面，比如直接访问`http://devops.iamzhl.top:8080/cas`，需要跳转到`http://devops.iamzhl.top/index.html`，那么就可以在`application.properties`中添加以下属性
+
+```properties
+cas.view.defaultRedirectUrl=http://devops.iamzhl.top/index.html
+```
+
+## 自定义登录界面主题
+
+在`cas/WEB-INF/classes/static/themes`中新建一个文件夹以要设置的主题名命名，比如`devops`，在此目录下建立`js`、`css`以及`images`等静态资源文件夹，将定制的静态资源保存好，结构如下
+
+![](https://ws1.sinaimg.cn/large/006dLY5Ily1fzqqbpvu1cj31p818k4au.jpg)
+
+然后在`application.properties`添加以下属性
+
+```properties
+ cas.theme.defaultThemeName=devops
+```
+
