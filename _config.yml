@@ -158,6 +158,6 @@ deploy:
   branch: master
 - type: git
   repository:
-    github: git@gitee.com:athlonreg/athlonreg.gitee.io.git
+    github: https://gitee.com/athlonreg/athlonreg.gitee.io.git
   branch: master
 - type: baidu_url_submitter
