@@ -38,8 +38,6 @@
   {% set nofollow = ' rel="external nofollow"' %}
 {% endif %}
 
-<span>Hosted by <a href="https://pages.coding.me" style="font-weight: bold">Coding Pages</a></span>
-
 {% if theme.footer.powered.enable and theme.footer.theme.enable %}
   <span class="post-meta-divider">|</span>
 {% endif %}
