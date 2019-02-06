@@ -6,7 +6,7 @@ const ap = new APlayer({
       {
         name: '怀念青春',
         artist: '刘刚',
-        url: 'http://music.163.com/song/media/outer/url?id=29800567.mp3',
+        url: 'https://gitee.com/athlonreg/blog-music/raw/master/huainianqingchun.mp3',
         cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/huainianqingchun.jpg',
       },
       {
@@ -28,10 +28,10 @@ const ap = new APlayer({
         cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/huashengudaodejing.jpg',
       },
       {
-        name: '沙漠骆驼',
-        artist: '展展与罗罗',
-        url: 'http://music.163.com/song/media/outer/url?id=486814412.mp3',
-        cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/shamoluotuo.jpg',
+        name: '一曲相思',
+        artist: '半阳',
+        url: 'http://music.163.com/song/media/outer/url?id=1313558186.mp3',
+        cover: 'https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike92%2C5%2C5%2C92%2C30/sign=f65ae70fffd3572c72ef948eeb7a0842/77c6a7efce1b9d1601712a87fedeb48f8d5464a6.jpg',
       }
     ]
 });
