@@ -134,14 +134,14 @@ live2d:
   pluginRootPath: live2dw/ 
   pluginJsPath: lib/ 
   pluginModelPath: assets/ 
-  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
-  debug: false # 调试, 是否在控制台输出日志
+  tagMode: true # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: true # 调试, 是否在控制台输出日志
   display:
     position: right
     width: 100
     height: 200
   mobile:
-    show: true
+    show: false
   model:
     use: live2d-widget-model-tororo 
 
