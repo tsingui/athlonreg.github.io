@@ -6,7 +6,7 @@ const ap = new APlayer({
       {
         name: '怀念青春',
         artist: '刘刚',
-        url: 'https://gitee.com/athlonreg/blog-music/raw/master/huainianqingchun.mp3',
+        url: 'https://gitee.com/athlonreg/blog-music/attach_files/download?i=213491&u=http%3A%2F%2Ffiles.git.oschina.net%2Fgroup1%2FM00%2F06%2FCE%2FPaAvDFx_UKSAfbeAAKVVlKysTVQ515.mp3%3Ftoken%3Dd2bfc17e3f99541f6c219ac211b4973b%26ts%3D1551847588%26attname%3Dhuainianqingchun.mp3',
         cover: 'https://raw.githubusercontent.com/athlonreg/BlogImages/master/Images/blogcover/huainianqingchun.jpg',
       },
       {
