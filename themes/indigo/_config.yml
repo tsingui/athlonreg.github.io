@@ -133,9 +133,9 @@ gitalk:
   enable: true
   owner: athlonreg  # 例：asdfv1929   
   repo: gittalk   # 例：asdfv1929.github.io
-  clientID: 2fa40fcfb4a9f851c22b
-  clientSecret: 6fa9995849a674bf227662f9dff8a02f03c23dfa
-  adminUser: athlonreg #指定可初始化评论账户
+  client_id: 2fa40fcfb4a9f851c22b
+  client_secret: 6fa9995849a674bf227662f9dff8a02f03c23dfa
+  admin: athlonreg #指定可初始化评论账户
   distractionFreeMode: true
 
 # Valine Comment system. https://valine.js.org
