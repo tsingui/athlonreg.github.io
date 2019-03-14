@@ -46,7 +46,7 @@ brand: /img/brand.jpg
 favicon: /favicon.ico
 
 # email
-email: 634206017@qq.com
+email: 15563836030@163.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -57,7 +57,7 @@ archives_title: Archives
 categories_title: Categories
 
 # 文章截断
-excerpt_render: false
+excerpt_render: true
 excerpt_length: 200
 excerpt_link: 阅读全文...
 mathjax: false
@@ -198,5 +198,5 @@ lightbox: true
 ICP_license: false
 
 # daovoice
-daovoice: true
+daovoice: false
 daovoice_app_id: 2ec55fb7  # 这里填你刚才获得的 app_id
