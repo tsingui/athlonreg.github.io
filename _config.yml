@@ -107,7 +107,7 @@ baidushare: false
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: indigo
 
 # hexo-neat
 neat_enable: true
@@ -134,8 +134,8 @@ live2d:
   pluginRootPath: live2dw/ 
   pluginJsPath: lib/ 
   pluginModelPath: assets/ 
-  tagMode: true # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
-  debug: true # 调试, 是否在控制台输出日志
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
   display:
     position: right
     width: 100

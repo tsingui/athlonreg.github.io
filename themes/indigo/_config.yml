@@ -46,7 +46,7 @@ brand: /img/brand.jpg
 favicon: /favicon.ico
 
 # email
-email: 1143991340@qq.com
+email: 634206017@qq.com
 
 # 设置 Android L Chrome 浏览器状态栏颜色
 color: '#3F51B5'
@@ -96,7 +96,7 @@ cnzz: false
 baidu_tongji: false
 
 # 腾讯分析，如要开启，输入站点id
-tajs: 65767586
+tajs: false
 
 # google
 google_analytics: false
@@ -118,23 +118,47 @@ disqus_shortname: false
 uyan_uid: false
 # 是否使用 gitment，https://github.com/imsun/gitment
 gitment: false
-# gitment:
 owner: athlonreg
 repo: git-comment
 client_id: 2532600737516ae73769
 client_secret: 5447e3b58a359bae698dcac5318ec956949b2163
 
+# use gitalk://github.com/gitalk/gitalk
+# gitalk: true
+#  owner: 
+#  repo: 
+#  client_id: 
+#  client_secret: 
+gitalk:
+  enable: true
+  owner: athlonreg  # 例：asdfv1929   
+  repo: gittalk   # 例：asdfv1929.github.io
+  clientID: 2fa40fcfb4a9f851c22b
+  clientSecret: 6fa9995849a674bf227662f9dff8a02f03c23dfa
+  adminUser: athlonreg #指定可初始化评论账户
+  distractionFreeMode: true
+
 # Valine Comment system. https://valine.js.org
 valine:
-  enable: true # 如果你想使用valine，请将值设置为 true
-  appId: k1qv17ho3MJ13J73ybcPSzdS-gzGzoHsz # your leancloud appId
-  appKey: vXRKLu09Vu3krwPWN3hXIuBQ # your leancloud appKey
-  notify: true # Mail notify
-  verify: true # Verify code
-  avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
-  placeholder: 给博主留言... # Comment Box placeholder
-  guest_info: nick,mail,link # Comment header info
-  pageSize: 10 # comment list page size
+  enable: false
+  appId:
+  appKey:
+  notify: false
+  verify: false
+  avatar: mm
+  placeholder: Just go go
+  guest_info: nick,mail,link
+  pageSize: 10
+# valine:
+#   enable: true # 如果你想使用valine，请将值设置为 true
+#   appId: k1qv17ho3MJ13J73ybcPSzdS-gzGzoHsz # your leancloud appId
+#   appKey: vXRKLu09Vu3krwPWN3hXIuBQ # your leancloud appKey
+#   notify: true # Mail notify
+#   verify: true # Verify code
+#   avatar: mm # Gravatar style : mm/identicon/monsterid/wavatar/retro/hide
+#   placeholder: 给博主留言... # Comment Box placeholder
+#   guest_info: nick,mail,link # Comment header info
+#   pageSize: 10 # comment list page size
 
 # 是否开启Hyper Comments，填写id则启用，false则禁用。http://hypercomments.com
 # Hyper Comments support. Write your id here, or false to disable
@@ -151,7 +175,6 @@ canonical: https://blog.iamzhl.top
 since_year: 2017
 
 # 用户页面中作者相关的描述性文字，如不需要设为 false
-# about: false
 about: 一个Linux运维热爱者，同时也是一个PC极客发烧友
 
 # “不蒜子”访问量统计，详见 http://ibruce.info/2015/04/04/busuanzi/
@@ -160,9 +183,9 @@ visit_counter:
   site_pv: 站点总访问量：
 
 # 动态定义title
-# title_change:
-#   normal: (つェ⊂)咦!又好了!
-#   leave: 死鬼去哪里了！
+title_change:
+  normal: (つェ⊂)咦!又好了!
+  leave: 死鬼去哪里了！
 
 # 设置为 true 发布后将使用 unpkg cdn 最新的主题样式
 # 如果想让你的自定义样式生效，把此项设为 false
